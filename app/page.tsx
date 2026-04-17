@@ -18,7 +18,7 @@ export const metadata: Metadata = buildMetadata({
 
 const stats = [
   { value: '500+', label: 'Projects Completed' },
-  { value: '8+', label: 'Years of Experience' },
+  { value: '3+', label: 'Years of Experience' },
   { value: 'FAA', label: 'Part 107 Certified' },
   { value: 'Fully', label: 'Insured' },
 ];
@@ -142,22 +142,22 @@ export default function HomePage() {
               {
                 quote:
                   "We listed a property that had sat on the market for 60 days with standard photos. LNDMRK came out, shot it from the air, and we had three offers within a week. The aerial footage showed the lot size and the neighborhood in a way ground photos just can't. We use them on every listing now.",
-                name: 'Kristen Alvarez',
-                title: 'Realtor, Compass — Fort Worth, TX',
+                name: 'Kristen A.',
+                title: 'Realtor — Fort Worth, TX',
                 stars: 5,
               },
               {
                 quote:
                   "They shot both fields and the full resort grounds for us in one session — pool, cabanas, the works. The images ended up on our website, social media, and a regional tourism campaign. Every time we need aerial coverage for an event or a marketing push, LNDMRK is the first call we make.",
-                name: 'Marcus Webb',
-                title: 'Director of Operations, Buckhorn Lake Resort',
+                name: 'Marcus W.',
+                title: 'Director of Operations, Resort & Events Venue',
                 stars: 5,
               },
               {
                 quote:
                   "We brought them in to document a large backyard build — putting green, plunge pool, stone retaining walls. They captured progress shots throughout the project and the final reveal photos were stunning. Our client used them for their HOA presentation and it made our crew look incredible.",
-                name: 'Derek Castillo',
-                title: 'Owner, Premier Outdoor Living',
+                name: 'Derek C.',
+                title: 'Owner, Outdoor Construction Company',
                 stars: 5,
               },
             ].map((t, i) => (

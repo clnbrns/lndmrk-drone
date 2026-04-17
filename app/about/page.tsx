@@ -7,7 +7,7 @@ import { buildMetadata } from '@/lib/metadata';
 export const metadata: Metadata = buildMetadata({
   title: 'About LNDMRK Drone | FAA-Certified Aerial Photographers',
   description:
-    'Meet the LNDMRK Drone team — FAA Part 107 certified pilots and visual storytellers with 8+ years of experience in aerial photography and drone videography.',
+    'Meet the LNDMRK Drone team — FAA Part 107 certified pilots and visual storytellers with 3+ years of experience in aerial photography and drone videography.',
   path: '/about',
 });
 
@@ -47,11 +47,10 @@ const teamMembers = [
 ];
 
 const timeline = [
-  { year: '2017', event: 'LNDMRK Drone founded with a focus on aerial real estate photography in Fort Worth, TX.' },
-  { year: '[PLACEHOLDER: Year]', event: 'Expanded services to include construction monitoring and drone mapping.' },
-  { year: '[PLACEHOLDER: Year]', event: 'Secured first commercial film production contract. Grew fleet to [PLACEHOLDER: N] aircraft.' },
-  { year: '[PLACEHOLDER: Year]', event: 'Launched agricultural and inspection service lines. Reached 250 projects completed.' },
-  { year: '[PLACEHOLDER: Year]', event: 'Expanded regional coverage. Crossed 500 projects and added government & public safety services.' },
+  { year: '2023', event: 'LNDMRK Drone founded with a focus on aerial real estate photography in Fort Worth, TX.' },
+  { year: '2024', event: 'Expanded services to include construction monitoring, drone mapping, and film production.' },
+  { year: '2025', event: 'Launched agricultural and inspection service lines. Added government & public safety services.' },
+  { year: '2026', event: 'Continued growth across the DFW Metroplex and beyond.' },
 ];
 
 export default function AboutPage() {
@@ -62,7 +61,7 @@ export default function AboutPage() {
       <HeroSection
         eyebrow="Who We Are"
         title="Meet the LNDMRK Drone Team"
-        subtitle="FAA-certified pilots and visual storytellers with over 8 years of experience capturing the world from above."
+        subtitle="FAA-certified pilots and visual storytellers capturing the world from above since 2023."
       />
 
       {/* Mission */}
@@ -87,7 +86,7 @@ export default function AboutPage() {
             {[
               { label: 'FAA Part 107 Certified', desc: 'All pilots carry current Remote Pilot Certificates as required by federal law.' },
               { label: 'Fully Insured', desc: 'Commercial liability coverage on every project. Certificates available upon request.' },
-              { label: '500+ Projects', desc: 'Eight years of commercial aerial experience across Texas and beyond.' },
+              { label: '500+ Projects', desc: 'Commercial aerial experience across the DFW Metroplex and beyond.' },
             ].map((item) => (
               <div key={item.label} className="bg-brand-card border border-brand-border rounded-xl p-6">
                 <span className="block w-6 h-0.5 bg-brand-accent mb-4" aria-hidden="true" />

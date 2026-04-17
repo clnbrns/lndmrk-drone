@@ -52,7 +52,7 @@ const posts: BlogPost[] = [
     author: 'Colin Burns',
     authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
     authorBio:
-      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with over 8 years of experience in aerial photography and videography across Texas and beyond.',
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with 3+ years of experience in aerial photography and videography across Texas and beyond.',
     category: 'Photography',
     readTime: '8 min read',
     relatedSlugs: ['real-estate-drone-guide', 'faa-part-107-explained'],
@@ -161,7 +161,7 @@ const posts: BlogPost[] = [
     author: 'Colin Burns',
     authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
     authorBio:
-      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with over 8 years of experience in aerial photography and videography across Texas and beyond.',
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with 3+ years of experience in aerial photography and videography across Texas and beyond.',
     category: 'Real Estate',
     readTime: '12 min read',
     relatedSlugs: ['aerial-photography-tips', 'faa-part-107-explained'],
@@ -260,7 +260,7 @@ const posts: BlogPost[] = [
     author: 'Colin Burns',
     authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
     authorBio:
-      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with over 8 years of experience in aerial photography and videography across Texas and beyond.',
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with 3+ years of experience in aerial photography and videography across Texas and beyond.',
     category: 'Regulations',
     readTime: '10 min read',
     relatedSlugs: ['aerial-photography-tips', 'real-estate-drone-guide'],
