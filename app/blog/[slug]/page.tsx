@@ -183,8 +183,8 @@ const posts: BlogPost[] = [
         </p>
         <p>
           Studies consistently show that listings using aerial photos receive significantly more online engagement
-          and shorter days-on-market than comparable listings without them. For properties over [PLACEHOLDER: price
-          threshold], aerial coverage is essentially table stakes — high-end buyers expect it.
+          and shorter days-on-market than comparable listings without them. For properties over $400,000,
+          aerial coverage is essentially table stakes — high-end buyers expect it.
         </p>
         <h2 className="text-2xl font-bold text-brand-text">What a Real Estate Drone Shoot Includes</h2>
         <p>

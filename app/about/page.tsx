@@ -27,22 +27,10 @@ const articleSchema = {
 
 const teamMembers = [
   {
-    name: '[PLACEHOLDER: First Last]',
-    title: '[PLACEHOLDER: Lead Pilot & Founder]',
-    bio: '[PLACEHOLDER: Brief bio describing experience, certifications (FAA Part 107), years in the industry, and area of specialty. 2-3 sentences.]',
-    credentials: ['FAA Part 107', '[PLACEHOLDER: Certification]'],
-  },
-  {
-    name: '[PLACEHOLDER: First Last]',
-    title: '[PLACEHOLDER: Director of Photography]',
-    bio: '[PLACEHOLDER: Brief bio describing cinematography background, equipment expertise, and notable projects. 2-3 sentences.]',
-    credentials: ['FAA Part 107', '[PLACEHOLDER: Certification]'],
-  },
-  {
-    name: '[PLACEHOLDER: First Last]',
-    title: '[PLACEHOLDER: GIS & Mapping Specialist]',
-    bio: '[PLACEHOLDER: Brief bio describing surveying or GIS background, software expertise (Pix4D, ArcGIS), and industry experience. 2-3 sentences.]',
-    credentials: ['FAA Part 107', '[PLACEHOLDER: Certification]'],
+    name: 'Colin Burns',
+    title: 'Lead Pilot & Founder',
+    bio: 'Colin founded LNDMRK Drone in 2023 with a focus on delivering cinematic aerial content for real estate, commercial, and media clients across the DFW Metroplex. He holds an FAA Part 107 Remote Pilot Certificate and has completed 500+ commercial flights across a wide range of industries.',
+    credentials: ['FAA Part 107', 'Fully Insured'],
   },
 ];
 
@@ -104,7 +92,7 @@ export default function AboutPage() {
           <h2 id="team-heading" className="text-3xl font-bold text-brand-text text-center mb-12">
             The Team
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-md md:max-w-none mx-auto">
             {teamMembers.map((member) => (
               <article key={member.name} className="bg-brand-surface border border-brand-border rounded-xl p-6">
                 <div

@@ -27,7 +27,7 @@ export default function ServicesPage() {
       <HeroSection
         eyebrow="All Services"
         title="Drone Photography & Videography Services"
-        subtitle="Eight specialized aerial service lines covering every industry. All operated by FAA Part 107 certified pilots based in [PLACEHOLDER: region]."
+        subtitle="Eight specialized aerial service lines covering every industry. All operated by FAA Part 107 certified pilots based in Fort Worth, TX."
       />
 
       <section className="bg-brand-bg py-20" aria-labelledby="services-list-heading">

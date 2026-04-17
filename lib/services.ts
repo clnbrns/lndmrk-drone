@@ -387,7 +387,7 @@ export const services: Service[] = [
       },
       {
         q: 'What insurance coverage do you carry?',
-        a: 'We carry $[PLACEHOLDER: amount] in commercial general liability and hull insurance. Certificates of Insurance naming your production company can be issued within 24 hours for most shoots.',
+        a: 'We carry commercial general liability and hull insurance on every production. Certificates of Insurance naming your production company can be issued within 24 hours for most shoots.',
       },
       {
         q: 'Are your pilots FAA Part 107 certified?',
@@ -553,7 +553,7 @@ export const services: Service[] = [
     eyebrow: 'Government & Public Safety',
     icon: '🏛️',
     intro:
-      'Government agencies and public safety organizations need aerial data they can trust — on time, on budget, and in full compliance with federal and state regulations. LNDMRK Drone provides aerial photography, mapping, and situational awareness services to municipalities, emergency management agencies, utilities, and public safety departments across [PLACEHOLDER: region].',
+      'Government agencies and public safety organizations need aerial data they can trust — on time, on budget, and in full compliance with federal and state regulations. LNDMRK Drone provides aerial photography, mapping, and situational awareness services to municipalities, emergency management agencies, utilities, and public safety departments across the Dallas-Fort Worth Metroplex and North Texas.',
     featuresHeading: 'Use Cases',
     features: [
       {
@@ -610,7 +610,7 @@ export const services: Service[] = [
       },
       {
         q: 'How quickly can you deploy for emergency or time-sensitive operations?',
-        a: 'For contracted agency clients, we target a 4-hour deployment window for emergency activations within [PLACEHOLDER: service radius]. Standing retainer agreements with priority scheduling are available for agencies requiring guaranteed response times.',
+        a: 'For contracted agency clients, we target a 4-hour deployment window for emergency activations within the DFW Metroplex. Standing retainer agreements with priority scheduling are available for agencies requiring guaranteed response times.',
       },
       {
         q: 'How is sensitive government data handled and stored?',

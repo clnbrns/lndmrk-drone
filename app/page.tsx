@@ -12,7 +12,7 @@ import { buildMetadata } from '@/lib/metadata';
 export const metadata: Metadata = buildMetadata({
   title: 'LNDMRK Drone | Aerial Photography & Videography',
   description:
-    'Professional drone photography and videography for real estate, events, construction, agriculture, film, and inspection. FAA-certified. Serving [PLACEHOLDER: region].',
+    'Professional drone photography and videography for real estate, events, construction, agriculture, film, and inspection. FAA-certified. Serving Dallas-Fort Worth, TX.',
   path: '/',
 });
 

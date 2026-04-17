@@ -17,7 +17,7 @@ const posts = [
     excerpt:
       'From choosing the right time of day to understanding how altitude affects compression, these field-tested tips apply whether you\'re shooting real estate or landscape.',
     date: '2026-03-15',
-    author: '[PLACEHOLDER: Author Name]',
+    author: 'Colin Burns',
     category: 'Photography',
     readTime: '8 min read',
   },
@@ -27,7 +27,7 @@ const posts = [
     excerpt:
       'Aerial photos make listings sell faster and for more money. Here\'s everything a real estate agent or property developer needs to know before booking a drone shoot.',
     date: '2026-02-28',
-    author: '[PLACEHOLDER: Author Name]',
+    author: 'Colin Burns',
     category: 'Real Estate',
     readTime: '12 min read',
   },
@@ -37,7 +37,7 @@ const posts = [
     excerpt:
       'Not all drone operators are created equal. Here\'s what FAA Part 107 certification requires, why it matters for commercial work, and what questions to ask before hiring a drone company.',
     date: '2026-02-10',
-    author: '[PLACEHOLDER: Author Name]',
+    author: 'Colin Burns',
     category: 'Regulations',
     readTime: '10 min read',
   },
@@ -45,9 +45,9 @@ const posts = [
     slug: 'construction-drone-benefits',
     title: 'How Construction Teams Are Using Drones to Reduce Rework and Disputes',
     excerpt:
-      '[PLACEHOLDER: Excerpt about construction drone photography benefits, progress tracking, and ROI for contractors and project managers. 2-3 sentences.]',
+      'Drone photography has become one of the most cost-effective tools for construction project management — reducing disputes, catching rework early, and giving owners real-time visibility into progress. Here\'s how contractors across DFW are putting aerial documentation to work on every phase of the build.',
     date: '2026-01-22',
-    author: '[PLACEHOLDER: Author Name]',
+    author: 'Colin Burns',
     category: 'Construction',
     readTime: '9 min read',
   },
@@ -55,9 +55,9 @@ const posts = [
     slug: 'drone-mapping-accuracy',
     title: 'How Accurate Is Drone Mapping? A Plain-English Guide to Photogrammetry',
     excerpt:
-      '[PLACEHOLDER: Excerpt explaining drone mapping accuracy, GCPs, RTK, and what accuracy levels are realistic for different applications. 2-3 sentences.]',
+      'Modern drone mapping can achieve sub-inch horizontal accuracy — but only when the right ground control points and RTK workflows are in place. This guide explains what accuracy is actually achievable, what drives the variance, and how to spec a mapping project for your application.',
     date: '2026-01-08',
-    author: '[PLACEHOLDER: Author Name]',
+    author: 'Colin Burns',
     category: 'Mapping',
     readTime: '11 min read',
   },
@@ -65,9 +65,9 @@ const posts = [
     slug: 'hiring-drone-company',
     title: '7 Questions to Ask Before Hiring a Drone Photography Company',
     excerpt:
-      '[PLACEHOLDER: Excerpt covering what to verify (FAA cert, insurance, experience, deliverable formats, equipment) before signing with a drone services provider. 2-3 sentences.]',
+      'Not every drone operator with a camera is qualified for commercial work. Before you sign a contract, here are the seven questions that separate professional operators from hobbyists — covering certification, insurance, equipment, deliverables, and experience.',
     date: '2025-12-14',
-    author: '[PLACEHOLDER: Author Name]',
+    author: 'Colin Burns',
     category: 'Guides',
     readTime: '7 min read',
   },

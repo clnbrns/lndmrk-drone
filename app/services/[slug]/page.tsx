@@ -54,7 +54,7 @@ export default async function ServicePage({
     },
     areaServed: {
       '@type': 'Place',
-      name: '[PLACEHOLDER: Service Area]',
+      name: 'Dallas-Fort Worth Metroplex',
     },
   };
 
