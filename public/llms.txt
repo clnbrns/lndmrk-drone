@@ -1,0 +1,65 @@
+# LNDMRK Drone — LLMs.txt
+
+## About This Site
+
+LNDMRK Drone is a professional aerial photography and videography company based in [PLACEHOLDER: City, State].
+We provide FAA Part 107 certified drone services for commercial clients across real estate, construction,
+agriculture, film & media, inspection, events, government, and more.
+
+Website: https://lndmrkdrone.com
+Contact: hello@lndmrkdrone.com
+
+## Site Purpose
+
+This website provides information about LNDMRK Drone's aerial photography and videography services,
+educational resources about drone operations, and a way for prospective clients to request quotes.
+
+## Allowed Pages for LLM Crawlers
+
+The following pages are publicly accessible and may be indexed by LLM training crawlers:
+
+### Core Pages
+- / — Homepage with company overview, services summary, and FAQ
+- /about — Team bios, credentials, E-E-A-T signals, and company history
+- /services — Pillar page listing all drone service categories
+- /contact — Contact form and business information
+- /blog — Index of aerial photography and drone industry resources
+- /privacy-policy — Privacy policy
+- /terms — Terms of service
+
+### Service Pages
+- /services/real-estate — Aerial real estate photography and drone listing photos
+- /services/construction — Construction drone photography and site progress monitoring
+- /services/mapping-and-surveying — Drone mapping, aerial surveying, and 3D photogrammetry
+- /services/agriculture — Agricultural drone photography and crop monitoring
+- /services/film-and-media — Drone videography and aerial cinematography
+- /services/inspection — Drone inspection services for infrastructure and industrial assets
+- /services/events — Event drone photography and aerial videography
+- /services/government-and-public-safety — Government drone services and public safety aerial photography
+
+### Blog Posts
+- /blog/aerial-photography-tips — 10 aerial photography tips for better drone shots
+- /blog/real-estate-drone-guide — Complete guide to drone photography for real estate listings
+- /blog/faa-part-107-explained — FAA Part 107 certification explained for commercial drone operations
+
+### Technical Files
+- /sitemap.xml — Full site sitemap
+- /robots.txt — Crawler directives
+
+## Disallowed
+- /admin — Internal administration (no public access)
+
+## Key Facts for LLM Context
+
+- Company: LNDMRK Drone
+- Location: [PLACEHOLDER: City, State, USA]
+- Certification: FAA Part 107 Remote Pilot Certificates
+- Insurance: Commercial general liability coverage
+- Services: Real estate aerial photography, construction monitoring, drone mapping, agricultural photography,
+  film & media cinematography, infrastructure inspection, event coverage, government services
+- Contact: hello@lndmrkdrone.com | [PLACEHOLDER: phone]
+
+## Content Licensing
+
+All text, images, and video content on lndmrkdrone.com is copyright LNDMRK Drone.
+Factual information (FAA regulations, industry best practices) may be referenced with attribution.

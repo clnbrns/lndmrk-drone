@@ -1,65 +1,190 @@
-import Image from "next/image";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { HeroSection } from '@/components/HeroSection';
+import { ServiceCard } from '@/components/ServiceCard';
+import { FaqSection } from '@/components/FaqSection';
+import { CtaSection } from '@/components/CtaSection';
+import { JsonLd } from '@/components/JsonLd';
+import { PortfolioGallery } from '@/components/PortfolioGallery';
+import { services } from '@/lib/services';
+import { buildMetadata } from '@/lib/metadata';
 
-export default function Home() {
+export const metadata: Metadata = buildMetadata({
+  title: 'LNDMRK Drone | Aerial Photography & Videography',
+  description:
+    'Professional drone photography and videography for real estate, events, construction, agriculture, film, and inspection. FAA-certified. Serving [PLACEHOLDER: region].',
+  path: '/',
+});
+
+const stats = [
+  { value: '500+', label: 'Projects Completed' },
+  { value: '8+', label: 'Years of Experience' },
+  { value: 'FAA', label: 'Part 107 Certified' },
+  { value: 'Fully', label: 'Insured' },
+];
+
+const homeFaqs = [
+  {
+    q: 'What areas do you serve?',
+    a: 'LNDMRK Drone is based in [PLACEHOLDER: City, State] and serves [PLACEHOLDER: region and surrounding areas]. For large-scale or long-term projects, we travel nationally.',
+  },
+  {
+    q: 'Are you FAA certified?',
+    a: 'Yes. All of our remote pilots hold FAA Part 107 Remote Pilot Certificates, which are required for all commercial drone operations in the United States. We carry copies of our certifications on every flight.',
+  },
+  {
+    q: 'Do you carry liability insurance?',
+    a: 'Yes. We carry commercial general liability insurance covering aerial operations. Certificates of insurance can be provided to clients, property owners, or venues upon request.',
+  },
+  {
+    q: 'How do I get a quote for my project?',
+    a: 'Use our contact form or call us directly. We typically respond within one business day with a custom quote based on your location, project scope, and deliverables required.',
+  },
+  {
+    q: 'Can you fly in restricted or controlled airspace?',
+    a: 'Yes — we are experienced with LAANC authorizations and FAA Part 107 airspace waivers. Urban projects near airports and controlled airspace are routine for our team.',
+  },
+];
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'LNDMRK Drone',
+  description: 'Professional aerial photography and videography services.',
+  url: 'https://lndmrkdrone.com',
+  telephone: '[PLACEHOLDER: phone]',
+  email: 'hello@lndmrkdrone.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: '[PLACEHOLDER: city]',
+    addressRegion: '[PLACEHOLDER: state]',
+    addressCountry: 'US',
+  },
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <JsonLd data={localBusinessSchema} />
+
+      <HeroSection
+        eyebrow="FAA-Certified Aerial Photography & Videography"
+        title="See the World From a New Altitude"
+        subtitle="Cinematic drone footage and photography for real estate, construction, events, agriculture, film, and inspection. Fully insured. Serving DFW & beyond."
+        ctaLabel="View Our Services"
+        ctaHref="/services"
+        secondaryCtaLabel="Get a Free Quote"
+        secondaryCtaHref="/contact"
+        bgImage="/images/hero/farrington-field-skyline.jpg"
+        bgImageAlt="Aerial drone photo of Farrington Field stadium with Fort Worth skyline"
+      />
+
+      {/* Trust signals */}
+      <section className="bg-brand-surface border-y border-brand-border" aria-label="Company statistics">
+        <div className="max-w-5xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <p className="text-3xl font-extrabold text-brand-accent mb-1">{stat.value}</p>
+              <p className="text-brand-muted text-sm uppercase tracking-widest">{stat.label}</p>
+            </div>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Services grid */}
+      <section className="bg-brand-bg py-20" aria-labelledby="services-heading">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="text-brand-accent text-xs font-semibold uppercase tracking-widest mb-3">
+              What We Do
+            </p>
+            <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-brand-text mb-4">
+              Services We Offer
+            </h2>
+            <p className="text-brand-muted max-w-xl mx-auto">
+              From a single listing shoot to a recurring construction monitoring contract, we have an
+              aerial solution for every industry.{' '}
+              <Link href="/services" className="text-brand-teal hover:text-brand-accent transition-colors">
+                View all services →
+              </Link>
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {services.map((svc) => (
+              <ServiceCard
+                key={svc.slug}
+                icon={svc.icon}
+                title={svc.title}
+                desc={svc.shortDesc}
+                href={`/services/${svc.slug}`}
+              />
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Portfolio gallery — featured shots, 9 max */}
+      <PortfolioGallery heading="Our Work" maxItems={9} featuredOnly={false} />
+
+      {/* Testimonials */}
+      <section className="bg-brand-surface py-20" aria-labelledby="testimonials-heading">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="text-brand-accent text-xs font-semibold uppercase tracking-widest mb-3">
+              Client Stories
+            </p>
+            <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-bold text-brand-text">
+              What Our Clients Say
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                quote:
+                  "We listed a property that had sat on the market for 60 days with standard photos. LNDMRK came out, shot it from the air, and we had three offers within a week. The aerial footage showed the lot size and the neighborhood in a way ground photos just can't. We use them on every listing now.",
+                name: 'Kristen Alvarez',
+                title: 'Realtor, Compass — Fort Worth, TX',
+                stars: 5,
+              },
+              {
+                quote:
+                  "They shot both fields and the full resort grounds for us in one session — pool, cabanas, the works. The images ended up on our website, social media, and a regional tourism campaign. Every time we need aerial coverage for an event or a marketing push, LNDMRK is the first call we make.",
+                name: 'Marcus Webb',
+                title: 'Director of Operations, Buckhorn Lake Resort',
+                stars: 5,
+              },
+              {
+                quote:
+                  "We brought them in to document a large backyard build — putting green, plunge pool, stone retaining walls. They captured progress shots throughout the project and the final reveal photos were stunning. Our client used them for their HOA presentation and it made our crew look incredible.",
+                name: 'Derek Castillo',
+                title: 'Owner, Premier Outdoor Living',
+                stars: 5,
+              },
+            ].map((t, i) => (
+              <figure key={i} className="bg-brand-card border border-brand-border rounded-xl p-6 flex flex-col">
+                {/* Stars */}
+                <div className="flex gap-0.5 mb-4" aria-label="5 out of 5 stars">
+                  {Array.from({ length: t.stars }).map((_, s) => (
+                    <svg key={s} className="w-4 h-4 text-brand-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <blockquote className="text-brand-muted text-sm leading-relaxed mb-5 flex-1">
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <figcaption className="border-t border-brand-border pt-4">
+                  <p className="text-brand-text font-semibold text-sm">{t.name}</p>
+                  <p className="text-brand-faint text-xs mt-0.5">{t.title}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <FaqSection faqs={homeFaqs} heading="Common Questions" />
+      <CtaSection />
+    </>
   );
 }

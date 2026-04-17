@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lndmrk-next",
+      "runtimeExecutable": "/usr/local/bin/npm",
+      "runtimeArgs": ["--prefix", "/Users/colinmburns/lndmrk-drone-next", "run", "dev"],
+      "port": 3000
+    }
+  ]
+}
