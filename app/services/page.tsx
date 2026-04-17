@@ -61,12 +61,12 @@ export default function ServicesPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { icon: '✅', title: 'FAA Part 107 Certified', desc: 'Every pilot on our team holds a current Remote Pilot Certificate and follows FAA regulations on every flight.' },
-              { icon: '🛡️', title: 'Fully Insured', desc: '[PLACEHOLDER: $X]M commercial liability coverage. We provide certificates of insurance to clients and venues on request.' },
-              { icon: '⚡', title: 'Fast Turnaround', desc: 'Most deliverables are ready within 24–48 hours. Rush delivery is available when timelines are tight.' },
+              { title: 'FAA Part 107 Certified', desc: 'Every pilot on our team holds a current Remote Pilot Certificate and follows FAA regulations on every flight.' },
+              { title: 'Fully Insured', desc: 'Commercial liability coverage on every project. Certificates of insurance provided to clients and venues on request.' },
+              { title: 'Fast Turnaround', desc: 'Most deliverables are ready within 24–48 hours. Rush delivery is available when timelines are tight.' },
             ].map((item) => (
               <div key={item.title} className="bg-brand-card border border-brand-border rounded-xl p-6">
-                <span className="text-2xl mb-3 block">{item.icon}</span>
+                <span className="block w-6 h-0.5 bg-brand-accent mb-4" aria-hidden="true" />
                 <h3 className="text-brand-text font-semibold mb-2">{item.title}</h3>
                 <p className="text-brand-muted text-sm">{item.desc}</p>
               </div>

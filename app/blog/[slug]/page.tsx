@@ -49,10 +49,10 @@ const posts: BlogPost[] = [
     metaDesc:
       'Improve your drone photography with these 10 field-tested aerial photography tips: golden hour timing, altitude choices, composition rules, and camera settings.',
     date: '2026-03-15',
-    author: '[PLACEHOLDER: Author Name]',
-    authorTitle: '[PLACEHOLDER: Lead Pilot & Photographer]',
+    author: 'Colin Burns',
+    authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
     authorBio:
-      '[PLACEHOLDER: 2-3 sentence author bio describing experience, specialization, and relevant credentials.]',
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with over 8 years of experience in aerial photography and videography across Texas and beyond.',
     category: 'Photography',
     readTime: '8 min read',
     relatedSlugs: ['real-estate-drone-guide', 'faa-part-107-explained'],
@@ -158,10 +158,10 @@ const posts: BlogPost[] = [
     metaDesc:
       'Everything real estate agents and property developers need to know about aerial drone photography for listings — from what\'s included to what it costs and how to prepare.',
     date: '2026-02-28',
-    author: '[PLACEHOLDER: Author Name]',
-    authorTitle: '[PLACEHOLDER: Lead Pilot & Photographer]',
+    author: 'Colin Burns',
+    authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
     authorBio:
-      '[PLACEHOLDER: 2-3 sentence author bio describing experience, specialization, and relevant credentials.]',
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with over 8 years of experience in aerial photography and videography across Texas and beyond.',
     category: 'Real Estate',
     readTime: '12 min read',
     relatedSlugs: ['aerial-photography-tips', 'faa-part-107-explained'],
@@ -214,13 +214,13 @@ const posts: BlogPost[] = [
         <h2 className="text-2xl font-bold text-brand-text">Pricing: What to Expect</h2>
         <p>
           Real estate drone photography pricing varies by market, package scope, and turnaround requirements.
-          Typical ranges in [PLACEHOLDER: market]:
+          Contact us for a custom quote based on your specific listing and location.
         </p>
         <ul className="list-disc list-inside space-y-2 ml-2">
-          <li><strong className="text-brand-text">Photo-only package:</strong> [PLACEHOLDER: $X–$X]</li>
-          <li><strong className="text-brand-text">Photo + video package:</strong> [PLACEHOLDER: $X–$X]</li>
-          <li><strong className="text-brand-text">Twilight/golden hour add-on:</strong> [PLACEHOLDER: $X–$X]</li>
-          <li><strong className="text-brand-text">Rush same-day delivery:</strong> [PLACEHOLDER: $X additional]</li>
+          <li><strong className="text-brand-text">Photo-only package</strong></li>
+          <li><strong className="text-brand-text">Photo + video package</strong></li>
+          <li><strong className="text-brand-text">Twilight/golden hour add-on</strong></li>
+          <li><strong className="text-brand-text">Rush same-day delivery</strong></li>
         </ul>
         <h2 className="text-2xl font-bold text-brand-text">FAA Compliance: What You Should Verify</h2>
         <p>
@@ -257,10 +257,10 @@ const posts: BlogPost[] = [
     metaDesc:
       'What is FAA Part 107? A plain-English guide to the commercial drone certification rules, what they require, and why it matters when hiring a drone photography company.',
     date: '2026-02-10',
-    author: '[PLACEHOLDER: Author Name]',
-    authorTitle: '[PLACEHOLDER: Lead Pilot & Photographer]',
+    author: 'Colin Burns',
+    authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
     authorBio:
-      '[PLACEHOLDER: 2-3 sentence author bio describing experience, specialization, and relevant credentials.]',
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with over 8 years of experience in aerial photography and videography across Texas and beyond.',
     category: 'Regulations',
     readTime: '10 min read',
     relatedSlugs: ['aerial-photography-tips', 'real-estate-drone-guide'],
@@ -451,10 +451,12 @@ export default async function BlogPostPage({
         <aside className="mt-14 p-6 bg-brand-surface border border-brand-border rounded-xl">
           <div className="flex items-start gap-4">
             <div
-              className="w-14 h-14 rounded-full bg-brand-card border border-brand-border flex items-center justify-center text-2xl flex-shrink-0"
+              className="w-14 h-14 rounded-full bg-brand-card border border-brand-border flex items-center justify-center flex-shrink-0"
               aria-hidden="true"
             >
-              👤
+              <svg className="w-7 h-7 text-brand-faint" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+              </svg>
             </div>
             <div>
               <p className="text-brand-text font-bold">{post.author}</p>

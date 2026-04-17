@@ -39,7 +39,12 @@ export function ContactForm() {
   if (status === 'success') {
     return (
       <div className="bg-brand-card border border-brand-teal rounded-xl p-10 text-center">
-        <div className="text-4xl mb-4">✅</div>
+        <div className="mb-4 flex justify-center">
+          <svg className="w-12 h-12 text-brand-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="9 12 11 14 15 10" />
+          </svg>
+        </div>
         <h2 className="text-2xl font-bold text-brand-text mb-2">Message Sent!</h2>
         <p className="text-brand-muted">
           Thanks — we&apos;ll get back to you within one business day with a custom quote.

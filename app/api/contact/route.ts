@@ -14,7 +14,7 @@ export async function POST(request: Request) {
 
     const { error } = await resend.emails.send({
       from: 'LNDMRK Drone <onboarding@resend.dev>',
-      to: 'colinmburns@gmail.com',
+      to: ['colinmburns@gmail.com'],
       replyTo: email,
       subject: `New Quote Request: ${service} — ${name}`,
       html: `

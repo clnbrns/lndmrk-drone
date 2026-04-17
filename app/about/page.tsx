@@ -47,7 +47,7 @@ const teamMembers = [
 ];
 
 const timeline = [
-  { year: '[PLACEHOLDER: Year]', event: 'LNDMRK Drone founded with a focus on aerial real estate photography in [PLACEHOLDER: city].' },
+  { year: '2017', event: 'LNDMRK Drone founded with a focus on aerial real estate photography in Fort Worth, TX.' },
   { year: '[PLACEHOLDER: Year]', event: 'Expanded services to include construction monitoring and drone mapping.' },
   { year: '[PLACEHOLDER: Year]', event: 'Secured first commercial film production contract. Grew fleet to [PLACEHOLDER: N] aircraft.' },
   { year: '[PLACEHOLDER: Year]', event: 'Launched agricultural and inspection service lines. Reached 250 projects completed.' },
@@ -85,12 +85,12 @@ export default function AboutPage() {
           {/* E-E-A-T credentials */}
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { icon: '🛡️', label: 'FAA Part 107 Certified', desc: 'All pilots carry current Remote Pilot Certificates as required by federal law.' },
-              { icon: '📋', label: 'Fully Insured', desc: '[PLACEHOLDER: $X]M commercial liability coverage. Certificates available upon request.' },
-              { icon: '🏆', label: '500+ Projects', desc: 'Eight years of commercial aerial experience across [PLACEHOLDER: N] states.' },
+              { label: 'FAA Part 107 Certified', desc: 'All pilots carry current Remote Pilot Certificates as required by federal law.' },
+              { label: 'Fully Insured', desc: 'Commercial liability coverage on every project. Certificates available upon request.' },
+              { label: '500+ Projects', desc: 'Eight years of commercial aerial experience across Texas and beyond.' },
             ].map((item) => (
               <div key={item.label} className="bg-brand-card border border-brand-border rounded-xl p-6">
-                <span className="text-2xl mb-3 block">{item.icon}</span>
+                <span className="block w-6 h-0.5 bg-brand-accent mb-4" aria-hidden="true" />
                 <h3 className="text-brand-text font-semibold mb-2">{item.label}</h3>
                 <p className="text-brand-muted text-sm">{item.desc}</p>
               </div>
@@ -109,10 +109,12 @@ export default function AboutPage() {
             {teamMembers.map((member) => (
               <article key={member.name} className="bg-brand-surface border border-brand-border rounded-xl p-6">
                 <div
-                  className="w-20 h-20 rounded-full bg-brand-card border-2 border-brand-border mb-5 flex items-center justify-center text-3xl"
+                  className="w-20 h-20 rounded-full bg-brand-card border-2 border-brand-border mb-5 flex items-center justify-center"
                   aria-label={`Photo placeholder for ${member.name}`}
                 >
-                  👤
+                  <svg className="w-9 h-9 text-brand-faint" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+                  </svg>
                 </div>
                 <h3 className="text-brand-text font-bold text-lg">{member.name}</h3>
                 <p className="text-brand-teal text-sm font-medium mb-3">{member.title}</p>

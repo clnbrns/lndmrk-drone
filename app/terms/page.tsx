@@ -82,8 +82,8 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-semibold text-brand-text mb-3">7. Governing Law</h2>
           <p>
-            These terms are governed by the laws of the State of [PLACEHOLDER: State], without regard to conflict of
-            law principles. Any disputes shall be resolved in the courts of [PLACEHOLDER: County, State].
+            These terms are governed by the laws of the State of Texas, without regard to conflict of
+            law principles. Any disputes shall be resolved in the courts of Tarrant County, Texas.
           </p>
         </section>
 
@@ -91,8 +91,8 @@ export default function TermsPage() {
           <h2 className="text-xl font-semibold text-brand-text mb-3">8. Contact</h2>
           <p>
             Questions about these terms? Contact us at{' '}
-            <a href="mailto:hello@lndmrkdrone.com" className="text-brand-teal hover:text-brand-accent transition-colors">
-              hello@lndmrkdrone.com
+            <a href="mailto:colinmburns@gmail.com" className="text-brand-teal hover:text-brand-accent transition-colors">
+              colinmburns@gmail.com
             </a>
             .
           </p>

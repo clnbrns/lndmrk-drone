@@ -26,7 +26,7 @@ const stats = [
 const homeFaqs = [
   {
     q: 'What areas do you serve?',
-    a: 'LNDMRK Drone is based in [PLACEHOLDER: City, State] and serves [PLACEHOLDER: region and surrounding areas]. For large-scale or long-term projects, we travel nationally.',
+    a: 'LNDMRK Drone is based in Fort Worth, TX and serves the Dallas-Fort Worth Metroplex and surrounding areas. For large-scale or long-term projects, we travel nationally.',
   },
   {
     q: 'Are you FAA certified?',
@@ -52,12 +52,12 @@ const localBusinessSchema = {
   name: 'LNDMRK Drone',
   description: 'Professional aerial photography and videography services.',
   url: 'https://lndmrkdrone.com',
-  telephone: '[PLACEHOLDER: phone]',
-  email: 'hello@lndmrkdrone.com',
+  telephone: '+16829999240',
+  email: 'colinmburns@gmail.com',
   address: {
     '@type': 'PostalAddress',
-    addressLocality: '[PLACEHOLDER: city]',
-    addressRegion: '[PLACEHOLDER: state]',
+    addressLocality: 'Fort Worth',
+    addressRegion: 'TX',
     addressCountry: 'US',
   },
 };

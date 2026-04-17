@@ -16,7 +16,7 @@ const localBusinessSchema = {
   '@type': 'LocalBusiness',
   name: 'LNDMRK Drone',
   url: 'https://lndmrkdrone.com',
-  email: 'hello@lndmrkdrone.com',
+  email: 'colinmburns@gmail.com',
 };
 
 export default function ContactPage() {
@@ -44,8 +44,8 @@ export default function ContactPage() {
               <address className="not-italic space-y-5">
                 <div>
                   <p className="text-brand-muted text-xs uppercase tracking-widest mb-1">Email</p>
-                  <a href="mailto:hello@lndmrkdrone.com" className="text-brand-text text-sm hover:text-brand-accent transition-colors">
-                    hello@lndmrkdrone.com
+                  <a href="mailto:colinmburns@gmail.com" className="text-brand-text text-sm hover:text-brand-accent transition-colors">
+                    colinmburns@gmail.com
                   </a>
                 </div>
                 <div>

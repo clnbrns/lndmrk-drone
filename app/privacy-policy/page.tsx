@@ -88,10 +88,10 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-xl font-semibold text-brand-text mb-3">7. Contact</h2>
           <p>
             Questions about this policy? Contact us at{' '}
-            <a href="mailto:hello@lndmrkdrone.com" className="text-brand-teal hover:text-brand-accent transition-colors">
-              hello@lndmrkdrone.com
+            <a href="mailto:colinmburns@gmail.com" className="text-brand-teal hover:text-brand-accent transition-colors">
+              colinmburns@gmail.com
             </a>{' '}
-            or [PLACEHOLDER: mailing address].
+            or by mail at Fort Worth, TX.
           </p>
         </section>
       </div>

@@ -94,7 +94,7 @@ export default async function ServicePage({
                 key={feature.title}
                 className="bg-brand-card border border-brand-border rounded-xl p-6"
               >
-                <span className="text-2xl mb-3 block">{feature.icon}</span>
+                <span className="block w-6 h-0.5 bg-brand-accent mb-4" aria-hidden="true" />
                 <h3 className="text-brand-text font-semibold mb-2">{feature.title}</h3>
                 <p className="text-brand-muted text-sm leading-relaxed">{feature.desc}</p>
               </div>
@@ -132,12 +132,12 @@ export default async function ServicePage({
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { icon: '✅', label: 'FAA Part 107 Certified', desc: 'Compliant commercial operations on every flight.' },
-              { icon: '🛡️', label: 'Fully Insured', desc: 'Liability certificates available for every project.' },
-              { icon: '⚡', label: 'Fast Turnaround', desc: '24–48 hour delivery on most deliverables.' },
+              { label: 'FAA Part 107 Certified', desc: 'Compliant commercial operations on every flight.' },
+              { label: 'Fully Insured', desc: 'Liability certificates available for every project.' },
+              { label: 'Fast Turnaround', desc: '24–48 hour delivery on most deliverables.' },
             ].map((item) => (
               <div key={item.label} className="text-center p-5">
-                <span className="text-3xl block mb-2">{item.icon}</span>
+                <span className="block w-8 h-0.5 bg-brand-accent mx-auto mb-4" aria-hidden="true" />
                 <p className="text-brand-text font-semibold mb-1">{item.label}</p>
                 <p className="text-brand-muted text-sm">{item.desc}</p>
               </div>
