@@ -27,7 +27,7 @@ export default function ServicesPage() {
       <HeroSection
         eyebrow="All Services"
         title="Drone Photography & Videography Services"
-        subtitle="Eight specialized aerial service lines covering every industry. All operated by FAA Part 107 certified pilots based in Fort Worth, TX."
+        subtitle="Eight specialized aerial service lines covering every industry. FAA Part 107 certified pilot based in Fort Worth, TX."
       />
 
       <section className="bg-brand-bg py-20" aria-labelledby="services-list-heading">
@@ -61,7 +61,7 @@ export default function ServicesPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { title: 'FAA Part 107 Certified', desc: 'Every pilot on our team holds a current Remote Pilot Certificate and follows FAA regulations on every flight.' },
+              { title: 'FAA Part 107 Certified', desc: 'Our pilot holds a current FAA Remote Pilot Certificate and follows all regulations on every commercial flight.' },
               { title: 'Fully Insured', desc: 'Commercial liability coverage on every project. Certificates of insurance provided to clients and venues on request.' },
               { title: 'Fast Turnaround', desc: 'Most deliverables are ready within 24–48 hours. Rush delivery is available when timelines are tight.' },
             ].map((item) => (

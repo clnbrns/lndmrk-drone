@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface HeroSectionProps {
+  /** Small pill badge above the eyebrow — e.g. "FAA Part 107 Certified" */
+  badge?: string;
   eyebrow?: string;
   title: string;
   subtitle?: string;
@@ -111,6 +113,7 @@ function DroneVisual() {
 }
 
 export function HeroSection({
+  badge,
   eyebrow,
   title,
   subtitle,
@@ -159,6 +162,12 @@ export function HeroSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text column */}
           <div>
+            {badge && (
+              <div className="inline-flex items-center gap-2 border border-brand-teal/40 text-brand-teal text-xs font-semibold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-5">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-teal inline-block" aria-hidden="true" />
+                {badge}
+              </div>
+            )}
             {eyebrow && (
               <p className="text-brand-accent text-xs font-semibold uppercase tracking-widest mb-5">
                 {eyebrow}

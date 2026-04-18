@@ -30,7 +30,7 @@ const homeFaqs = [
   },
   {
     q: 'Are you FAA certified?',
-    a: 'Yes. All of our remote pilots hold FAA Part 107 Remote Pilot Certificates, which are required for all commercial drone operations in the United States. We carry copies of our certifications on every flight.',
+    a: 'Yes. Our pilot holds an FAA Part 107 Remote Pilot Certificate, which is required for all commercial drone operations in the United States. We carry a copy of the certification on every flight.',
   },
   {
     q: 'Do you carry liability insurance?',
@@ -68,13 +68,13 @@ export default function HomePage() {
       <JsonLd data={localBusinessSchema} />
 
       <HeroSection
-        eyebrow="FAA-Certified Aerial Photography & Videography"
+        badge="FAA Part 107 Certified"
         title="See the World From a New Altitude"
         subtitle="Cinematic drone footage and photography for real estate, construction, events, agriculture, film, and inspection. Fully insured. Serving DFW & beyond."
-        ctaLabel="View Our Services"
-        ctaHref="/services"
-        secondaryCtaLabel="Get a Free Quote"
-        secondaryCtaHref="/contact"
+        ctaLabel="Book a Flight"
+        ctaHref="/contact"
+        secondaryCtaLabel="View Our Work"
+        secondaryCtaHref="/portfolio"
         bgImage="/images/hero/farrington-field-skyline.jpg"
         bgImageAlt="Aerial drone photo of Farrington Field stadium with Fort Worth skyline"
       />
@@ -91,8 +91,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Why LNDMRK — differentiator + proof points */}
+      <section className="bg-brand-bg py-24" aria-labelledby="why-heading">
+        <div className="max-w-5xl mx-auto px-6">
+          {/* Headline block */}
+          <div className="text-center mb-16">
+            <p className="text-brand-accent text-xs font-semibold uppercase tracking-widest mb-4">
+              Why LNDMRK
+            </p>
+            <h2 id="why-heading" className="text-3xl md:text-4xl font-extrabold text-brand-text mb-4 leading-tight">
+              Not just a pilot with a camera.
+              <br />
+              <span className="text-brand-teal">A marketer with a drone.</span>
+            </h2>
+            <p className="text-brand-muted text-lg max-w-2xl mx-auto leading-relaxed">
+              Drone services backed by 20 years of sales and marketing experience. Shot by someone
+              who has led social media for major brands — we know what stops the scroll, what sells
+              listings, and what makes clients look incredible.
+            </p>
+          </div>
+
+          {/* Proof point grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {[
+              {
+                label: 'Marketing-First Eye',
+                desc: 'Composition, timing, and storytelling informed by 20 years in brand marketing and social media. We shoot what performs, not just what\'s pretty.',
+              },
+              {
+                label: 'FAA Part 107 Certified',
+                desc: 'Licensed, insured, and compliant on every flight. Certificates of insurance available upon request for venues, HOAs, and general contractors.',
+              },
+              {
+                label: '500+ Projects Delivered',
+                desc: 'From single-listing shoots to multi-day commercial builds — real experience across real estate, events, construction, and film in the DFW Metroplex.',
+              },
+              {
+                label: 'Fort Worth Based',
+                desc: 'Local knowledge, fast turnaround, and boots on the ground. We know DFW — and we travel nationally for the right project.',
+              },
+            ].map((point) => (
+              <div
+                key={point.label}
+                className="bg-brand-surface border border-brand-border rounded-xl p-7 hover:border-brand-teal/40 transition-colors"
+              >
+                <p className="text-brand-accent text-xs font-semibold uppercase tracking-widest mb-3">
+                  Proof Point
+                </p>
+                <h3 className="text-brand-text font-bold text-lg mb-2">{point.label}</h3>
+                <p className="text-brand-muted text-sm leading-relaxed">{point.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services grid */}
-      <section className="bg-brand-bg py-20" aria-labelledby="services-heading">
+      <section className="bg-brand-surface py-20" aria-labelledby="services-heading">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <p className="text-brand-accent text-xs font-semibold uppercase tracking-widest mb-3">

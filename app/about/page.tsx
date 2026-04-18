@@ -5,9 +5,9 @@ import { JsonLd } from '@/components/JsonLd';
 import { buildMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'About LNDMRK Drone | FAA-Certified Aerial Photographers',
+  title: 'About LNDMRK Drone | FAA-Certified Aerial Photographer',
   description:
-    'Meet the LNDMRK Drone team — FAA Part 107 certified pilots and visual storytellers with 3+ years of experience in aerial photography and drone videography.',
+    'Meet the LNDMRK Drone team — FAA Part 107 certified pilot and visual storyteller with 3+ years of experience in aerial photography and drone videography.',
   path: '/about',
 });
 
@@ -16,7 +16,7 @@ const articleSchema = {
   '@type': 'AboutPage',
   name: 'About LNDMRK Drone',
   description:
-    'LNDMRK Drone is a team of FAA-certified pilots and visual storytellers specializing in aerial photography and videography.',
+    'LNDMRK Drone is an FAA-certified pilot and visual storyteller specializing in aerial photography and videography.',
   url: 'https://lndmrkdrone.com/about',
   publisher: {
     '@type': 'Organization',
@@ -35,10 +35,9 @@ const teamMembers = [
 ];
 
 const timeline = [
-  { year: '2023', event: 'LNDMRK Drone founded with a focus on aerial real estate photography in Fort Worth, TX.' },
-  { year: '2024', event: 'Expanded services to include construction monitoring, drone mapping, and film production.' },
-  { year: '2025', event: 'Launched agricultural and inspection service lines. Added government & public safety services.' },
-  { year: '2026', event: 'Continued growth across the DFW Metroplex and beyond.' },
+  { year: '2023', event: 'Launched with a focus on residential construction documentation — backyard builds, pools, and custom home projects across DFW.' },
+  { year: '2025', event: 'Moved into event marketing and youth sports, covering stadiums, tournaments, and community events across North Texas.' },
+  { year: '2026', event: 'Expanded into commercial construction, supporting developers and general contractors with aerial progress documentation.' },
 ];
 
 export default function AboutPage() {
@@ -49,7 +48,7 @@ export default function AboutPage() {
       <HeroSection
         eyebrow="Who We Are"
         title="Meet the LNDMRK Drone Team"
-        subtitle="FAA-certified pilots and visual storytellers capturing the world from above since 2023."
+        subtitle="FAA-certified pilot and visual storyteller capturing the world from above since 2023."
       />
 
       {/* Mission */}
@@ -63,8 +62,7 @@ export default function AboutPage() {
             craft and safety to every flight.
           </p>
           <p className="text-brand-muted text-lg leading-relaxed">
-            Every pilot on our team holds an FAA Part 107 Remote Pilot Certificate and undergoes
-            regular flight reviews and continuing education. We carry comprehensive liability insurance
+            Colin holds an FAA Part 107 Remote Pilot Certificate and undergoes regular flight reviews and continuing education. We carry comprehensive liability insurance
             and maintain our equipment to the highest standards so our clients can focus on their
             projects — not the logistics of flying.
           </p>
@@ -72,7 +70,7 @@ export default function AboutPage() {
           {/* E-E-A-T credentials */}
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { label: 'FAA Part 107 Certified', desc: 'All pilots carry current Remote Pilot Certificates as required by federal law.' },
+              { label: 'FAA Part 107 Certified', desc: 'Our pilot carries a current FAA Remote Pilot Certificate as required by federal law.' },
               { label: 'Fully Insured', desc: 'Commercial liability coverage on every project. Certificates available upon request.' },
               { label: '500+ Projects', desc: 'Commercial aerial experience across the DFW Metroplex and beyond.' },
             ].map((item) => (

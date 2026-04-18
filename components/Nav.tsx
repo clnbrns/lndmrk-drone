@@ -124,6 +124,14 @@ export function Nav() {
 
           <li>
             <Link
+              href="/portfolio"
+              className="text-brand-muted hover:text-brand-text text-sm font-medium transition-colors"
+            >
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/blog"
               className="text-brand-muted hover:text-brand-text text-sm font-medium transition-colors"
             >
@@ -202,6 +210,15 @@ export function Nav() {
                   </li>
                 ))}
               </ul>
+            </li>
+            <li>
+              <Link
+                href="/portfolio"
+                className="block py-2.5 text-brand-muted hover:text-brand-text font-medium"
+                onClick={() => setMobileOpen(false)}
+              >
+                Portfolio
+              </Link>
             </li>
             <li>
               <Link

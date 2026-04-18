@@ -10,7 +10,7 @@ interface CtaSectionProps {
 export function CtaSection({
   heading = 'Ready to See Your World From Above?',
   subtext = 'Contact us for a free quote. We respond within one business day.',
-  ctaLabel = 'Get a Free Quote',
+  ctaLabel = 'Book a Flight',
   ctaHref = '/contact',
 }: CtaSectionProps) {
   return (

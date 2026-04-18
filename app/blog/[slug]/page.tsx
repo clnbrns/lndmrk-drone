@@ -511,7 +511,7 @@ const posts: BlogPost[] = [
           <li>Do they have any relevant waivers for your specific project requirements?</li>
         </ul>
         <p>
-          All of our pilots at LNDMRK Drone hold current Part 107 certificates and we are happy to provide
+          Our pilot at LNDMRK Drone holds a current Part 107 certificate and we are happy to provide
           documentation upon request. Questions?{' '}
           <Link href="/contact" className="text-brand-teal hover:text-brand-accent transition-colors">
             Contact us
