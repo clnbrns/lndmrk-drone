@@ -39,6 +39,11 @@ const relatedPostsData: Record<string, { title: string; excerpt: string; href: s
     excerpt: 'What Part 107 requires, why it matters, and what to ask when hiring a drone company.',
     href: '/blog/faa-part-107-explained',
   },
+  'do-drone-photos-help-sell-homes': {
+    title: 'Do Drone Photos Actually Help Sell Homes? What the Data Says',
+    excerpt: 'NAR data, buyer perspectives, and the property types where aerial photography moves the needle most.',
+    href: '/blog/do-drone-photos-help-sell-homes',
+  },
 };
 
 const posts: BlogPost[] = [
@@ -247,6 +252,180 @@ const posts: BlogPost[] = [
       {
         q: 'Can drones fly over occupied residential neighborhoods?',
         a: 'Yes, within FAA regulations. Part 107 permits drone operations over moving vehicles and people in some circumstances, and over residential areas is generally permitted at appropriate altitudes. Pilots must always prioritize safety and respect local ordinances.',
+      },
+    ],
+  },
+  {
+    slug: 'do-drone-photos-help-sell-homes',
+    title: 'Do Drone Photos Actually Help Sell Homes? What the Data Says',
+    metaTitle: 'Do Drone Photos Help Sell Homes? The Data | LNDMRK Drone Blog',
+    metaDesc:
+      'Do drone photos actually help sell homes faster and for more money? We look at NAR survey data, buyer behavior research, and which property types benefit most from aerial photography.',
+    date: '2026-04-17',
+    author: 'Colin Burns',
+    authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
+    authorBio:
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with 3+ years of experience in aerial photography and videography across Texas and beyond.',
+    category: 'Real Estate',
+    readTime: '7 min read',
+    relatedSlugs: ['real-estate-drone-guide', 'faa-part-107-explained'],
+    content: (
+      <div className="space-y-6 text-brand-muted leading-relaxed">
+        <p>
+          First-time homebuyers and agents ask this question constantly: do drone photos actually move the
+          needle, or are they just a nice-to-have that makes the listing look polished? It&apos;s a fair
+          question — aerial photography costs money, and sellers want to know if it comes back to them at
+          the closing table.
+        </p>
+        <p>
+          The short answer is yes, and the data is more lopsided than most people expect. Here&apos;s what
+          the research shows and where aerial photography makes the biggest difference.
+        </p>
+
+        <h2 className="text-2xl font-bold text-brand-text">What the NAR Data Shows</h2>
+        <p>
+          The National Association of Realtors tracks technology adoption among its members every year. In
+          its{' '}
+          <a
+            href="https://www.nar.realtor/drones"
+            className="text-brand-teal hover:text-brand-accent transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            2025 REALTOR Technology Survey
+          </a>
+          , drone photography ranked as the third most popular technology among real estate professionals,
+          with 52% of REALTORS reporting they use drone photography or video in their listings. That&apos;s not
+          a niche tool anymore — it&apos;s a mainstream expectation in most markets.
+        </p>
+        <p>
+          Research cited by NAR found that homes marketed with aerial photography are 68% more likely to
+          sell than comparable listings using ground-level photos only. That figure tracks with what agents
+          report anecdotally: listings that sit on the market often see a surge in showings after aerial
+          photos are added. The aerial perspective answers questions buyers have been quietly asking while
+          scrolling past the listing.
+        </p>
+
+        <h2 className="text-2xl font-bold text-brand-text">What Buyers Are Actually Asking</h2>
+        <p>
+          In online buyer communities, the most common frustration with listing photos isn&apos;t the quality
+          of the interior shots — it&apos;s that they can&apos;t answer basic location and context questions.
+          How big is the lot, really? What&apos;s directly behind the property? How close is the highway, the
+          commercial strip, the neighbors? Is there any green space nearby?
+        </p>
+        <p>
+          Drone photos answer all of those questions directly. A single overhead shot can show lot size,
+          setback from the street, what&apos;s behind the fence, and how the neighborhood is laid out around
+          the property. For buyers who are relocating or shopping remotely — an increasingly common
+          situation — aerial imagery can be the difference between scheduling a showing and moving on.
+        </p>
+        <p>
+          The buyers who benefit most from aerial photography are also the buyers agents most want to
+          attract: out-of-state relocators, move-up buyers evaluating lot size and usable land, and
+          buyers cross-shopping multiple neighborhoods who need to quickly understand the surrounding
+          context. These are serious, motivated buyers who are doing their homework online before they
+          ever call an agent.
+        </p>
+
+        <h2 className="text-2xl font-bold text-brand-text">Which Properties Benefit Most</h2>
+        <p>
+          Aerial photography isn&apos;t equally valuable for every listing. Here&apos;s where it makes the biggest
+          measurable difference:
+        </p>
+        <ul className="list-disc list-inside space-y-3 ml-2">
+          <li>
+            <strong className="text-brand-text">Large lots and acreage:</strong> Ground photography simply cannot
+            communicate lot size. An overhead shot that shows the full property footprint is worth more than
+            ten ground-level photos for any listing over half an acre.
+          </li>
+          <li>
+            <strong className="text-brand-text">Waterfront and view properties:</strong> The value proposition
+            of a lake lot, golf course view, or greenbelt backing is invisible from street level. Aerial
+            photography makes it the headline of every listing photo.
+          </li>
+          <li>
+            <strong className="text-brand-text">Properties with location advantages:</strong> Close to a park,
+            trail system, or amenity center? An aerial shot showing that proximity communicates it better than
+            any description.
+          </li>
+          <li>
+            <strong className="text-brand-text">Listings that have been sitting:</strong> A property that&apos;s been
+            on the market for 30+ days often needs a reset. New aerial photos change the visual narrative
+            and can generate a fresh wave of showing requests without a price reduction.
+          </li>
+          <li>
+            <strong className="text-brand-text">New construction and luxury homes:</strong> Buyers in the
+            upper price tiers expect aerial coverage. Submitting a luxury listing without it signals that
+            the marketing effort isn&apos;t commensurate with the price point.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-bold text-brand-text">Where It Matters Less</h2>
+        <p>
+          In the interest of being straightforward: aerial photography has the least impact on small urban
+          condos and townhomes with no lot to speak of, on properties where the surrounding context is
+          negative (dense commercial, industrial adjacency), or in very price-sensitive markets where
+          buyers are focused almost entirely on interior condition and price per square foot.
+        </p>
+        <p>
+          That said, even in those cases, aerial photography can still add value — a condo with a rooftop
+          terrace, a townhome with a rare private yard, or a property near walkable amenities can all
+          benefit from a well-executed aerial shot that highlights the specific advantage.
+        </p>
+
+        <h2 className="text-2xl font-bold text-brand-text">The Compliance Factor Agents Overlook</h2>
+        <p>
+          One thing worth noting for agents who are considering hiring a drone photographer: FAA Part 107
+          certification is required for all commercial drone operations in the United States. This isn&apos;t
+          a formality — it&apos;s a federal requirement, and flying commercially without it carries significant
+          fines.
+        </p>
+        <p>
+          When 52% of REALTORS are using drone photography, there&apos;s real pressure to cut corners on
+          cost, and some unlicensed operators are willing to undercut certified professionals on price.
+          Before booking anyone, ask to see the pilot&apos;s FAA Remote Pilot Certificate number and verify
+          it&apos;s current. Ask whether they carry commercial liability insurance. The certification isn&apos;t
+          just a regulatory box — it means the pilot passed a knowledge test covering airspace, weather,
+          emergency procedures, and operating rules. That matters when the aircraft is flying over your
+          client&apos;s $700,000 property.
+        </p>
+        <p>
+          Read more:{' '}
+          <Link href="/blog/faa-part-107-explained" className="text-brand-teal hover:text-brand-accent transition-colors">
+            FAA Part 107 Explained: What It Means for Commercial Drone Operations
+          </Link>
+        </p>
+
+        <h2 className="text-2xl font-bold text-brand-text">The Bottom Line</h2>
+        <p>
+          Drone photos help sell homes. The data backs it up, the adoption numbers confirm it&apos;s now an
+          industry standard, and buyer behavior explains why: people want context, and aerial photography
+          is the most efficient way to deliver it. For any listing with significant land, a notable
+          location advantage, or a price point where buyers have options, skipping aerial coverage is a
+          marketing gap that will show up in days-on-market.
+        </p>
+        <p>
+          If you&apos;re an agent in the DFW area and want to talk through whether aerial photography makes
+          sense for a specific listing,{' '}
+          <Link href="/contact" className="text-brand-teal hover:text-brand-accent transition-colors">
+            get in touch
+          </Link>
+          . We turn around most real estate shoots within 24 hours.
+        </p>
+      </div>
+    ),
+    faqs: [
+      {
+        q: 'How much more likely are homes with drone photos to sell?',
+        a: 'Research cited by the National Association of Realtors found that homes marketed with aerial photography are 68% more likely to sell than comparable listings using only ground-level photos. The NAR\'s 2025 Technology Survey also found that 52% of REALTORS now use drone photography, making it the third most popular technology in the industry.',
+      },
+      {
+        q: 'Is aerial photography worth it for smaller or lower-priced homes?',
+        a: 'It depends on the property\'s specific advantages. For homes with a large lot, a notable location feature (waterfront, park-adjacent, greenbelt), or listings that have been sitting on the market, aerial photography typically pays off. For small urban condos or properties where the surrounding context isn\'t a selling point, the ROI is lower — though it still adds a professional presentation layer.',
+      },
+      {
+        q: 'How quickly can I get drone photos for a listing?',
+        a: 'LNDMRK Drone turns around most real estate aerial photography within 24 hours of the shoot. Rush same-day delivery is available for urgent listing deadlines. Contact us to check availability for your specific listing date.',
       },
     ],
   },

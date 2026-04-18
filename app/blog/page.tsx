@@ -12,6 +12,16 @@ export const metadata: Metadata = buildMetadata({
 
 const posts = [
   {
+    slug: 'do-drone-photos-help-sell-homes',
+    title: 'Do Drone Photos Actually Help Sell Homes? What the Data Says',
+    excerpt:
+      'NAR survey data shows 52% of REALTORS now use drone photography and homes with aerial shots are 68% more likely to sell. Here\'s what the research means for your listing strategy.',
+    date: '2026-04-17',
+    author: 'Colin Burns',
+    category: 'Real Estate',
+    readTime: '7 min read',
+  },
+  {
     slug: 'aerial-photography-tips',
     title: '10 Aerial Photography Tips That Will Instantly Improve Your Drone Shots',
     excerpt:
