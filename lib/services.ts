@@ -63,8 +63,8 @@ export const services: Service[] = [
       },
       {
         icon: '🗺️',
-        title: 'Lot & Site Mapping',
-        desc: 'Overhead orthomosaic images that clearly show lot boundaries, acreage, and site layout.',
+        title: 'Lot & Site Overview',
+        desc: 'High-altitude overhead aerials that clearly show lot boundaries, acreage, and site layout for buyers evaluating larger properties.',
       },
       {
         icon: '⚡',
@@ -126,19 +126,19 @@ export const services: Service[] = [
         desc: 'Capture finished conditions from above for record drawings, punch lists, and owner handover packages.',
       },
       {
-        icon: '🗺️',
-        title: '3D Site Mapping',
-        desc: 'Photogrammetric surveys generate accurate 3D models, orthomosaics, and digital elevation models for site planning.',
+        icon: '📸',
+        title: 'Before & After Documentation',
+        desc: 'Side-by-side aerial comparisons at each project phase — powerful for client presentations, social media, and portfolio marketing.',
       },
       {
         icon: '⚠️',
         title: 'Safety & Compliance',
-        desc: 'Inspect hard-to-reach areas without putting workers at height, and document OSHA compliance from above.',
+        desc: 'Inspect hard-to-reach areas without putting workers at height, and document site conditions from above.',
       },
       {
         icon: '📊',
-        title: 'Earthwork Volume Reports',
-        desc: 'Calculate cut-and-fill volumes from aerial data to verify contractor billing and reduce overruns.',
+        title: 'Stakeholder Reporting',
+        desc: 'Polished aerial image sets and video updates that keep owners, lenders, and HOAs informed without requiring a site visit.',
       },
     ],
     industries: [
@@ -159,173 +159,19 @@ export const services: Service[] = [
         a: 'Yes — our pilots are trained to operate safely around active job sites. We coordinate with your site superintendent before each flight to establish safe flight corridors.',
       },
       {
-        q: 'What file formats do you deliver for construction surveys?',
-        a: 'We deliver orthomosaic images (GeoTIFF), 3D point clouds (LAS/LAZ), digital elevation models, and PDF progress reports. All deliverables are compatible with AutoCAD, Revit, and leading construction management platforms.',
+        q: 'What file formats do you deliver for construction documentation?',
+        a: 'We deliver high-resolution JPEG and TIFF photo sets, organized by date and flight phase. Video progress updates are delivered as MP4 files. All files are named and organized for easy handoff to your project management platform.',
       },
       {
-        q: 'Do you need ground control points (GCPs) for accurate mapping?',
-        a: 'GCPs improve absolute accuracy to ±2–3 cm. We can place our own GCPs or work with survey control points you provide. RTK-equipped drones are also available for projects requiring sub-5 cm accuracy without GCPs.',
+        q: 'Can you provide recurring weekly or monthly coverage?',
+        a: 'Yes — recurring packages are our most popular construction offering. We lock in a set flight schedule and lower per-visit rate so you have consistent documentation throughout the build without re-booking each time.',
       },
       {
         q: 'Can you obtain permits to fly in controlled airspace near urban sites?',
         a: 'Yes. We are experienced with LAANC authorization and FAA airspace waivers. Urban site flights are routine for our team — we handle all airspace coordination.',
       },
     ],
-    relatedSlugs: ['mapping-and-surveying', 'inspection'],
-  },
-  {
-    slug: 'mapping-and-surveying',
-    title: 'Drone Mapping & Aerial Surveying',
-    shortDesc: 'Orthomosaic maps, digital elevation models, and 3D point clouds from certified pilots.',
-    metaTitle: 'Drone Mapping Services & Aerial Surveying | 3D Photogrammetry | LNDMRK Drone',
-    metaDesc:
-      'Professional drone mapping services, aerial surveying, and 3D photogrammetry. Orthomosaic maps and digital elevation models for mining, agriculture, and civil engineering.',
-    h1: 'Drone Mapping Services & Aerial Surveying',
-    eyebrow: 'Mapping & Surveying',
-    icon: '🗺️',
-    intro:
-      'Traditional surveying is expensive and time-consuming. Drone-based photogrammetry delivers survey-grade spatial data faster and at a fraction of the cost. We produce orthomosaic maps, digital elevation models, and 3D point clouds that integrate directly with GIS, CAD, and BIM workflows.',
-    featuresHeading: 'Deliverables',
-    features: [
-      {
-        icon: '🛰️',
-        title: 'Orthomosaic Maps',
-        desc: 'Geometrically corrected aerial imagery accurate to ±3 cm, delivered as GeoTIFF for direct GIS import.',
-      },
-      {
-        icon: '⛰️',
-        title: 'Digital Elevation Models',
-        desc: 'DSMs and DTMs that accurately represent surface topography for drainage design, grading, and flood modeling.',
-      },
-      {
-        icon: '☁️',
-        title: '3D Point Clouds',
-        desc: 'Dense point clouds in LAS/LAZ format compatible with AutoCAD, ArcGIS, and processing platforms like Pix4D.',
-      },
-      {
-        icon: '📐',
-        title: 'Volumetric Analysis',
-        desc: 'Accurate cut-and-fill calculations and stockpile volume reports for mining, quarrying, and earthworks projects.',
-      },
-      {
-        icon: '🌍',
-        title: 'Contour Maps',
-        desc: 'Generated contour lines at any interval overlaid on orthomosaics for civil engineering and land planning.',
-      },
-      {
-        icon: '🏗️',
-        title: '3D Mesh Models',
-        desc: 'Textured 3D mesh models for visualization, stakeholder presentations, and BIM coordination.',
-      },
-    ],
-    industries: [
-      'Mining & Quarrying',
-      'Agriculture & Forestry',
-      'Civil Engineering',
-      'Land Development',
-      'Environmental Monitoring',
-      'Oil & Gas',
-    ],
-    faqs: [
-      {
-        q: 'What accuracy can I expect from drone survey data?',
-        a: 'With ground control points (GCPs), we achieve horizontal accuracy of ±2–3 cm and vertical accuracy of ±3–5 cm. RTK drone flights without GCPs achieve ±5 cm horizontal, ±10 cm vertical — suitable for most engineering applications.',
-      },
-      {
-        q: 'What file formats are included in the deliverable package?',
-        a: 'Standard deliverables include GeoTIFF orthomosaic, LAS point cloud, DEM in GeoTIFF or ASCII grid, and a PDF accuracy report. DXF contour files and Shapefile layers are available as add-ons.',
-      },
-      {
-        q: 'Do we need to set up ground control points ourselves?',
-        a: 'We can set up GCPs on your behalf as part of the service, or we can coordinate with your licensed surveyor to use existing control. RTK flights eliminate the need for GCPs on most projects.',
-      },
-      {
-        q: 'How long does post-processing take after the flight?',
-        a: 'Processing time depends on area size and resolution required. Typical projects of 100–500 acres are processed and delivered within 3–5 business days of the flight date.',
-      },
-      {
-        q: 'How is pricing structured for large-area mapping projects?',
-        a: 'Pricing is based on area (acres or square kilometers), required accuracy, number of deliverables, and mobilization. We provide fixed-price quotes after reviewing your project scope — contact us for a custom estimate.',
-      },
-    ],
-    relatedSlugs: ['construction', 'agriculture'],
-  },
-  {
-    slug: 'agriculture',
-    title: 'Agricultural Drone Photography',
-    shortDesc: 'Monitor crop health, analyze irrigation, and estimate yields with precision aerial data.',
-    metaTitle: 'Agricultural Drone Photography & Crop Monitoring | LNDMRK Drone',
-    metaDesc:
-      'Agricultural drone photography for crop health monitoring, irrigation analysis, field mapping, and yield estimation. Data-driven decisions for modern farms.',
-    h1: 'Agricultural Drone Photography & Crop Monitoring',
-    eyebrow: 'Agriculture',
-    icon: '🌾',
-    intro:
-      'Modern agriculture demands precision. Our agricultural drone services give growers, agronomists, and farm managers a bird\'s-eye view of crop health, irrigation performance, and field conditions — enabling faster intervention and measurable yield improvements. All flights are scheduled around optimal imaging windows for maximum data quality.',
-    featuresHeading: 'Use Cases',
-    features: [
-      {
-        icon: '🌿',
-        title: 'Crop Health Monitoring',
-        desc: 'NDVI and multispectral imagery identify stressed vegetation days before visible symptoms appear, enabling early intervention.',
-      },
-      {
-        icon: '💧',
-        title: 'Irrigation Analysis',
-        desc: 'Thermal and RGB data reveal under- and over-irrigated zones so you can optimize water application and reduce waste.',
-      },
-      {
-        icon: '🗺️',
-        title: 'Field Mapping',
-        desc: 'Accurate orthomosaic maps of fields, drainage, access roads, and infrastructure for planning and record-keeping.',
-      },
-      {
-        icon: '📊',
-        title: 'Yield Estimation',
-        desc: 'Pre-harvest canopy analysis correlates with yield data to generate early estimates for logistics and marketing planning.',
-      },
-      {
-        icon: '🐛',
-        title: 'Pest & Disease Detection',
-        desc: 'Detect localized infestations and disease spread early to target treatment and minimize chemical use.',
-      },
-      {
-        icon: '🌱',
-        title: 'Stand Count & Emergence',
-        desc: 'High-resolution imagery at emergence quantifies plant stand and identifies replanting needs with GPS-precise locations.',
-      },
-    ],
-    industries: [
-      'Row Crops (Corn, Soy, Wheat)',
-      'Specialty Crops & Orchards',
-      'Viticulture & Vineyards',
-      'Horticulture & Greenhouses',
-      'Forestry & Timber',
-      'Rangeland & Pasture',
-    ],
-    faqs: [
-      {
-        q: 'Do you use multispectral sensors for NDVI analysis?',
-        a: 'Yes. We operate multispectral cameras (including the MicaSense RedEdge and similar systems) capable of capturing NIR, Red Edge, and thermal bands. RGB NDVI is also available as a lower-cost alternative for basic crop scouting.',
-      },
-      {
-        q: 'When is the best time to fly for crop health imagery?',
-        a: 'Solar noon ±2 hours on clear days provides the most consistent reflectance data. For thermal analysis, early morning flights before temperatures peak produce the most diagnostic results.',
-      },
-      {
-        q: 'What data formats do agronomists and farm management software accept?',
-        a: 'We deliver GeoTIFF orthomosaics, shapefiles of problem zones, and NDVI maps compatible with John Deere Operations Center, Climate FieldView, and most precision ag platforms.',
-      },
-      {
-        q: 'How many acres can you cover in a single flight day?',
-        a: 'Typical coverage is 500–1,500 acres per day depending on flight altitude, overlap settings, and sensor type. Large operations can be surveyed over consecutive days under a single mobilization.',
-      },
-      {
-        q: 'Can drone data integrate with variable-rate application equipment?',
-        a: 'Yes. We can generate prescription maps (shapefiles or ISO-XML) compatible with most VRA controllers for targeted fertilizer, irrigation, or pesticide applications.',
-      },
-    ],
-    relatedSlugs: ['mapping-and-surveying', 'inspection'],
+    relatedSlugs: ['real-estate', 'inspection'],
   },
   {
     slug: 'film-and-media',
@@ -431,7 +277,7 @@ export const services: Service[] = [
       {
         icon: '🌉',
         title: 'Bridges & Structures',
-        desc: 'Deck, pier, and bearing inspection with photogrammetric crack mapping and change detection against prior inspection data.',
+        desc: 'Deck, pier, and bearing inspection with detailed visual documentation and change detection against prior inspection imagery.',
       },
       {
         icon: '📡',
@@ -569,7 +415,7 @@ export const services: Service[] = [
       {
         icon: '🏙️',
         title: 'Urban Planning',
-        desc: 'Orthomosaic mapping, 3D modeling, and change detection for planners, zoning boards, and infrastructure departments.',
+        desc: 'Aerial documentation and change detection for planners, zoning boards, and infrastructure departments.',
       },
       {
         icon: '🌊',
@@ -617,7 +463,7 @@ export const services: Service[] = [
         a: 'Data is transferred via encrypted connections and stored on secure, access-controlled servers. We do not share, publish, or retain government imagery beyond the agreed contract period. Custom data handling agreements are available.',
       },
     ],
-    relatedSlugs: ['inspection', 'mapping-and-surveying'],
+    relatedSlugs: ['inspection', 'construction'],
   },
 ];
 

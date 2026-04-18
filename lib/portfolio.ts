@@ -320,12 +320,11 @@ export const portfolioItems: PortfolioItem[] = [
     featured: true,
   },
 
-  // ── Mapping & Surveying ────────────────────────────────────────────────────
   {
     src: '/images/portfolio/mapping-lake-marina-aerial.jpg',
-    alt: 'High-altitude aerial survey of Texas lake marina showing boat slips, docks, shoreline development, and Hill Country landscape',
-    caption: 'Lake Marina — Aerial Survey',
-    category: 'Mapping & Surveying',
+    alt: 'High-altitude aerial of Texas lake marina showing boat slips, docks, shoreline development, and Hill Country landscape',
+    caption: 'Lake Marina — Hill Country, TX',
+    category: 'Film & Media',
   },
 
   // ── Film & Media (Austin, Houston, Costa Rica, Texas Lakes) ───────────────
@@ -927,5 +926,4 @@ export const portfolioCategories = [
   'Events',
   'Construction',
   'Government & Public Safety',
-  'Mapping & Surveying',
 ];
