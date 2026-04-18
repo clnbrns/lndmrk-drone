@@ -13,6 +13,20 @@ export interface PortfolioItem {
 export const portfolioItems: PortfolioItem[] = [
   // ── Real Estate ────────────────────────────────────────────────────────────
   {
+    src: '/images/portfolio/real-estate-luxury-villa-hillside.jpg',
+    alt: 'Aerial drone photo of modern luxury villa with infinity pool on a hillside overlooking a tropical coastline',
+    caption: 'Luxury Villa — Coastal Hillside',
+    category: 'Real Estate',
+    featured: true,
+  },
+  {
+    src: '/images/portfolio/real-estate-beach-resort-cove.jpg',
+    alt: 'Aerial drone photo of a beach resort nestled in a dark sand cove with turquoise water, palm trees, and hillside villas',
+    caption: 'Beach Resort — Private Cove',
+    category: 'Real Estate',
+    featured: true,
+  },
+  {
     src: '/images/portfolio/real-estate-mediterranean-estate.jpg',
     alt: 'Aerial view of luxury Mediterranean estate with large pool, manicured grounds, and red tile roof in Texas Hill Country',
     caption: 'Luxury Estate — Hill Country, TX',
@@ -47,6 +61,50 @@ export const portfolioItems: PortfolioItem[] = [
 
   // ── Film & Media ───────────────────────────────────────────────────────────
   {
+    src: '/images/portfolio/film-houston-skyline-night.jpg',
+    alt: 'Night aerial drone photo of the Houston city skyline with colorful building lights, highway traffic, and ferris wheel',
+    caption: 'Houston Skyline — Night Aerial',
+    category: 'Film & Media',
+    featured: true,
+  },
+  {
+    src: '/images/portfolio/film-houston-skyline-night-vertical.jpg',
+    alt: 'Vertical night aerial of downtown Houston skyline with glowing skyscrapers, highway interchange, and city lights',
+    caption: 'Houston Skyline — Night Vertical',
+    category: 'Film & Media',
+  },
+  {
+    src: '/images/portfolio/film-costa-rica-cove-palms.jpg',
+    alt: 'Aerial drone photo looking through tropical palm trees toward a secluded ocean cove with rocky cliffs and blue water',
+    caption: 'Tropical Coastline — Pacific Cove',
+    category: 'Film & Media',
+    featured: true,
+  },
+  {
+    src: '/images/portfolio/film-costa-rica-beach-cove.jpg',
+    alt: 'Aerial view of a dramatic dark sand beach cove with turquoise breaking waves, rocky coastline, and distant islands',
+    caption: 'Pacific Coastline — Dark Sand Cove',
+    category: 'Film & Media',
+  },
+  {
+    src: '/images/portfolio/film-turquoise-water-overhead.jpg',
+    alt: 'Straight-down overhead aerial of brilliant turquoise ocean water with light patterns and surface reflections',
+    caption: 'Turquoise Water — Overhead Abstract',
+    category: 'Film & Media',
+  },
+  {
+    src: '/images/portfolio/film-beach-waves-overhead.jpg',
+    alt: 'Overhead aerial drone photo of waves washing onto a dark sand beach with a single rock visible in clear shallow water',
+    caption: 'Waves & Shore — Overhead',
+    category: 'Film & Media',
+  },
+  {
+    src: '/images/portfolio/film-boats-turquoise-water.jpg',
+    alt: 'Straight-down aerial of approximately 15 white fishing boats anchored on brilliant turquoise water near a beach shoreline',
+    caption: 'Fishing Fleet — Turquoise Bay',
+    category: 'Film & Media',
+  },
+  {
     src: '/images/portfolio/film-dallas-reunion-tower.jpg',
     alt: 'Cinematic aerial photo of Dallas Reunion Tower rising above downtown Dallas skyline with blue skies and clouds',
     caption: 'Downtown Dallas — Reunion Tower',
@@ -62,6 +120,26 @@ export const portfolioItems: PortfolioItem[] = [
   },
 
   // ── Events ─────────────────────────────────────────────────────────────────
+  {
+    src: '/images/portfolio/events-mavs-ballpark-dallas.jpg',
+    alt: 'Aerial drone photo of Mavs Ballpark baseball field with the Dallas skyline including American Airlines Center in the background',
+    caption: 'Mavs Ballpark — Dallas, TX',
+    category: 'Events',
+    featured: true,
+  },
+  {
+    src: '/images/portfolio/events-mural-district-courtyard.jpg',
+    alt: 'Aerial oblique view of an outdoor mural art district courtyard with colorful murals on warehouse walls and artificial turf installation',
+    caption: 'Mural Art District — Venue Setup',
+    category: 'Events',
+  },
+  {
+    src: '/images/portfolio/events-resort-cove-golden-hour.jpg',
+    alt: 'Aerial drone photo at golden hour of a beach resort on a dark sand cove with rocky foreshore, waves, and hillside villas',
+    caption: 'Beach Resort — Golden Hour',
+    category: 'Events',
+    featured: true,
+  },
   {
     src: '/images/portfolio/events-farrington-field-skyline.jpg',
     alt: 'Aerial drone photo of Farrington Field stadium in Fort Worth with the downtown Fort Worth skyline in the background',
