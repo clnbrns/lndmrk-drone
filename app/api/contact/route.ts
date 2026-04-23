@@ -1,17 +1,99 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
+import { createHash } from 'crypto';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
+// ---------- Meta CAPI helpers ----------
+
+function hashData(value: string): string {
+  return createHash('sha256').update(value.trim().toLowerCase()).digest('hex');
+}
+
+function hashPhone(raw: string): string {
+  // Strip all non-digits, then ensure country code prefix
+  const digits = raw.replace(/\D/g, '');
+  const normalized = digits.length === 10 ? `1${digits}` : digits;
+  return hashData(normalized);
+}
+
+interface CapiPayload {
+  eventID: string;
+  email: string;
+  phone?: string;
+  fbp?: string;
+  fbc?: string;
+  service: string;
+  sourceUrl: string;
+}
+
+async function sendCapiLeadEvent(payload: CapiPayload): Promise<void> {
+  const pixelId = process.env.META_PIXEL_ID;
+  const token = process.env.META_CAPI_TOKEN;
+
+  if (!pixelId || !token) {
+    console.warn('CAPI: META_PIXEL_ID or META_CAPI_TOKEN not set — skipping');
+    return;
+  }
+
+  const userData: Record<string, string> = {
+    em: hashData(payload.email),
+  };
+
+  if (payload.phone) {
+    userData.ph = hashPhone(payload.phone);
+  }
+  if (payload.fbp) {
+    userData.fbp = payload.fbp;
+  }
+  if (payload.fbc) {
+    userData.fbc = payload.fbc;
+  }
+
+  const body = JSON.stringify({
+    data: [
+      {
+        event_name: 'Lead',
+        event_time: Math.floor(Date.now() / 1000),
+        event_id: payload.eventID,
+        event_source_url: payload.sourceUrl,
+        action_source: 'website',
+        user_data: userData,
+        custom_data: {
+          content_name: payload.service,
+        },
+      },
+    ],
+  });
+
+  const url = `https://graph.facebook.com/v19.0/${pixelId}/events?access_token=${token}`;
+
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body,
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    console.error('CAPI error:', res.status, text);
+  } else {
+    console.info('CAPI Lead event sent, event_id:', payload.eventID);
+  }
+}
+
+// ---------- Route handler ----------
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, phone, service, message } = body;
+    const { name, email, phone, service, message, eventID, fbp, fbc } = body;
 
     if (!name || !email || !service || !message) {
       return NextResponse.json({ error: 'Missing required fields.' }, { status: 400 });
     }
 
+    // 1. Send notification email (blocking — we need this to succeed)
     const { error } = await resend.emails.send({
       from: 'LNDMRK Drone <onboarding@resend.dev>',
       to: ['colinmburns@gmail.com'],
@@ -54,6 +136,22 @@ export async function POST(request: Request) {
     if (error) {
       console.error('Resend error:', error);
       return NextResponse.json({ error: 'Failed to send email.' }, { status: 500 });
+    }
+
+    // 2. Fire CAPI Lead event (non-blocking — a CAPI failure never breaks the form)
+    if (eventID) {
+      const sourceUrl =
+        request.headers.get('referer') ?? 'https://lndmrkdrone.com/contact';
+
+      void sendCapiLeadEvent({
+        eventID,
+        email,
+        phone: phone || undefined,
+        fbp: fbp || undefined,
+        fbc: fbc || undefined,
+        service,
+        sourceUrl,
+      });
     }
 
     return NextResponse.json({ success: true });

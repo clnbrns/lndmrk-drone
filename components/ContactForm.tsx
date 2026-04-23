@@ -2,6 +2,24 @@
 
 import { useState } from 'react';
 
+/** Read a browser cookie by name. Returns '' if not found. */
+function getCookie(name: string): string {
+  if (typeof document === 'undefined') return '';
+  const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+  return match ? match[2] : '';
+}
+
+/** Fire a Meta Pixel event safely (guards against ad blockers). */
+function trackMetaEvent(eventName: string, params: Record<string, unknown>, eventID: string) {
+  try {
+    if (typeof window !== 'undefined' && typeof (window as Window & { fbq?: Function }).fbq === 'function') {
+      (window as Window & { fbq: Function }).fbq('track', eventName, params, { eventID });
+    }
+  } catch {
+    // Silently fail — ad blockers or SSR environments
+  }
+}
+
 export function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
@@ -10,22 +28,29 @@ export function ContactForm() {
     setStatus('sending');
 
     const form = e.currentTarget;
-    const data = {
-      name: (form.elements.namedItem('name') as HTMLInputElement).value,
-      email: (form.elements.namedItem('email') as HTMLInputElement).value,
-      phone: (form.elements.namedItem('phone') as HTMLInputElement).value,
-      service: (form.elements.namedItem('service') as HTMLSelectElement).value,
-      message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
-    };
+    const name    = (form.elements.namedItem('name')    as HTMLInputElement).value;
+    const email   = (form.elements.namedItem('email')   as HTMLInputElement).value;
+    const phone   = (form.elements.namedItem('phone')   as HTMLInputElement).value;
+    const service = (form.elements.namedItem('service') as HTMLSelectElement).value;
+    const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value;
+
+    // Generate a unique event ID for deduplication between browser pixel and CAPI
+    const eventID = crypto.randomUUID();
+
+    // Capture Meta attribution cookies for server-side CAPI forwarding
+    const fbp = getCookie('_fbp');
+    const fbc = getCookie('_fbc');
 
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ name, email, phone, service, message, eventID, fbp, fbc }),
       });
 
       if (res.ok) {
+        // Fire browser-side Lead event — event_id matches the CAPI call for deduplication
+        trackMetaEvent('Lead', { content_name: service }, eventID);
         setStatus('success');
         form.reset();
       } else {
@@ -95,6 +120,7 @@ export function ContactForm() {
           />
         </div>
       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label htmlFor="phone" className="block text-brand-muted text-sm font-medium mb-2">
@@ -122,8 +148,6 @@ export function ContactForm() {
             <option value="" disabled>Select a service…</option>
             <option value="Real Estate Aerial Photography">Real Estate Aerial Photography</option>
             <option value="Construction Drone Photography">Construction Drone Photography</option>
-            <option value="Drone Mapping & Surveying">Drone Mapping &amp; Surveying</option>
-            <option value="Agricultural Drone Photography">Agricultural Drone Photography</option>
             <option value="Film & Media Cinematography">Film &amp; Media Cinematography</option>
             <option value="Drone Inspection Services">Drone Inspection Services</option>
             <option value="Event Drone Coverage">Event Drone Coverage</option>
@@ -132,6 +156,7 @@ export function ContactForm() {
           </select>
         </div>
       </div>
+
       <div>
         <label htmlFor="message" className="block text-brand-muted text-sm font-medium mb-2">
           Project Details <span className="text-brand-accent" aria-hidden="true">*</span>
@@ -148,7 +173,7 @@ export function ContactForm() {
 
       {status === 'error' && (
         <p className="text-red-400 text-sm">
-          Something went wrong — please try again or email us directly at hello@lndmrkdrone.com.
+          Something went wrong — please try again or email us directly at colinmburns@gmail.com.
         </p>
       )}
 
