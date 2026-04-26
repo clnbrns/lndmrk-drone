@@ -4,7 +4,15 @@ import { locations } from '@/lib/locations';
 
 const BASE_URL = 'https://lndmrkdrone.com';
 
-const blogSlugs = ['aerial-photography-tips', 'real-estate-drone-guide', 'faa-part-107-explained'];
+const blogSlugs = [
+  'aerial-photography-tips',
+  'real-estate-drone-guide',
+  'faa-part-107-explained',
+  'do-drone-photos-help-sell-homes',
+  'construction-drone-benefits',
+  'drone-mapping-accuracy',
+  'hiring-drone-company',
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
