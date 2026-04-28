@@ -61,6 +61,31 @@ export const portfolioItems: PortfolioItem[] = [
 
   // ── Film & Media ───────────────────────────────────────────────────────────
   {
+    src: '/images/portfolio/film-landmark-kingfisher-towers.jpg',
+    alt: 'Aerial drone photo of Kingfisher Towers rooftop penthouse and infinity garden rising above a city skyline',
+    caption: 'Kingfisher Towers — Rooftop Penthouse',
+    category: 'Film & Media',
+    featured: true,
+  },
+  {
+    src: '/images/portfolio/film-landmark-bangalore-palace.jpg',
+    alt: 'Aerial drone photo of Bangalore Palace with formal gardens, symmetrical landscaping, and turrets from above',
+    caption: 'Bangalore Palace — Aerial Overview',
+    category: 'Film & Media',
+  },
+  {
+    src: '/images/portfolio/film-landmark-stadium-aerial.jpg',
+    alt: 'High-altitude aerial drone photo of a major stadium with running track, grass field, and surrounding city',
+    caption: 'Major Stadium — High-Altitude Aerial',
+    category: 'Film & Media',
+  },
+  {
+    src: '/images/portfolio/film-landmark-tennis-stadium.jpg',
+    alt: 'Aerial drone photo of a professional tennis stadium with blue courts, canopy roof, and surrounding tree canopy',
+    caption: 'Tennis Venue — Venue Aerial',
+    category: 'Film & Media',
+  },
+  {
     src: '/images/portfolio/film-houston-skyline-night.jpg',
     alt: 'Night aerial drone photo of the Houston city skyline with colorful building lights, highway traffic, and ferris wheel',
     caption: 'Houston Skyline — Night Aerial',
