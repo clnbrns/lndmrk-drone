@@ -255,6 +255,58 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'Construction',
   },
 
+  // ── BearcatTurf — ArtDocks Dallas ──────────────────────────────────────────
+  {
+    src: '/images/portfolio/construction-bearcat-turf-dallas-skyline.jpg',
+    alt: 'Aerial drone photo of BearcatTurf ArtDocks installation in Dallas with glowing mural walls and Dallas skyline visible in the rain at dusk',
+    caption: 'BearcatTurf — ArtDocks Dallas, TX',
+    category: 'Construction',
+    featured: true,
+  },
+  {
+    src: '/images/portfolio/construction-bearcat-turf-corridor-overhead.jpg',
+    alt: 'Straight-down overhead aerial of the BearcatTurf ArtDocks courtyard showing the full artificial turf corridor between mural-covered buildings',
+    caption: 'ArtDocks — Turf Corridor Overhead',
+    category: 'Construction',
+  },
+  {
+    src: '/images/portfolio/construction-bearcat-turf-mural-alley-twilight.jpg',
+    alt: 'Ground-level aerial of the ArtDocks mural alley at twilight with glowing lights, vibrant murals, and deep blue evening sky',
+    caption: 'ArtDocks — Mural Alley at Twilight',
+    category: 'Construction',
+    featured: true,
+  },
+  {
+    src: '/images/portfolio/construction-bearcat-turf-mural-alley-wide.jpg',
+    alt: 'Wide aerial view looking down the ArtDocks mural alleyway with BearcatTurf artificial turf, colorful art murals, and seating at dusk',
+    caption: 'ArtDocks — Full Alley View',
+    category: 'Construction',
+  },
+  {
+    src: '/images/portfolio/construction-bearcat-artdocks-overhead.jpg',
+    alt: 'Overhead drone shot of the ArtDocks outdoor venue showing the full turf courtyard, mural walls, and entrance sign',
+    caption: 'ArtDocks — Venue Overhead',
+    category: 'Construction',
+  },
+  {
+    src: '/images/portfolio/construction-bearcat-turf-mural-wall-dusk.jpg',
+    alt: 'Aerial close-up of the ArtDocks mural wall at dusk showing vivid painted murals lit by ground-level uplighting',
+    caption: 'ArtDocks — Mural Wall Detail',
+    category: 'Construction',
+  },
+  {
+    src: '/images/portfolio/construction-bearcat-turf-entrance-view.jpg',
+    alt: 'Aerial view from the entrance of the ArtDocks mural alleyway looking down the turf corridor with murals flanking both sides at dusk',
+    caption: 'ArtDocks — Entrance Perspective',
+    category: 'Construction',
+  },
+  {
+    src: '/images/portfolio/construction-bearcat-turf-installation-progress.jpg',
+    alt: 'Daytime aerial progress photo of BearcatTurf artificial turf installation at ArtDocks Dallas with turf being laid and Dallas skyline visible',
+    caption: 'ArtDocks — Installation in Progress',
+    category: 'Construction',
+  },
+
   // ── Government & Public Safety ─────────────────────────────────────────────
   {
     src: '/images/portfolio/government-school-playground-2.jpg',
