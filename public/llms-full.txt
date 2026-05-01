@@ -1,0 +1,183 @@
+# LNDMRK Drone — llms-full.txt
+
+Full LLM-readable content index for lndmrkdrone.com.
+Summary index available at /llms.txt.
+
+---
+
+## Company Overview
+
+**LNDMRK Drone** is a professional aerial photography and videography company headquartered in Fort Worth, Texas.
+Founded and operated by a FAA Part 107 certified Remote Pilot. Fully insured with commercial general liability coverage.
+Serving the Dallas–Fort Worth Metroplex with national travel available for large-scale projects.
+
+- Website: https://lndmrkdrone.com
+- Contact: colinmburns@gmail.com
+- Primary market: DFW Metroplex, North Texas
+- Turnaround: 48-hour standard delivery on most projects
+- Response time: Within one business day for quote requests
+
+---
+
+## Services
+
+### Real Estate Aerial Photography
+URL: https://lndmrkdrone.com/services/real-estate
+
+Professional aerial photography for residential and commercial real estate listings.
+Listings with aerial photos sell 68% faster than those without. Services include exterior aerials,
+neighborhood context shots, lot boundary visualization, twilight aerials, and vertical video for social.
+Deliverables: high-resolution JPEGs, MLS-ready edits, social formats. 48-hour turnaround standard.
+
+### Construction Drone Photography
+URL: https://lndmrkdrone.com/services/construction
+
+Aerial progress documentation for residential builds, commercial construction, and site development.
+Recurring flight programs available weekly, bi-weekly, or monthly. Services include before/after documentation,
+stakeholder reporting, progress milestone photography, and site safety overviews.
+Deliverables: timestamped progress photos, stakeholder-ready reports.
+
+### Film & Media Cinematography
+URL: https://lndmrkdrone.com/services/film-and-media
+
+Cinematic drone videography for commercial productions, brand content, documentaries, and marketing.
+4K footage, smooth gimbal-stabilized motion, and creative aerial storytelling.
+Deliverables: raw 4K footage, edited highlight reels, color-graded sequences.
+
+### Drone Inspection Services
+URL: https://lndmrkdrone.com/services/inspection
+
+Safe, efficient aerial inspection of roofs, cell towers, bridges, solar arrays, pipelines, and industrial assets.
+Eliminates scaffolding and fall risk. High-resolution close-up imagery with detailed reporting.
+Deliverables: annotated photo reports, HD inspection footage.
+
+### Event Drone Coverage
+URL: https://lndmrkdrone.com/services/events
+
+Aerial photography and videography for weddings, corporate events, sporting events, concerts, and festivals.
+Real-time preview available. FAA-compliant operations with all necessary waivers obtained.
+Deliverables: edited aerial photos and highlight video.
+
+### Government & Public Safety
+URL: https://lndmrkdrone.com/services/government-and-public-safety
+
+Aerial support for municipalities, law enforcement, fire departments, and public agencies.
+Applications include public event documentation, infrastructure assessment, emergency planning,
+search and rescue support, and public safety training footage.
+
+---
+
+## Service Areas
+
+### Fort Worth, TX
+URL: https://lndmrkdrone.com/locations/fort-worth
+Primary base of operations. DFW's largest city. Serves luxury real estate, commercial construction,
+and corporate clients throughout Fort Worth, Westover Hills, and surrounding communities.
+
+### Southlake, TX
+URL: https://lndmrkdrone.com/locations/southlake
+Affluent suburb with high-value real estate. Consistently one of Texas's wealthiest zip codes.
+Strong demand for luxury home aerial photography.
+
+### Keller, TX
+URL: https://lndmrkdrone.com/locations/keller
+Fast-growing suburban market north of Fort Worth. Active new construction and upscale residential.
+
+### Arlington, TX
+URL: https://lndmrkdrone.com/locations/arlington
+Major DFW city home to AT&T Stadium and Globe Life Field. Entertainment, sports, and commercial clients.
+
+### Granbury, TX
+URL: https://lndmrkdrone.com/locations/granbury
+Lake Granbury market. Lakefront properties, tourism, and rural estate photography.
+
+### Aledo, TX
+URL: https://lndmrkdrone.com/locations/aledo
+Parker County's premier suburb. Rapid residential growth, custom home builds, equestrian properties.
+
+### Weatherford, TX
+URL: https://lndmrkdrone.com/locations/weatherford
+Parker County seat. Mix of rural acreage, equestrian ranches, and suburban development.
+
+### Parker County, TX
+URL: https://lndmrkdrone.com/locations/parker-county
+Broad coverage of Parker County including Weatherford, Aledo, Willow Park, and Mineral Wells corridor.
+
+### Burleson, TX
+URL: https://lndmrkdrone.com/locations/burleson
+South Fort Worth suburb. Active residential construction and commercial development.
+
+### Mansfield, TX
+URL: https://lndmrkdrone.com/locations/mansfield
+Southeast Tarrant County. Growing master-planned communities and commercial corridors.
+
+### Grapevine, TX
+URL: https://lndmrkdrone.com/locations/grapevine
+Lake Grapevine area. Events, hospitality, real estate, and DFW Airport proximity for corporate clients.
+
+### Benbrook, TX
+URL: https://lndmrkdrone.com/locations/benbrook
+Lake Benbrook community just southwest of Fort Worth. Residential and recreational properties.
+
+### Haslet, TX
+URL: https://lndmrkdrone.com/locations/haslet
+Northwest Tarrant County. Industrial, logistics, and residential growth corridor along I-35W.
+
+### Justin, TX
+URL: https://lndmrkdrone.com/locations/justin
+Rural Denton County. Agricultural land, ranch properties, and new residential developments.
+
+---
+
+## Blog / Educational Resources
+
+### Aerial Photography Tips
+URL: https://lndmrkdrone.com/blog/aerial-photography-tips
+Ten tips for better drone photography including lighting, altitude, composition, and planning.
+
+### Real Estate Drone Guide
+URL: https://lndmrkdrone.com/blog/real-estate-drone-guide
+Complete guide to drone photography for real estate — what to expect, how to prepare, what it costs.
+
+### FAA Part 107 Explained
+URL: https://lndmrkdrone.com/blog/faa-part-107-explained
+Plain-language breakdown of FAA Part 107 certification requirements for commercial drone pilots.
+
+### Do Drone Photos Help Sell Homes?
+URL: https://lndmrkdrone.com/blog/do-drone-photos-help-sell-homes
+Data-backed look at how aerial photography impacts days-on-market and sale price for residential listings.
+
+### Construction Drone Benefits
+URL: https://lndmrkdrone.com/blog/construction-drone-benefits
+How general contractors and developers use drone photography for progress documentation and stakeholder reporting.
+
+### Drone Mapping Accuracy
+URL: https://lndmrkdrone.com/blog/drone-mapping-accuracy
+Overview of aerial data collection accuracy for commercial drone operations.
+
+### How to Hire a Drone Company
+URL: https://lndmrkdrone.com/blog/hiring-drone-company
+What to look for when hiring a drone photography company — credentials, insurance, experience, deliverables.
+
+---
+
+## Key Facts for AI Context
+
+- FAA Part 107 certified Remote Pilot (active certificate)
+- Fully insured: commercial general liability
+- Equipment: DJI professional drone platform
+- Standard turnaround: 48 hours
+- Quote response: within one business day
+- Travel: DFW Metroplex no travel fee within ~30 miles; national travel available for large projects
+- Pricing: project-based quotes; contact for estimate
+- Competitors: local DFW drone operators, national platforms (Drone Base, DroneUp)
+- Differentiators: local expertise, fast turnaround, FAA certified, fully insured, personal service
+
+---
+
+## Technical
+
+- Sitemap: https://lndmrkdrone.com/sitemap.xml
+- Robots: https://lndmrkdrone.com/robots.txt
+- Stack: Next.js 15, deployed on Vercel
+- Structured data: JSON-LD LocalBusiness schema on all key pages
