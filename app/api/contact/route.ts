@@ -4,6 +4,29 @@ import { createHash } from 'crypto';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// ---------- Allowed service values (must match ContactForm.tsx) ----------
+
+const ALLOWED_SERVICES = new Set([
+  'Real Estate Aerial Photography',
+  'Construction Drone Photography',
+  'Film & Media Cinematography',
+  'Drone Inspection Services',
+  'Event Drone Coverage',
+  'Government & Public Safety',
+  'Other / Not Sure',
+]);
+
+// ---------- HTML escaping (prevents injection via email client) ----------
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 // ---------- Meta CAPI helpers ----------
 
 function hashData(value: string): string {
@@ -11,7 +34,6 @@ function hashData(value: string): string {
 }
 
 function hashPhone(raw: string): string {
-  // Strip all non-digits, then ensure country code prefix
   const digits = raw.replace(/\D/g, '');
   const normalized = digits.length === 10 ? `1${digits}` : digits;
   return hashData(normalized);
@@ -40,15 +62,9 @@ async function sendCapiLeadEvent(payload: CapiPayload): Promise<void> {
     em: hashData(payload.email),
   };
 
-  if (payload.phone) {
-    userData.ph = hashPhone(payload.phone);
-  }
-  if (payload.fbp) {
-    userData.fbp = payload.fbp;
-  }
-  if (payload.fbc) {
-    userData.fbc = payload.fbc;
-  }
+  if (payload.phone) userData.ph = hashPhone(payload.phone);
+  if (payload.fbp)   userData.fbp = payload.fbp;
+  if (payload.fbc)   userData.fbc = payload.fbc;
 
   const body = JSON.stringify({
     data: [
@@ -59,15 +75,12 @@ async function sendCapiLeadEvent(payload: CapiPayload): Promise<void> {
         event_source_url: payload.sourceUrl,
         action_source: 'website',
         user_data: userData,
-        custom_data: {
-          content_name: payload.service,
-        },
+        custom_data: { content_name: payload.service },
       },
     ],
   });
 
   const url = `https://graph.facebook.com/v19.0/${pixelId}/events?access_token=${token}`;
-
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -89,16 +102,29 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, email, phone, service, message, eventID, fbp, fbc } = body;
 
+    // Required field presence check
     if (!name || !email || !service || !message) {
       return NextResponse.json({ error: 'Missing required fields.' }, { status: 400 });
     }
+
+    // Validate service against allowed values — prevents injection via arbitrary strings
+    if (!ALLOWED_SERVICES.has(service)) {
+      return NextResponse.json({ error: 'Invalid service selection.' }, { status: 400 });
+    }
+
+    // Escape all user input before interpolating into email HTML
+    const safeName    = escapeHtml(String(name));
+    const safeEmail   = escapeHtml(String(email));
+    const safePhone   = phone ? escapeHtml(String(phone)) : '—';
+    const safeService = escapeHtml(String(service));
+    const safeMessage = escapeHtml(String(message));
 
     // 1. Send notification email (blocking — we need this to succeed)
     const { error } = await resend.emails.send({
       from: 'LNDMRK Drone <onboarding@resend.dev>',
       to: ['colinmburns@gmail.com'],
       replyTo: email,
-      subject: `New Quote Request: ${service} — ${name}`,
+      subject: `New Quote Request: ${safeService} — ${safeName}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 24px;">
           <h2 style="color: #1a3520; border-bottom: 2px solid #b8df3c; padding-bottom: 12px;">
@@ -107,27 +133,27 @@ export async function POST(request: Request) {
           <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
             <tr>
               <td style="padding: 8px 12px; background: #f5f5f5; font-weight: bold; width: 140px;">Name</td>
-              <td style="padding: 8px 12px;">${name}</td>
+              <td style="padding: 8px 12px;">${safeName}</td>
             </tr>
             <tr>
               <td style="padding: 8px 12px; background: #f5f5f5; font-weight: bold;">Email</td>
-              <td style="padding: 8px 12px;"><a href="mailto:${email}">${email}</a></td>
+              <td style="padding: 8px 12px;"><a href="mailto:${safeEmail}">${safeEmail}</a></td>
             </tr>
             <tr>
               <td style="padding: 8px 12px; background: #f5f5f5; font-weight: bold;">Phone</td>
-              <td style="padding: 8px 12px;">${phone || '—'}</td>
+              <td style="padding: 8px 12px;">${safePhone}</td>
             </tr>
             <tr>
               <td style="padding: 8px 12px; background: #f5f5f5; font-weight: bold;">Service</td>
-              <td style="padding: 8px 12px;">${service}</td>
+              <td style="padding: 8px 12px;">${safeService}</td>
             </tr>
           </table>
           <div style="margin-top: 20px; padding: 16px; background: #f9f9f9; border-left: 4px solid #b8df3c;">
             <p style="font-weight: bold; margin: 0 0 8px;">Project Details</p>
-            <p style="margin: 0; white-space: pre-wrap;">${message}</p>
+            <p style="margin: 0; white-space: pre-wrap;">${safeMessage}</p>
           </div>
           <p style="margin-top: 24px; font-size: 12px; color: #999;">
-            Hit Reply to respond directly to ${name} at ${email}.
+            Hit Reply to respond directly to ${safeName} at ${safeEmail}.
           </p>
         </div>
       `,
@@ -138,7 +164,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Failed to send email.' }, { status: 500 });
     }
 
-    // 2. Fire CAPI Lead event (non-blocking — a CAPI failure never breaks the form)
+    // 2. Fire CAPI Lead event (non-blocking — CAPI failure never breaks the form)
     if (eventID) {
       const sourceUrl =
         request.headers.get('referer') ?? 'https://lndmrkdrone.com/contact';

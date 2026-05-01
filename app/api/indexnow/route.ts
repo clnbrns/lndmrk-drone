@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 
 const BASE_URL = 'https://lndmrkdrone.com';
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY;
+const INDEXNOW_SUBMIT_SECRET = process.env.INDEXNOW_SUBMIT_SECRET;
 
 // All URLs to submit to Bing/IndexNow
 const ALL_URLS = [
@@ -47,12 +48,19 @@ const ALL_URLS = [
 /**
  * POST /api/indexnow
  * Pings Bing's IndexNow endpoint with all site URLs.
+ * Requires the x-indexnow-secret header matching INDEXNOW_SUBMIT_SECRET env var.
  * Requires INDEXNOW_KEY env var (get from Bing Webmaster Tools).
  *
- * Usage: curl -X POST https://lndmrkdrone.com/api/indexnow
- * Or call from a deploy hook / GitHub Action after each push.
+ * Usage: curl -X POST https://lndmrkdrone.com/api/indexnow \
+ *   -H "x-indexnow-secret: YOUR_SUBMIT_SECRET"
  */
-export async function POST() {
+export async function POST(request: Request) {
+  // Authenticate the request — reject anyone without the shared secret
+  const submittedSecret = request.headers.get('x-indexnow-secret');
+  if (!INDEXNOW_SUBMIT_SECRET || submittedSecret !== INDEXNOW_SUBMIT_SECRET) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   if (!INDEXNOW_KEY) {
     return NextResponse.json(
       { error: 'INDEXNOW_KEY not set. Add it to Vercel environment variables.' },
@@ -77,7 +85,6 @@ export async function POST() {
     return NextResponse.json({
       success: true,
       submitted: ALL_URLS.length,
-      urls: ALL_URLS,
     });
   }
 
@@ -88,19 +95,7 @@ export async function POST() {
   );
 }
 
-// GET returns instructions
+// GET is disabled — no need to expose site structure or setup instructions publicly
 export async function GET() {
-  return NextResponse.json({
-    info: 'IndexNow URL submission endpoint',
-    usage: 'POST to this route to submit all URLs to Bing/IndexNow',
-    urls_queued: ALL_URLS.length,
-    setup: [
-      '1. Sign up at https://www.bing.com/webmasters',
-      '2. Add and verify lndmrkdrone.com',
-      '3. Generate an IndexNow key in Bing Webmaster Tools',
-      '4. Add INDEXNOW_KEY to Vercel environment variables',
-      '5. Create a file at /public/<your-key>.txt containing just the key',
-      '6. POST to /api/indexnow to submit all URLs',
-    ],
-  });
+  return NextResponse.json({ error: 'Method not allowed' }, { status: 405 });
 }
