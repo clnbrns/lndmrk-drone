@@ -27,6 +27,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
 
+        {/* Bing Webmaster Tools verification */}
+        <meta name="msvalidate.01" content="221DC5A9DF43CD4BF8668A9C6040EA5B" />
+
         {/* Meta Pixel */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
