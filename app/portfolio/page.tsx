@@ -20,8 +20,9 @@ export default function PortfolioPage() {
         subtitle="A selection of drone photography and videography from real estate, events, construction, film, and more — across DFW and beyond."
         ctaLabel="Get a Quote"
         ctaHref="/contact"
-        bgImage="/images/hero/farrington-field-skyline.jpg"
-        bgImageAlt="Aerial drone photo of Farrington Field stadium with Fort Worth skyline"
+        bgVideo="/videos/reel-dallas-ballpark-2025-05.mp4"
+        bgImage="/images/portfolio/film-dallas-downtown-night-wide.jpg"
+        bgImageAlt="Aerial drone photo of Dallas downtown skyline at night"
       />
 
       <PortfolioGallery

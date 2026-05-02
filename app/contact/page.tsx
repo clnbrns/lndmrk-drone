@@ -29,6 +29,8 @@ export default function ContactPage() {
         eyebrow="Work With Us"
         title="Get a Free Drone Photography Quote"
         subtitle="Tell us about your project. We respond within one business day with a custom quote."
+        bgImage="/images/portfolio/construction-bearcat-turf-dallas-skyline.jpg"
+        bgImageAlt="Aerial drone photo of BearcatTurf ArtDocks installation with Dallas skyline at dusk"
       />
 
       <section className="bg-brand-surface py-20">

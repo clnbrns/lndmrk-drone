@@ -49,6 +49,8 @@ export default function AboutPage() {
         eyebrow="Who We Are"
         title="Meet the LNDMRK Drone Team"
         subtitle="FAA-certified pilot and visual storyteller capturing the world from above since 2023."
+        bgImage="/images/hero/dallas-reunion-tower.jpg"
+        bgImageAlt="Aerial drone photo of Dallas Reunion Tower and downtown skyline"
       />
 
       {/* Mission */}
@@ -57,8 +59,8 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-brand-text mb-6">Our Mission</h2>
           <p className="text-brand-muted text-lg leading-relaxed mb-4">
             We founded LNDMRK Drone on a simple belief: every project deserves a perspective that
-            elevates it. Whether that means a sweeping cinematic reveal for a film production or an
-            accurate orthomosaic map for an engineering survey, we bring the same obsessive attention to
+            elevates it. Whether that means a sweeping cinematic reveal for a film production or a
+            detailed aerial inspection for a general contractor, we bring the same obsessive attention to
             craft and safety to every flight.
           </p>
           <p className="text-brand-muted text-lg leading-relaxed">
