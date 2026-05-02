@@ -11,10 +11,13 @@ interface HeroSectionProps {
   ctaHref?: string;
   secondaryCtaLabel?: string;
   secondaryCtaHref?: string;
-  /** Optional full-bleed background photo. Path relative to /public, e.g. "/images/hero/aerial-hero.jpg" */
+  /** Optional full-bleed background photo. Path relative to /public */
   bgImage?: string;
   /** Alt text for bgImage */
   bgImageAlt?: string;
+  /** Optional looping background video. Path relative to /public (e.g. "/videos/reel-2.mp4").
+   *  When both bgVideo and bgImage are set, the image is used as the video poster (shown while video loads). */
+  bgVideo?: string;
 }
 
 function DroneVisual() {
@@ -123,27 +126,46 @@ export function HeroSection({
   secondaryCtaHref,
   bgImage,
   bgImageAlt = 'Aerial drone photography',
+  bgVideo,
 }: HeroSectionProps) {
+  const hasBackground = !!(bgImage || bgVideo);
+
   return (
     <section className="relative bg-brand-bg overflow-hidden">
-      {/* Optional full-bleed background photo */}
-      {bgImage && (
-        <>
-          <Image
-            src={bgImage}
-            alt={bgImageAlt}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-          {/* Dark overlay so text remains readable */}
-          <div
-            className="absolute inset-0"
-            style={{ background: 'linear-gradient(to right, rgba(12,27,13,0.92) 40%, rgba(12,27,13,0.60) 100%)' }}
-            aria-hidden="true"
-          />
-        </>
+      {/* Looping background video */}
+      {bgVideo && (
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={bgImage ?? undefined}
+          className="absolute inset-0 w-full h-full object-cover"
+          aria-hidden="true"
+        >
+          <source src={bgVideo} type={bgVideo.endsWith('.mp4') ? 'video/mp4' : 'video/quicktime'} />
+        </video>
+      )}
+
+      {/* Static background photo (only when no video) */}
+      {bgImage && !bgVideo && (
+        <Image
+          src={bgImage}
+          alt={bgImageAlt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+      )}
+
+      {/* Dark overlay — shown whenever there's a photo or video background */}
+      {hasBackground && (
+        <div
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(to right, rgba(12,27,13,0.92) 40%, rgba(12,27,13,0.60) 100%)' }}
+          aria-hidden="true"
+        />
       )}
 
       {/* Background glow (shown when no photo) */}
@@ -201,8 +223,8 @@ export function HeroSection({
             )}
           </div>
 
-          {/* Visual column — drone HUD graphic (hidden when bg photo fills this role) */}
-          {!bgImage && (
+          {/* Visual column — drone HUD graphic (hidden when bg photo or video fills this role) */}
+          {!hasBackground && (
             <div className="hidden lg:block">
               <DroneVisual />
             </div>

@@ -12,8 +12,10 @@ function getCookie(name: string): string {
 /** Fire a Meta Pixel event safely (guards against ad blockers). */
 function trackMetaEvent(eventName: string, params: Record<string, unknown>, eventID: string) {
   try {
-    if (typeof window !== 'undefined' && typeof (window as Window & { fbq?: Function }).fbq === 'function') {
-      (window as Window & { fbq: Function }).fbq('track', eventName, params, { eventID });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const fbq = typeof window !== 'undefined' ? (window as any).fbq : undefined;
+    if (typeof fbq === 'function') {
+      fbq('track', eventName, params, { eventID });
     }
   } catch {
     // Silently fail — ad blockers or SSR environments

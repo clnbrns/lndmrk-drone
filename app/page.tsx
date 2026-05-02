@@ -70,11 +70,12 @@ export default function HomePage() {
       <HeroSection
         badge="FAA Part 107 Certified"
         title="See the World From a New Altitude"
-        subtitle="Cinematic drone footage and photography for real estate, construction, events, agriculture, film, and inspection. Fully insured. Serving DFW & beyond."
+        subtitle="Cinematic drone footage and photography for real estate, construction, events, film, and inspection. Fully insured. Serving DFW & beyond."
         ctaLabel="Book a Flight"
         ctaHref="/contact"
         secondaryCtaLabel="View Our Work"
         secondaryCtaHref="/portfolio"
+        bgVideo="/videos/reel-2.mp4"
         bgImage="/images/hero/farrington-field-skyline.jpg"
         bgImageAlt="Aerial drone photo of Farrington Field stadium with Fort Worth skyline"
       />

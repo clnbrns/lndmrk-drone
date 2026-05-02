@@ -41,3 +41,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* ── Shimmer loading placeholder ───────────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #294f30 25%, #3d6c46 50%, #294f30 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}

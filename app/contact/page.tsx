@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { HeroSection } from '@/components/HeroSection';
 import { JsonLd } from '@/components/JsonLd';
 import { ContactForm } from '@/components/ContactForm';
+import { GoldenHourWidget } from '@/components/GoldenHourWidget';
 import { buildMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = buildMetadata({
@@ -34,7 +35,7 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Form */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2" id="contact-form">
               <ContactForm />
             </div>
 
@@ -63,6 +64,8 @@ export default function ContactPage() {
                   <p className="text-brand-muted text-xs mt-1">National travel available for large projects.</p>
                 </div>
               </address>
+
+              <GoldenHourWidget />
             </aside>
           </div>
         </div>
