@@ -29,14 +29,14 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'DFW Metroplex',
-    metaTitle: 'Drone Photography Fort Worth TX | Aerial Photo & Video | LNDMRK Drone',
+    metaTitle: 'Drone Photography Fort Worth TX | FAA-Certified Aerial Photo & Video | LNDMRK Drone',
     metaDesc:
-      'Professional drone photography and videography in Fort Worth, TX. Real estate, construction, events, and film. FAA Part 107 certified. Same-week scheduling available.',
+      'Fort Worth drone photography by an FAA Part 107 certified pilot based in Tarrant County. Real estate, construction, events, and film. No travel fees. Same-week scheduling.',
     h1: 'Drone Photography & Videography in Fort Worth, TX',
     intro:
-      'LNDMRK Drone is based in Fort Worth — this is our home market. From Sundance Square to the Cultural District, from Alliance Corridor developments to Benbrook Lake, we know every corner of Cowtown from above. Fast response, no travel fees, and a pilot who has flown hundreds of commercial flights across Tarrant County.',
+      'Looking for drone photography in Fort Worth, TX? You found us — and we\'re local. LNDMRK Drone is based in Fort Worth, which means no travel fees, fast turnaround, and a pilot who knows every corner of Cowtown from above. From Sundance Square to the Cultural District, from Alliance Corridor developments to Benbrook Lake, we\'ve flown hundreds of commercial flights across Tarrant County.',
     marketContext:
-      'Fort Worth\'s explosive growth — ranked among the fastest-growing large cities in the U.S. — has created surging demand for aerial photography across every sector. Real estate agents need drone photos to compete in a hot market. Contractors documenting major developments along the Walsh Ranch and Chisholm Trail corridors need recurring aerial records. Event venues from Dickies Arena to Farrington Field need aerial content that matches their scale.',
+      'Fort Worth is one of the fastest-growing large cities in the U.S., and that growth has created steady demand for drone photography across every industry. Real estate agents need aerial photos to compete in a hot listings market. General contractors documenting major developments along the Walsh Ranch and Chisholm Trail corridors need recurring aerial records. Event venues from Dickies Arena to Farrington Field need aerial content that matches their scale. LNDMRK Drone delivers Fort Worth drone photography for all of it — with the local knowledge and airspace experience to operate anywhere in the city.',
     proofPoints: [
       {
         label: 'Local Pilot, No Travel Fees',
@@ -67,6 +67,14 @@ export const locations: Location[] = [
       {
         q: 'Can you cover events at Dickies Arena or Farrington Field?',
         a: 'Absolutely — event drone coverage at Fort Worth venues is one of our core services. We coordinate directly with venue management and obtain any required permits for drone operations at or near the facility.',
+      },
+      {
+        q: 'How much does drone photography cost in Fort Worth?',
+        a: 'Pricing depends on the scope of the project — a standard real estate aerial package typically starts around $150–$250, while commercial shoots, construction documentation contracts, and film projects are quoted individually. Being based in Fort Worth means no travel fees for most Tarrant County locations. Contact us for a free quote on your specific project.',
+      },
+      {
+        q: 'Is LNDMRK Drone the right choice for my Fort Worth project?',
+        a: 'If you need a licensed, insured, local pilot with real commercial experience — yes. We hold an FAA Part 107 Remote Pilot Certificate, carry comprehensive liability insurance, and have completed 500+ commercial flights across DFW. We\'re not a hobbyist with a new drone — this is our full-time business, and Fort Worth is our backyard.',
       },
     ],
     heroImage: '/images/portfolio/events-farrington-field-skyline.jpg',
