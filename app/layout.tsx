@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google';
 import Script from 'next/script';
+import { headers } from 'next/headers';
 import './globals.css';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
@@ -10,15 +11,21 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist-sans' });
 
 export const metadata: Metadata = defaultMetadata;
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  // Read the nonce injected by middleware.ts so inline <Script> tags carry it.
+  // The browser matches this nonce against the Content-Security-Policy header,
+  // allowing our inline scripts while blocking any injected ones.
+  const nonce = (await headers()).get('x-nonce') ?? '';
+
   return (
     <html lang="en" className={`${geist.variable} h-full`}>
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-6KNHTHRW5J"
           strategy="afterInteractive"
+          nonce={nonce}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="afterInteractive" nonce={nonce}>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -31,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="msvalidate.01" content="221DC5A9DF43CD4BF8668A9C6040EA5B" />
 
         {/* Meta Pixel */}
-        <Script id="meta-pixel" strategy="afterInteractive">
+        <Script id="meta-pixel" strategy="afterInteractive" nonce={nonce}>
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

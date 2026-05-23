@@ -4,6 +4,15 @@ import { createHash } from 'crypto';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// ---------- Validation helpers ----------
+
+/** Practical email format check (RFC 5321 max 254 chars, requires local@domain.tld shape) */
+const EMAIL_RE = /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/;
+
+function isValidEmail(value: string): boolean {
+  return value.length <= 254 && EMAIL_RE.test(value);
+}
+
 // ---------- Allowed service values (must match ContactForm.tsx) ----------
 
 const ALLOWED_SERVICES = new Set([
@@ -105,6 +114,11 @@ export async function POST(request: Request) {
     // Required field presence check
     if (!name || !email || !service || !message) {
       return NextResponse.json({ error: 'Missing required fields.' }, { status: 400 });
+    }
+
+    // Validate email format before it reaches Resend's replyTo header
+    if (!isValidEmail(String(email))) {
+      return NextResponse.json({ error: 'Invalid email address.' }, { status: 400 });
     }
 
     // Validate service against allowed values — prevents injection via arbitrary strings
