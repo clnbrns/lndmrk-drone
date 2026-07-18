@@ -16,7 +16,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'LNDMRK Drone',
-  url: 'https://lndmrkdrone.com',
+  url: 'https://www.lndmrkdrone.com',
   email: 'colinmburns@gmail.com',
 };
 

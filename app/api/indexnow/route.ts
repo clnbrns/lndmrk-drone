@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const BASE_URL = 'https://lndmrkdrone.com';
+const BASE_URL = 'https://www.lndmrkdrone.com';
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY;
 const INDEXNOW_SUBMIT_SECRET = process.env.INDEXNOW_SUBMIT_SECRET;
 
@@ -51,7 +51,7 @@ const ALL_URLS = [
  * Requires the x-indexnow-secret header matching INDEXNOW_SUBMIT_SECRET env var.
  * Requires INDEXNOW_KEY env var (get from Bing Webmaster Tools).
  *
- * Usage: curl -X POST https://lndmrkdrone.com/api/indexnow \
+ * Usage: curl -X POST https://www.lndmrkdrone.com/api/indexnow \
  *   -H "x-indexnow-secret: YOUR_SUBMIT_SECRET"
  */
 export async function POST(request: Request) {
@@ -69,7 +69,7 @@ export async function POST(request: Request) {
   }
 
   const payload = {
-    host: 'lndmrkdrone.com',
+    host: 'www.lndmrkdrone.com',
     key: INDEXNOW_KEY,
     keyLocation: `${BASE_URL}/${INDEXNOW_KEY}.txt`,
     urlList: ALL_URLS,

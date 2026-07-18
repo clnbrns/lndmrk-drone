@@ -51,7 +51,7 @@ const localBusinessSchema = {
   '@type': 'LocalBusiness',
   name: 'LNDMRK Drone',
   description: 'Professional aerial photography and videography services.',
-  url: 'https://lndmrkdrone.com',
+  url: 'https://www.lndmrkdrone.com',
   telephone: '+16829999240',
   email: 'colinmburns@gmail.com',
   address: {

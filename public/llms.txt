@@ -7,7 +7,7 @@
 **LNDMRK Drone** is a professional aerial photography and videography company based in Fort Worth, TX.
 FAA Part 107 certified. Fully insured. Serving the DFW Metroplex and available nationally for large projects.
 
-- Website: https://lndmrkdrone.com
+- Website: https://www.lndmrkdrone.com
 - Contact: colinmburns@gmail.com
 - Service area: Dallas–Fort Worth Metroplex, TX (national travel available)
 - Certification: FAA Remote Pilot Certificate (Part 107)
@@ -15,49 +15,49 @@ FAA Part 107 certified. Fully insured. Serving the DFW Metroplex and available n
 
 ## Services
 
-- Real Estate Aerial Photography — https://lndmrkdrone.com/services/real-estate
-- Construction Drone Photography — https://lndmrkdrone.com/services/construction
-- Film & Media Cinematography — https://lndmrkdrone.com/services/film-and-media
-- Drone Inspection Services — https://lndmrkdrone.com/services/inspection
-- Event Drone Coverage — https://lndmrkdrone.com/services/events
-- Government & Public Safety — https://lndmrkdrone.com/services/government-and-public-safety
+- Real Estate Aerial Photography — https://www.lndmrkdrone.com/services/real-estate
+- Construction Drone Photography — https://www.lndmrkdrone.com/services/construction
+- Film & Media Cinematography — https://www.lndmrkdrone.com/services/film-and-media
+- Drone Inspection Services — https://www.lndmrkdrone.com/services/inspection
+- Event Drone Coverage — https://www.lndmrkdrone.com/services/events
+- Government & Public Safety — https://www.lndmrkdrone.com/services/government-and-public-safety
 
 ## Local Service Areas (DFW)
 
-- Fort Worth — https://lndmrkdrone.com/locations/fort-worth
-- Southlake — https://lndmrkdrone.com/locations/southlake
-- Keller — https://lndmrkdrone.com/locations/keller
-- Arlington — https://lndmrkdrone.com/locations/arlington
-- Granbury — https://lndmrkdrone.com/locations/granbury
-- Aledo — https://lndmrkdrone.com/locations/aledo
-- Weatherford — https://lndmrkdrone.com/locations/weatherford
-- Parker County — https://lndmrkdrone.com/locations/parker-county
-- Burleson — https://lndmrkdrone.com/locations/burleson
-- Mansfield — https://lndmrkdrone.com/locations/mansfield
-- Grapevine — https://lndmrkdrone.com/locations/grapevine
-- Benbrook — https://lndmrkdrone.com/locations/benbrook
-- Haslet — https://lndmrkdrone.com/locations/haslet
-- Justin — https://lndmrkdrone.com/locations/justin
+- Fort Worth — https://www.lndmrkdrone.com/locations/fort-worth
+- Southlake — https://www.lndmrkdrone.com/locations/southlake
+- Keller — https://www.lndmrkdrone.com/locations/keller
+- Arlington — https://www.lndmrkdrone.com/locations/arlington
+- Granbury — https://www.lndmrkdrone.com/locations/granbury
+- Aledo — https://www.lndmrkdrone.com/locations/aledo
+- Weatherford — https://www.lndmrkdrone.com/locations/weatherford
+- Parker County — https://www.lndmrkdrone.com/locations/parker-county
+- Burleson — https://www.lndmrkdrone.com/locations/burleson
+- Mansfield — https://www.lndmrkdrone.com/locations/mansfield
+- Grapevine — https://www.lndmrkdrone.com/locations/grapevine
+- Benbrook — https://www.lndmrkdrone.com/locations/benbrook
+- Haslet — https://www.lndmrkdrone.com/locations/haslet
+- Justin — https://www.lndmrkdrone.com/locations/justin
 
 ## Blog / Resources
 
-- Aerial Photography Tips — https://lndmrkdrone.com/blog/aerial-photography-tips
-- Real Estate Drone Guide — https://lndmrkdrone.com/blog/real-estate-drone-guide
-- FAA Part 107 Explained — https://lndmrkdrone.com/blog/faa-part-107-explained
-- Do Drone Photos Help Sell Homes? — https://lndmrkdrone.com/blog/do-drone-photos-help-sell-homes
-- Construction Drone Benefits — https://lndmrkdrone.com/blog/construction-drone-benefits
-- Drone Mapping Accuracy — https://lndmrkdrone.com/blog/drone-mapping-accuracy
-- How to Hire a Drone Company — https://lndmrkdrone.com/blog/hiring-drone-company
+- Aerial Photography Tips — https://www.lndmrkdrone.com/blog/aerial-photography-tips
+- Real Estate Drone Guide — https://www.lndmrkdrone.com/blog/real-estate-drone-guide
+- FAA Part 107 Explained — https://www.lndmrkdrone.com/blog/faa-part-107-explained
+- Do Drone Photos Help Sell Homes? — https://www.lndmrkdrone.com/blog/do-drone-photos-help-sell-homes
+- Construction Drone Benefits — https://www.lndmrkdrone.com/blog/construction-drone-benefits
+- Drone Mapping Accuracy — https://www.lndmrkdrone.com/blog/drone-mapping-accuracy
+- How to Hire a Drone Company — https://www.lndmrkdrone.com/blog/hiring-drone-company
 
 ## Core Pages
 
-- Homepage — https://lndmrkdrone.com/
-- Portfolio — https://lndmrkdrone.com/portfolio
-- About — https://lndmrkdrone.com/about
-- Contact / Get a Quote — https://lndmrkdrone.com/contact
-- All Services — https://lndmrkdrone.com/services
-- All Locations — https://lndmrkdrone.com/locations
-- Sitemap — https://lndmrkdrone.com/sitemap.xml
+- Homepage — https://www.lndmrkdrone.com/
+- Portfolio — https://www.lndmrkdrone.com/portfolio
+- About — https://www.lndmrkdrone.com/about
+- Contact / Get a Quote — https://www.lndmrkdrone.com/contact
+- All Services — https://www.lndmrkdrone.com/services
+- All Locations — https://www.lndmrkdrone.com/locations
+- Sitemap — https://www.lndmrkdrone.com/sitemap.xml
 
 ## Content License
 

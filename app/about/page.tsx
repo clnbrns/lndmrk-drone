@@ -17,11 +17,11 @@ const articleSchema = {
   name: 'About LNDMRK Drone',
   description:
     'LNDMRK Drone is an FAA-certified pilot and visual storyteller specializing in aerial photography and videography.',
-  url: 'https://lndmrkdrone.com/about',
+  url: 'https://www.lndmrkdrone.com/about',
   publisher: {
     '@type': 'Organization',
     name: 'LNDMRK Drone',
-    url: 'https://lndmrkdrone.com',
+    url: 'https://www.lndmrkdrone.com',
   },
 };
 

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-export const BASE_URL = 'https://lndmrkdrone.com';
+export const BASE_URL = 'https://www.lndmrkdrone.com';
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),

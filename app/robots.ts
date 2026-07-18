@@ -84,7 +84,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://lndmrkdrone.com/sitemap.xml',
-    host: 'https://lndmrkdrone.com',
+    sitemap: 'https://www.lndmrkdrone.com/sitemap.xml',
+    host: 'https://www.lndmrkdrone.com',
   };
 }

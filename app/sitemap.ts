@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { services } from '@/lib/services';
 import { locations } from '@/lib/locations';
 
-const BASE_URL = 'https://lndmrkdrone.com';
+const BASE_URL = 'https://www.lndmrkdrone.com';
 
 const blogSlugs = [
   'aerial-photography-tips',

@@ -181,7 +181,7 @@ export async function POST(request: Request) {
     // 2. Fire CAPI Lead event (non-blocking — CAPI failure never breaks the form)
     if (eventID) {
       const sourceUrl =
-        request.headers.get('referer') ?? 'https://lndmrkdrone.com/contact';
+        request.headers.get('referer') ?? 'https://www.lndmrkdrone.com/contact';
 
       void sendCapiLeadEvent({
         eventID,
