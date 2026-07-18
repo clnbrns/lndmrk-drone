@@ -7,7 +7,7 @@ import { locations } from '@/lib/locations';
 import { buildMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Drone Photography Service Areas | DFW & North Texas | LNDMRK Drone',
+  title: 'Drone Photography Service Areas | DFW & North Texas',
   description:
     'LNDMRK Drone serves Fort Worth, Southlake, Keller, Arlington, Aledo, Weatherford, Granbury, Grapevine, Burleson, Mansfield, Benbrook, Haslet, Justin, and all of Parker County. FAA-certified aerial photography.',
   path: '/locations',

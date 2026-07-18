@@ -29,7 +29,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'DFW Metroplex',
-    metaTitle: 'Drone Photography Fort Worth TX | FAA-Certified Aerial Photo & Video | LNDMRK Drone',
+    metaTitle: 'Drone Photography Fort Worth TX | FAA-Certified Aerial Photo & Video',
     metaDesc:
       'Fort Worth drone photography by an FAA Part 107 certified pilot based in Tarrant County. Real estate, construction, events, and film. No travel fees. Same-week scheduling.',
     h1: 'Drone Photography & Videography in Fort Worth, TX',
@@ -87,7 +87,7 @@ export const locations: Location[] = [
     county: 'Tarrant & Denton County',
     state: 'TX',
     region: 'Northeast Tarrant County',
-    metaTitle: 'Drone Photography Southlake TX | Luxury Real Estate Aerial Photos | LNDMRK Drone',
+    metaTitle: 'Drone Photography Southlake TX | Luxury Real Estate Aerial Photos',
     metaDesc:
       'Professional drone photography for Southlake, TX luxury real estate, estates, and events. FAA-certified pilot serving the Carroll ISD corridor and Southlake Town Square area.',
     h1: 'Drone Photography & Aerial Real Estate Photos in Southlake, TX',
@@ -133,7 +133,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'North Tarrant County',
-    metaTitle: 'Drone Photography Keller TX | Aerial Real Estate & Construction | LNDMRK Drone',
+    metaTitle: 'Drone Photography Keller TX | Aerial Real Estate & Construction',
     metaDesc:
       'Drone photography and videography in Keller, TX. Real estate listing photos, construction progress, and event coverage. FAA-certified pilot based in Fort Worth.',
     h1: 'Drone Photography & Aerial Videography in Keller, TX',
@@ -175,7 +175,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'Mid-Cities / DFW',
-    metaTitle: 'Drone Photography Arlington TX | Aerial Photo & Video | LNDMRK Drone',
+    metaTitle: 'Drone Photography Arlington TX | Aerial Photo & Video',
     metaDesc:
       'Professional drone photography and videography in Arlington, TX. Real estate, events, commercial construction, and aerial film. FAA-certified. Serving the Entertainment District and beyond.',
     h1: 'Drone Photography & Videography in Arlington, TX',
@@ -217,7 +217,7 @@ export const locations: Location[] = [
     county: 'Hood County',
     state: 'TX',
     region: 'Hood County / Lake Granbury',
-    metaTitle: 'Drone Photography Granbury TX | Lake Property & Real Estate Aerial | LNDMRK Drone',
+    metaTitle: 'Drone Photography Granbury TX | Lake Property & Real Estate Aerial',
     metaDesc:
       'Drone photography in Granbury, TX and Lake Granbury. Aerial real estate photos for waterfront properties, lake homes, and Hood County listings. FAA-certified pilot from Fort Worth.',
     h1: 'Drone Photography & Lake Property Aerials in Granbury, TX',
@@ -265,7 +265,7 @@ export const locations: Location[] = [
     county: 'Parker County',
     state: 'TX',
     region: 'Parker County',
-    metaTitle: 'Drone Photography Aledo TX | Aerial Real Estate & Sports | LNDMRK Drone',
+    metaTitle: 'Drone Photography Aledo TX | Aerial Real Estate & Sports',
     metaDesc:
       'Drone photography in Aledo, TX. Real estate aerials, construction documentation, and sports/events coverage for Parker County. FAA-certified pilot based in Fort Worth.',
     h1: 'Drone Photography & Videography in Aledo, TX',
@@ -307,7 +307,7 @@ export const locations: Location[] = [
     county: 'Parker County',
     state: 'TX',
     region: 'Parker County',
-    metaTitle: 'Drone Photography Weatherford TX | Aerial Real Estate & Ranch | LNDMRK Drone',
+    metaTitle: 'Drone Photography Weatherford TX | Aerial Real Estate & Ranch',
     metaDesc:
       'Professional drone photography in Weatherford, TX. Real estate aerials, ranch and acreage listings, construction, and events in Parker County. FAA Part 107 certified.',
     h1: 'Drone Photography & Aerial Real Estate in Weatherford, TX',
@@ -353,7 +353,7 @@ export const locations: Location[] = [
     county: 'Parker County',
     state: 'TX',
     region: 'West DFW',
-    metaTitle: 'Drone Photography Parker County TX | Aerial Real Estate & Ranch | LNDMRK Drone',
+    metaTitle: 'Drone Photography Parker County TX | Aerial Real Estate & Ranch',
     metaDesc:
       'Professional drone photography serving all of Parker County, TX — Weatherford, Aledo, Willow Park, Hudson Oaks, Azle, and surrounding areas. Real estate, ranch, construction, and events.',
     h1: 'Drone Photography Services Across Parker County, TX',
@@ -399,7 +399,7 @@ export const locations: Location[] = [
     county: 'Johnson & Tarrant County',
     state: 'TX',
     region: 'South Tarrant County',
-    metaTitle: 'Drone Photography Burleson TX | Aerial Real Estate & Construction | LNDMRK Drone',
+    metaTitle: 'Drone Photography Burleson TX | Aerial Real Estate & Construction',
     metaDesc:
       'Drone photography in Burleson, TX. Aerial real estate photos, construction documentation, and event coverage for Johnson and south Tarrant County. FAA-certified.',
     h1: 'Drone Photography & Aerial Real Estate in Burleson, TX',
@@ -441,7 +441,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'Southeast Tarrant County',
-    metaTitle: 'Drone Photography Mansfield TX | Aerial Real Estate & Events | LNDMRK Drone',
+    metaTitle: 'Drone Photography Mansfield TX | Aerial Real Estate & Events',
     metaDesc:
       'Drone photography in Mansfield, TX. Aerial real estate photos, construction, and event coverage for Southeast Tarrant County. FAA-certified pilot based in Fort Worth.',
     h1: 'Drone Photography & Aerial Real Estate in Mansfield, TX',
@@ -483,7 +483,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'North Tarrant County',
-    metaTitle: 'Drone Photography Grapevine TX | Aerial Events, Real Estate & Tourism | LNDMRK Drone',
+    metaTitle: 'Drone Photography Grapevine TX | Aerial Events, Real Estate & Tourism',
     metaDesc:
       'Drone photography in Grapevine, TX. Aerial coverage for events, wineries, Lake Grapevine, real estate, and tourism. FAA-certified pilot. Serving the Grapevine Historic District and beyond.',
     h1: 'Drone Photography, Events & Tourism Aerials in Grapevine, TX',
@@ -529,7 +529,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'Southwest Fort Worth',
-    metaTitle: 'Drone Photography Benbrook TX | Aerial Real Estate & Lake Photos | LNDMRK Drone',
+    metaTitle: 'Drone Photography Benbrook TX | Aerial Real Estate & Lake Photos',
     metaDesc:
       'Drone photography in Benbrook, TX. Aerial real estate, Lake Benbrook waterfront, and construction photography. FAA-certified pilot based in Fort Worth.',
     h1: 'Drone Photography & Lake Benbrook Aerial Photos in Benbrook, TX',
@@ -571,7 +571,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'North Fort Worth / Alliance Corridor',
-    metaTitle: 'Drone Photography Haslet TX | Aerial Real Estate & Construction | LNDMRK Drone',
+    metaTitle: 'Drone Photography Haslet TX | Aerial Real Estate & Construction',
     metaDesc:
       'Drone photography in Haslet, TX. Real estate aerial photos, new construction documentation, and commercial coverage along the Alliance Corridor. FAA-certified.',
     h1: 'Drone Photography & New Construction Aerials in Haslet, TX',
@@ -613,7 +613,7 @@ export const locations: Location[] = [
     county: 'Denton County',
     state: 'TX',
     region: 'Northwest DFW',
-    metaTitle: 'Drone Photography Justin TX | Aerial Real Estate & Ranch | LNDMRK Drone',
+    metaTitle: 'Drone Photography Justin TX | Aerial Real Estate & Ranch',
     metaDesc:
       'Drone photography in Justin, TX and northwest Denton County. Aerial real estate, ranch, and acreage photography. FAA-certified pilot serving Denton County.',
     h1: 'Drone Photography & Aerial Real Estate in Justin, TX',

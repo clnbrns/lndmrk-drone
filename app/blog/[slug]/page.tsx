@@ -50,7 +50,7 @@ const posts: BlogPost[] = [
   {
     slug: 'aerial-photography-tips',
     title: '10 Aerial Photography Tips That Will Instantly Improve Your Drone Shots',
-    metaTitle: '10 Aerial Photography Tips for Better Drone Shots | LNDMRK Drone Blog',
+    metaTitle: '10 Aerial Photography Tips for Better Drone Shots',
     metaDesc:
       'Improve your drone photography with these 10 field-tested aerial photography tips: golden hour timing, altitude choices, composition rules, and camera settings.',
     date: '2026-03-15',
@@ -159,7 +159,7 @@ const posts: BlogPost[] = [
   {
     slug: 'real-estate-drone-guide',
     title: 'The Complete Guide to Drone Photography for Real Estate Listings',
-    metaTitle: 'Drone Photography for Real Estate Listings: A Complete Guide | LNDMRK Drone',
+    metaTitle: 'Drone Photography for Real Estate Listings: A Complete Guide',
     metaDesc:
       'Everything real estate agents and property developers need to know about aerial drone photography for listings — from what\'s included to what it costs and how to prepare.',
     date: '2026-02-28',
@@ -258,7 +258,7 @@ const posts: BlogPost[] = [
   {
     slug: 'do-drone-photos-help-sell-homes',
     title: 'Do Drone Photos Actually Help Sell Homes? What the Data Says',
-    metaTitle: 'Do Drone Photos Help Sell Homes? The Data | LNDMRK Drone Blog',
+    metaTitle: 'Do Drone Photos Help Sell Homes? The Data',
     metaDesc:
       'Do drone photos actually help sell homes faster and for more money? We look at NAR survey data, buyer behavior research, and which property types benefit most from aerial photography.',
     date: '2026-04-17',
@@ -432,7 +432,7 @@ const posts: BlogPost[] = [
   {
     slug: 'faa-part-107-explained',
     title: 'FAA Part 107 Explained: What It Means for Commercial Drone Operations',
-    metaTitle: 'FAA Part 107 Certification Explained | Commercial Drone Operations | LNDMRK Drone',
+    metaTitle: 'FAA Part 107 Certification Explained | Commercial Drone Operations',
     metaDesc:
       'What is FAA Part 107? A plain-English guide to the commercial drone certification rules, what they require, and why it matters when hiring a drone photography company.',
     date: '2026-02-10',

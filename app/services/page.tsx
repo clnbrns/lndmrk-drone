@@ -10,7 +10,7 @@ import { buildMetadata } from '@/lib/metadata';
 export const metadata: Metadata = buildMetadata({
   title: 'Drone Photography & Videography Services',
   description:
-    'Explore LNDMRK Drone\'s full range of aerial services: real estate, construction, film, inspection, events, and government. FAA Part 107 certified, fully insured.',
+    'Explore LNDMRK Drone\'s full range of aerial services: real estate, ranch & land, construction, film, roof & building inspections, events, and government. FAA Part 107 certified, fully insured.',
   path: '/services',
 });
 
@@ -27,7 +27,7 @@ export default function ServicesPage() {
       <HeroSection
         eyebrow="All Services"
         title="Drone Photography & Videography Services"
-        subtitle="Six specialized aerial service lines covering every industry. FAA Part 107 certified pilot based in Fort Worth, TX."
+        subtitle="Ten specialized aerial services covering every industry and use case. FAA Part 107 certified pilot based in Fort Worth, TX."
         bgImage="/images/portfolio/real-estate-luxury-estate-pool-spa-turf.jpg"
         bgImageAlt="Aerial drone photo of luxury estate with pool, spa, and turf"
       />

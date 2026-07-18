@@ -27,4 +27,20 @@ export const serviceHeroImages: Record<string, { src: string; alt: string }> = {
     src: '/images/portfolio/government-school-playground.jpg',
     alt: 'Aerial documentation of school campus playground and grounds',
   },
+  'ranch-land-photography': {
+    src: '/images/portfolio/film-texas-hill-country-lake-canyon.jpg',
+    alt: 'High-altitude aerial photo of Texas land with lake, canyon, and open acreage',
+  },
+  'roof-inspections': {
+    src: '/images/portfolio/real-estate-fort-worth-home.jpg',
+    alt: 'Overhead drone photo of a Fort Worth home showing full roof condition',
+  },
+  'commercial-building-inspections': {
+    src: '/images/portfolio/construction-bearcat-artdocks-overhead.jpg',
+    alt: 'Overhead aerial photo of commercial building roof and surrounding facility',
+  },
+  'construction-progress-documentation': {
+    src: '/images/portfolio/construction-bearcat-turf-installation-progress.jpg',
+    alt: 'Aerial progress photo of active construction site installation underway',
+  },
 };

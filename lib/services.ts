@@ -31,7 +31,7 @@ export const services: Service[] = [
     slug: 'real-estate',
     title: 'Real Estate Aerial Photography',
     shortDesc: 'Make listings sell faster with stunning aerial photos and video tours.',
-    metaTitle: 'Aerial Real Estate Photography & Drone Listing Photos | LNDMRK Drone',
+    metaTitle: 'Aerial Real Estate Photography & Drone Listing Photos',
     metaDesc:
       'Professional aerial real estate photography and drone listing photos. Show properties from their best angle and sell faster with FAA-certified pilots. Book online.',
     h1: 'Aerial Real Estate Photography That Sells Properties Faster',
@@ -94,13 +94,13 @@ export const services: Service[] = [
         a: 'Standard turnaround is 24–48 business hours after the shoot. Rush delivery within the same day is available for urgent listings.',
       },
     ],
-    relatedSlugs: ['film-and-media', 'events'],
+    relatedSlugs: ['ranch-land-photography', 'film-and-media'],
   },
   {
     slug: 'construction',
     title: 'Construction Drone Photography',
     shortDesc: 'Track site progress, document milestones, and reduce rework with aerial insight.',
-    metaTitle: 'Construction Drone Photography & Site Progress Monitoring | LNDMRK Drone',
+    metaTitle: 'Construction Drone Photography & Site Progress Monitoring',
     metaDesc:
       'Construction drone photography for site progress monitoring, pre-construction surveys, and as-built documentation. Reduce rework and disputes. FAA-certified.',
     h1: 'Construction Drone Photography & Site Progress Monitoring',
@@ -171,13 +171,13 @@ export const services: Service[] = [
         a: 'Yes. We are experienced with LAANC authorization and FAA airspace waivers. Urban site flights are routine for our team — we handle all airspace coordination.',
       },
     ],
-    relatedSlugs: ['real-estate', 'inspection'],
+    relatedSlugs: ['construction-progress-documentation', 'inspection'],
   },
   {
     slug: 'film-and-media',
     title: 'Drone Videography & Aerial Cinematography',
     shortDesc: 'Cinematic 4K aerial footage for commercials, film, TV, events, and social media.',
-    metaTitle: 'Drone Videography & Aerial Cinematography | Commercial Drone Filming | LNDMRK Drone',
+    metaTitle: 'Drone Videography & Aerial Cinematography | Commercial Drone Filming',
     metaDesc:
       'Professional drone videography and aerial cinematography for commercials, film, TV, events, and social media. 4K footage with FAA Part 107 certified pilots. Request a quote.',
     h1: 'Drone Videography & Aerial Cinematography',
@@ -254,7 +254,7 @@ export const services: Service[] = [
     slug: 'inspection',
     title: 'Drone Inspection Services',
     shortDesc: 'Safe, efficient aerial inspection of wind turbines, pipelines, bridges, cell towers, and roofs.',
-    metaTitle: 'Drone Inspection Services | Aerial Infrastructure Inspection | LNDMRK Drone',
+    metaTitle: 'Drone Inspection Services | Aerial Infrastructure Inspection',
     metaDesc:
       'Professional drone inspection services for wind turbines, pipelines, bridges, cell towers, and roofs. Thermal imaging available. Safer and more cost-effective than rope access.',
     h1: 'Drone Inspection Services for Infrastructure & Industrial Assets',
@@ -317,13 +317,13 @@ export const services: Service[] = [
         a: 'All pilots hold FAA Part 107 certificates. For specialized assets (wind turbines, bridges), we follow ASTM E3125 and client-specific inspection protocols and can work under the direction of a licensed professional engineer.',
       },
     ],
-    relatedSlugs: ['construction', 'government-and-public-safety'],
+    relatedSlugs: ['roof-inspections', 'commercial-building-inspections'],
   },
   {
     slug: 'events',
     title: 'Event Drone Photography & Videography',
     shortDesc: 'Stunning aerial coverage for weddings, concerts, sports events, and resorts.',
-    metaTitle: 'Event Drone Photography & Wedding Aerial Photography | LNDMRK Drone',
+    metaTitle: 'Event Drone Photography & Wedding Aerial Photography',
     metaDesc:
       'Event drone photography and videography for weddings, concerts, sports, and tourism. Aerial coverage that captures the full scale and emotion of your event.',
     h1: 'Event Drone Photography & Aerial Videography',
@@ -392,7 +392,7 @@ export const services: Service[] = [
     slug: 'government-and-public-safety',
     title: 'Government & Public Safety Drone Services',
     shortDesc: 'Aerial support for emergency response, traffic management, urban planning, and disaster documentation.',
-    metaTitle: 'Government Drone Services & Public Safety Aerial Photography | LNDMRK Drone',
+    metaTitle: 'Government Drone Services & Public Safety Aerial Photography',
     metaDesc:
       'Government drone services for emergency response, traffic management, urban planning, and disaster documentation. Fully compliant, FAA-certified, and ready for rapid deployment.',
     h1: 'Government & Public Safety Drone Services',
@@ -464,6 +464,290 @@ export const services: Service[] = [
       },
     ],
     relatedSlugs: ['inspection', 'construction'],
+  },
+  {
+    slug: 'ranch-land-photography',
+    title: 'Ranch & Land Aerial Photography',
+    shortDesc: 'Show every fence line, tank, and pasture in one frame — aerial media for acreage listings.',
+    metaTitle: 'Ranch & Land Aerial Photography in North Texas',
+    metaDesc:
+      'Drone photography for ranches, farms & acreage across North Texas. Show every fence line, tank, and pasture in one frame. FAA-certified, 48-hour delivery.',
+    h1: 'Ranch & Land Aerial Photography in North Texas',
+    eyebrow: 'Ranch & Land',
+    icon: '🌾',
+    intro:
+      "You can't sell 200 acres with photos taken from a truck window. Buyers evaluating land want to see the whole property at once — terrain, water, access, fencing, and improvements in proper relation to each other. One high-altitude aerial answers questions that forty ground photos can't. We serve Parker, Wise, Hood, Johnson, Denton, Tarrant, and surrounding counties — and travel for the right ranch.",
+    featuresHeading: 'What Your Listing Gets',
+    features: [
+      {
+        icon: '🗺️',
+        title: 'Full-Property Aerials',
+        desc: 'The whole parcel in one frame, plus detail passes over tanks, creeks, barns, and pens.',
+      },
+      {
+        icon: '📐',
+        title: 'Boundary-Line Overlays',
+        desc: 'Property lines drawn on the aerial from your survey or plat, so buyers instantly understand what they are looking at.',
+      },
+      {
+        icon: '🎬',
+        title: 'Cinematic Video Tour',
+        desc: 'A 60–90 second flyover cut for MLS, LandsofTexas, and social media.',
+      },
+      {
+        icon: '🌅',
+        title: 'Golden-Hour Scheduling',
+        desc: 'Texas land sells at sunset — we schedule flights for the light that flatters the property.',
+      },
+      {
+        icon: '💧',
+        title: 'Water & Improvement Passes',
+        desc: 'Dedicated coverage of stock tanks, creeks, wells, barns, arenas, and outbuildings that drive land value.',
+      },
+      {
+        icon: '⚡',
+        title: '48-Hour Turnaround',
+        desc: 'Edited, listing-ready files delivered before your property goes live.',
+      },
+    ],
+    industries: [
+      'Ranch & Land Brokerages',
+      'Farm & Ranch Sellers',
+      'Recreational Land',
+      'Equestrian Properties',
+      'Hunting Properties',
+      'Land Developers',
+    ],
+    faqs: [
+      {
+        q: 'How much does ranch photography cost?',
+        a: 'Pricing depends on property size and deliverables — boundary overlays and video tours are quoted per listing. Send us your acreage and county through the contact form and we will return a same-day quote. Volume pricing is available for brokerages marketing multiple properties.',
+      },
+      {
+        q: 'Can you show property lines on the photos?',
+        a: 'Yes. Provide a survey or plat and we overlay accurate boundary lines on your aerials — the single most requested deliverable for land listings.',
+      },
+      {
+        q: 'How large a property can you cover?',
+        a: 'We photograph everything from small homesteads to multi-thousand-acre working ranches. Large properties may take multiple flights, which we plan into a single visit.',
+      },
+      {
+        q: 'Do you travel outside the DFW area?',
+        a: 'Yes. We regularly cover listings across North Texas and will travel statewide for larger ranch properties. Travel is quoted up front with no surprises.',
+      },
+    ],
+    relatedSlugs: ['real-estate', 'film-and-media'],
+  },
+  {
+    slug: 'roof-inspections',
+    title: 'Drone Roof Inspections',
+    shortDesc: 'Independent roof documentation for insurance claims, home purchases, and facility planning.',
+    metaTitle: 'Independent Drone Roof Inspections | Fort Worth & DFW',
+    metaDesc:
+      'Unbiased drone roof inspections in Fort Worth & DFW for insurance claims, home purchases & facility planning. We document — we don\'t sell roofs. 24-hour reports.',
+    h1: "Drone Roof Inspections That Aren't Trying to Sell You a Roof",
+    eyebrow: 'Roof Inspections',
+    icon: '🏠',
+    intro:
+      "Free roof inspections in DFW usually come from companies that profit when they find damage. LNDMRK is different: we're a licensed aerial documentation company, not a roofing contractor. You get complete, high-resolution evidence of your roof's actual condition — every slope, ridge, valley, and penetration — and no sales pitch afterward.",
+    featuresHeading: 'When Independent Documentation Matters',
+    features: [
+      {
+        icon: '🌩️',
+        title: 'Insurance Claims',
+        desc: 'Timestamped, high-resolution imagery of hail and wind damage, organized by roof section in the format adjusters work with.',
+      },
+      {
+        icon: '🔑',
+        title: 'Pre-Purchase Inspections',
+        desc: "Know the roof's real condition before closing, from someone with no stake in the answer.",
+      },
+      {
+        icon: '🏢',
+        title: 'Facility & Portfolio Owners',
+        desc: 'Scheduled condition surveys for capital planning across your properties.',
+      },
+      {
+        icon: '🤝',
+        title: 'Contractors & Adjusters',
+        desc: 'A certified Part 107 pilot on call when you need documentation flights at scale.',
+      },
+      {
+        icon: '📋',
+        title: 'Organized 24-Hour Reports',
+        desc: 'Complete photo coverage delivered within 24 hours as an organized, shareable report.',
+      },
+      {
+        icon: '🪜',
+        title: 'No One on Your Roof',
+        desc: 'Steep, high, or fragile roofs are no problem — nobody climbs, and nobody gets hurt on your property.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Why pay when roofers inspect for free?',
+        a: 'A free inspection is a sales call. When the result feeds an insurance claim, a real-estate negotiation, or a legal file, you need documentation from a party with nothing to gain — that is what we provide.',
+      },
+      {
+        q: 'Will this work for my insurance claim?',
+        a: 'Our imagery is timestamped, geotagged, and organized by roof section — the format adjusters work with. We do not assess claim value; we give you evidence nobody can argue with.',
+      },
+      {
+        q: 'How fast can you fly after a storm?',
+        a: 'Usually within 24–48 hours, weather permitting. After major hail events we prioritize by scheduling order — book early.',
+      },
+      {
+        q: 'Do you inspect commercial roofs?',
+        a: 'Yes — flat, membrane, metal, and steep-slope commercial roofs, including recurring condition surveys for facility managers. See our commercial building inspection service for portfolio programs.',
+      },
+    ],
+    relatedSlugs: ['commercial-building-inspections', 'inspection'],
+  },
+  {
+    slug: 'commercial-building-inspections',
+    title: 'Commercial Building Inspections',
+    shortDesc: 'Aerial roof, façade & envelope surveys for property managers — no lifts, no disruption.',
+    metaTitle: 'Commercial Building Drone Inspections | DFW',
+    metaDesc:
+      'Drone inspections for commercial roofs, façades & facilities across DFW. Scheduled condition surveys for property managers — no lifts, no ladders, no disruption.',
+    h1: 'Commercial Building Inspections Without the Lift Rental',
+    eyebrow: 'Commercial Inspections',
+    icon: '🏢',
+    intro:
+      "A boom lift, a crew, and a closed parking lot — or one certified pilot and an hour of flight time. LNDMRK documents commercial roofs, façades, and building envelopes across DFW with high-resolution aerial imagery, so your maintenance decisions are based on what's actually up there.",
+    featuresHeading: 'For Property & Facility Managers',
+    features: [
+      {
+        icon: '📅',
+        title: 'Scheduled Condition Surveys',
+        desc: 'Quarterly or annual flights that build a visual maintenance record for capital planning and budgeting.',
+      },
+      {
+        icon: '🌩️',
+        title: 'Storm-Damage Response',
+        desc: 'Post-event documentation across your whole portfolio, prioritized and delivered fast for claims.',
+      },
+      {
+        icon: '🧱',
+        title: 'Façade & Envelope Imaging',
+        desc: 'Masonry, glazing, flashing, and drainage at every elevation — without scaffolding.',
+      },
+      {
+        icon: '✅',
+        title: 'Pre- & Post-Work Verification',
+        desc: 'Confirm contractor work was completed as billed, with before-and-after imagery.',
+      },
+      {
+        icon: '🗂️',
+        title: 'Reports That Fit Your Workflow',
+        desc: 'Photo sets organized by building and elevation, with side-by-side comparisons against prior surveys.',
+      },
+      {
+        icon: '🚷',
+        title: 'Zero Tenant Disruption',
+        desc: 'No site shutdown, no lifts, no one on the roof — most inspections finish inside an hour.',
+      },
+    ],
+    industries: [
+      'Property Management',
+      'Facility Management',
+      'Commercial Real Estate',
+      'HOAs & Community Associations',
+      'Insurance & Claims',
+      'Roofing & Restoration Contractors',
+    ],
+    faqs: [
+      {
+        q: 'What does a commercial inspection cost?',
+        a: 'Pricing depends on building size and scope. Portfolio and recurring-schedule pricing brings the per-building cost down significantly — request a facility quote for a same-day number.',
+      },
+      {
+        q: 'Do you carry insurance we can verify?',
+        a: 'Yes — we are FAA Part 107 certified and fully insured, with certificates of insurance provided on request, naming your entity as additional insured if required.',
+      },
+      {
+        q: 'Can you inspect an occupied property?',
+        a: 'Yes. Flights require no site shutdown, no lifts, and no one on the roof — most inspections finish inside an hour with zero tenant disruption.',
+      },
+      {
+        q: 'How quickly do we get deliverables?',
+        a: 'Organized photo sets and condition summaries are delivered within 48 hours of flight, shareable with owners, boards, insurers, and contractors.',
+      },
+    ],
+    relatedSlugs: ['roof-inspections', 'inspection'],
+  },
+  {
+    slug: 'construction-progress-documentation',
+    title: 'Construction Progress Documentation',
+    shortDesc: 'Recurring flights from fixed waypoints — consistent progress records for owners & lenders.',
+    metaTitle: 'Monthly Construction Progress Photos | DFW',
+    metaDesc:
+      'Recurring drone progress documentation for DFW construction sites. Same angles, every month — for owners, lenders & marketing. FAA-certified, 48-hour delivery.',
+    h1: 'Every Milestone, Documented From the Same Angle',
+    eyebrow: 'Construction Progress',
+    icon: '🗓️',
+    intro:
+      'Progress documentation only works when it is consistent. LNDMRK flies your site on a fixed schedule — same GPS waypoints, same angles, same altitudes — so month 14 lines up perfectly with month 1. Owners see progress, lenders release draws, and disputes get settled by the photo record instead of memory.',
+    featuresHeading: 'Documentation Packages',
+    features: [
+      {
+        icon: '📅',
+        title: 'Monthly Progress Flights',
+        desc: 'Repeatable aerial sets from fixed waypoints, delivered within 48 hours of each flight.',
+      },
+      {
+        icon: '🏦',
+        title: 'Draw-Inspection Support',
+        desc: 'Dated imagery packaged for lender verification requirements.',
+      },
+      {
+        icon: '🎉',
+        title: 'Milestone & Topping-Out Media',
+        desc: 'Cinematic photo and video for marketing, investor decks, and groundbreaking-to-ribbon-cutting timelapse.',
+      },
+      {
+        icon: '🔭',
+        title: 'Pre-Construction Site Conditions',
+        desc: 'Document existing conditions before you break ground — and before the claims start.',
+      },
+      {
+        icon: '🗄️',
+        title: 'Organized Photo Archive',
+        desc: 'The entire record organized by date, so any month is retrievable in seconds.',
+      },
+      {
+        icon: '🛫',
+        title: 'Airspace Handled',
+        desc: "LAANC authorizations near DFW's controlled airspace secured before every flight — routine for our team.",
+      },
+    ],
+    industries: [
+      'General Contractors',
+      'Developers',
+      'Construction Lenders',
+      'Owners & Owner Reps',
+      'Architecture & Engineering',
+      'Marketing & Investor Relations',
+    ],
+    faqs: [
+      {
+        q: 'How is recurring documentation priced?',
+        a: 'By flight, with rates dropping on a standing schedule. Multi-site programs are quoted as a portfolio — request portfolio pricing with your site count and flight cadence.',
+      },
+      {
+        q: 'Can you fly near DFW or Alliance airspace?',
+        a: 'Yes. We secure LAANC authorizations for controlled airspace — a routine part of operating in the Metroplex, handled before every flight.',
+      },
+      {
+        q: 'What if weather cancels a flight?',
+        a: 'We monitor conditions and automatically reschedule within the same window, so your monthly record never has a gap.',
+      },
+      {
+        q: 'How do stakeholders access the imagery?',
+        a: 'Deliverables arrive as organized, dated photo sets ready for your project management platform, plus polished updates suitable for owners, lenders, and HOAs.',
+      },
+    ],
+    relatedSlugs: ['construction', 'commercial-building-inspections'],
   },
 ];
 
