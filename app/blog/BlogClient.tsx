@@ -5,6 +5,16 @@ import { useState } from 'react';
 
 const posts = [
   {
+    slug: 'drone-shots-before-you-build',
+    title: 'The 12 Drone Shots to Capture Before You Build on Raw Land',
+    excerpt:
+      'Buying acreage or planning a custom home? These are the 12 drone shots architects and land planners actually ask for — altitudes, angles, and why each one matters, from the high-altitude master planning image to walking-height flights along future paths.',
+    date: '2026-07-18',
+    author: 'Colin Burns',
+    category: 'Guides',
+    readTime: '10 min read',
+  },
+  {
     slug: 'do-drone-photos-help-sell-homes',
     title: 'Do Drone Photos Actually Help Sell Homes? What the Data Says',
     excerpt:

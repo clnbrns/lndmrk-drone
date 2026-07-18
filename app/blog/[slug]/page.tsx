@@ -24,6 +24,11 @@ interface BlogPost {
 }
 
 const relatedPostsData: Record<string, { title: string; excerpt: string; href: string }> = {
+  'drone-shots-before-you-build': {
+    title: 'The 12 Drone Shots to Capture Before You Build on Raw Land',
+    excerpt: 'The mission plan architects and land planners actually ask for — altitudes, angles, and why each shot matters.',
+    href: '/blog/drone-shots-before-you-build',
+  },
   'aerial-photography-tips': {
     title: '10 Aerial Photography Tips That Will Instantly Improve Your Drone Shots',
     excerpt: 'Field-tested tips on timing, altitude, composition, and settings for better aerial photography.',
@@ -47,6 +52,192 @@ const relatedPostsData: Record<string, { title: string; excerpt: string; href: s
 };
 
 const posts: BlogPost[] = [
+  {
+    slug: 'drone-shots-before-you-build',
+    title: 'The 12 Drone Shots to Capture Before You Build on Raw Land',
+    metaTitle: '12 Drone Shots to Capture Before You Build on Raw Land',
+    metaDesc:
+      'Buying acreage or planning a custom home? These are the 12 drone shots architects and land planners actually ask for — altitudes, angles, and why each one matters.',
+    date: '2026-07-18',
+    author: 'Colin Burns',
+    authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
+    authorBio:
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with 3+ years of experience in aerial photography and videography across Texas and beyond.',
+    category: 'Guides',
+    readTime: '10 min read',
+    relatedSlugs: ['aerial-photography-tips', 'faa-part-107-explained'],
+    content: (
+      <div className="space-y-6 text-brand-muted leading-relaxed">
+        <p>
+          Most drone photography is made to <em>sell</em> land. This guide is about drone photography
+          made to help you <em>decide what to do with it</em>.
+        </p>
+        <p>
+          Recently, a client preparing to build on several acres in North Texas sent me a brief that
+          began with one of the best instructions I've ever received: <em>think like an architect, a
+          landscape architect, and a future visitor — not just someone making a beautiful promotional
+          video.</em>
+        </p>
+        <p>
+          That's exactly the right way to think about aerial imagery before construction. Long before
+          a house is designed, the land is already answering questions: Where should the house sit?
+          Which trees are worth designing around? Where does the sun rise over the property line?
+          What will you actually see from the front porch?
+        </p>
+        <p>
+          Here are the 12 shots that answer those questions — the same mission plan I fly for{' '}
+          <Link href="/for/land-buyers" className="text-brand-teal hover:text-brand-accent transition-colors">
+            land buyers
+          </Link>
+          , architects, and{' '}
+          <Link href="/for/custom-home-builders" className="text-brand-teal hover:text-brand-accent transition-colors">
+            custom home builders
+          </Link>
+          .
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">1. The High-Altitude Overview (the Most Important Shot)</h2>
+        <p>From 250–350 feet, capture the entire property in a single frame:</p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Straight-down (orthographic) photos</li>
+          <li>Oblique views from all four compass directions</li>
+          <li>The full tract plus any adjacent parcels</li>
+          <li>
+            The property's relationship to the road, neighboring homes, tree lines, and existing
+            structures
+          </li>
+        </ul>
+        <p>
+          This becomes your <strong className="text-brand-text">master planning image</strong> — the
+          one you'll draw on, measure against, and return to for every decision that follows. If you
+          only budget for one flight, this is it.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">2. The Slow &ldquo;Arrival&rdquo; Flight</h2>
+        <p>
+          Start at the road and fly slowly toward the future house site, following the path a guest
+          would drive or walk. This is the view every visitor will experience, and it's almost
+          impossible to evaluate from the ground. A single uncut arrival flight tells you more about
+          entrance design and driveway alignment than a dozen still photos.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">3. Hover Shots Over the Future House Site</h2>
+        <p>
+          This is often the most valuable footage of the whole mission. Hover directly above the spot
+          where the house might sit at <strong className="text-brand-text">15, 30, 60, and 100 feet</strong>,
+          rotating a full 360° at each height. Those four altitudes roughly correspond to porch
+          height, rooftop height, treetop height, and planning height — and together they let you
+          evaluate:
+        </p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>The best front porch view</li>
+          <li>Sunrise and sunset orientation</li>
+          <li>Privacy from neighbors</li>
+          <li>Which trees to preserve</li>
+          <li>Sightlines to pastures, ponds, or other features</li>
+        </ul>
+        <p>
+          Later, a designer can composite a rendering of the future house directly into these frames.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">4. Signature Trees</h2>
+        <p>
+          If the property has a heritage oak or any tree worth designing around, give it its own
+          sequence: directly overhead, orbits at 30, 60, and 100 feet, and a low cinematic pass
+          beneath the canopy. On many properties, one great tree becomes the emotional center of the
+          whole site plan — document it like it matters.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">5. Groves and Secondary Building Sites</h2>
+        <p>
+          Any area that might someday hold a guest cabin, barn, or studio deserves overheads, oblique
+          angles, flights under the canopy, and views both outward (toward the rest of the property)
+          and inward (what it feels like to stand there). This footage answers a question that's hard
+          to judge on foot: will a second structure complement the landscape or compete with the main
+          home?
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">6. The Relationship Between Parcels</h2>
+        <p>
+          If the property includes multiple tracts, fly from one to the other{' '}
+          <strong className="text-brand-text">without cutting the video</strong>. A continuous flight
+          reveals the visual connection, walking routes, fencing opportunities, and whether the
+          parcels read as one estate or two separate pieces of land.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">7. Existing Structures — Wells, Windmills, Barns</h2>
+        <p>
+          Old structures are often assets in disguise. Capture close-ups, medium shots, wide landscape
+          shots, and an orbit. A working windmill or weathered barn can become a historical landmark
+          of the property rather than something to demolish — but only if you've documented it well
+          enough to design around it.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">8. The Golden Hour Flight</h2>
+        <p>
+          Every property has an hour when it looks its best, and in Texas that's usually the last hour
+          of daylight. Long shadows reveal terrain. Tree silhouettes show structure. Grass turns gold.
+          This is the footage you'll want for the memory as much as the planning.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">9. Winter and Summer Canopy (Fly Twice)</h2>
+        <p>
+          Leaf-off conditions reveal terrain, drainage patterns, fence lines, and house visibility.
+          Leaf-on conditions show shade, privacy, and beauty. If you're serious about a property,
+          budget for two visits in opposite seasons — the land tells a different story in each.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">10. Mapping Passes: Orthomosaic, Contours, and 3D Terrain</h2>
+        <p>
+          Overlapping top-down photos can be processed into an{' '}
+          <strong className="text-brand-text">orthomosaic map</strong>, an elevation model, a contour
+          map, and a 3D terrain model. Even if you don't need them on day one, you'll be glad to have
+          them when planning utilities, drainage, fencing, and building placement. This is the
+          difference between guessing at grade and knowing it.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">11. Low-Level &ldquo;Walking Height&rdquo; Flights</h2>
+        <p>
+          Fly at 6–8 feet — human eye level — along the paths people will actually take: entrance to
+          the house site, house site to the garden, house site to the pasture. High-altitude shots
+          plan the property; walking-height footage lets you <em>experience</em> it before anything is
+          built.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">12. Future Estate Views (the Dream Shots)</h2>
+        <p>
+          Stand where the future porch will be and fly outward toward everything the owners will
+          someday look at: the trees, the pasture, the sunset. These shots aren't for planning —
+          they're for conviction. They're how a piece of raw land starts to feel like home.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">One More Thing: Ask for the Raw Footage</h2>
+        <p>
+          Whoever flies your property, ask for{' '}
+          <strong className="text-brand-text">
+            4K video in a flat color profile (D-Log or equivalent) and the original files
+          </strong>{' '}
+          — not just an edited highlight reel. The polished reel is great for sharing, but the raw
+          footage is what lets you pause on any frame, measure relationships, and build conceptual
+          overlays months later. (This is standard in every LNDMRK mission — you get everything the
+          drone captured.)
+        </p>
+        <p>
+          Planning to build? LNDMRK Drone flies land-planning missions across North Texas —
+          high-altitude overviews, homesite hover studies, orthomosaic mapping, and raw 4K delivery.{' '}
+          <Link href="/contact" className="text-brand-teal hover:text-brand-accent transition-colors">
+            Get in touch
+          </Link>{' '}
+          to plan your mission.
+        </p>
+      </div>
+    ),
+    faqs: [
+      {
+        q: 'How high should a drone fly for a full-property overview?',
+        a: "250–350 feet captures most residential acreage in a single frame while staying under the FAA's 400-foot ceiling for Part 107 operations.",
+      },
+      {
+        q: 'What is an orthomosaic map?',
+        a: 'A single, distortion-corrected top-down image stitched from hundreds of overlapping drone photos — accurate enough to measure distances and plan building placement, at far higher resolution than satellite imagery.',
+      },
+      {
+        q: 'Why photograph a property in both winter and summer?',
+        a: 'Bare trees reveal terrain, drainage, and sightlines; full canopy shows shade and privacy. Together they give you the complete picture no single visit can.',
+      },
+      {
+        q: 'Do I need a licensed pilot for this?',
+        a: 'Yes — any drone work performed for a business purpose in the U.S. requires an FAA Part 107 certified remote pilot.',
+      },
+    ],
+  },
   {
     slug: 'aerial-photography-tips',
     title: '10 Aerial Photography Tips That Will Instantly Improve Your Drone Shots',

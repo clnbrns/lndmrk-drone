@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { services } from '@/lib/services';
+import { audiences } from '@/lib/audiences';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -7,7 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-brand-surface border-t border-brand-border">
       <div className="max-w-6xl mx-auto px-6 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-10">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
@@ -37,6 +38,25 @@ export function Footer() {
                     className="text-brand-muted hover:text-brand-text text-sm transition-colors"
                   >
                     {svc.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Who We Serve */}
+          <div>
+            <h3 className="text-brand-text font-semibold text-sm uppercase tracking-widest mb-4">
+              Who We Serve
+            </h3>
+            <ul className="space-y-2" role="list">
+              {audiences.map((aud) => (
+                <li key={aud.slug}>
+                  <Link
+                    href={`/for/${aud.slug}`}
+                    className="text-brand-muted hover:text-brand-text text-sm transition-colors"
+                  >
+                    {aud.navLabel}
                   </Link>
                 </li>
               ))}

@@ -1,18 +1,10 @@
 import { MetadataRoute } from 'next';
 import { services } from '@/lib/services';
 import { locations } from '@/lib/locations';
+import { audiences } from '@/lib/audiences';
+import { blogSlugs } from '@/lib/blogSlugs';
 
 const BASE_URL = 'https://www.lndmrkdrone.com';
-
-const blogSlugs = [
-  'aerial-photography-tips',
-  'real-estate-drone-guide',
-  'faa-part-107-explained',
-  'do-drone-photos-help-sell-homes',
-  'construction-drone-benefits',
-  'drone-mapping-accuracy',
-  'hiring-drone-company',
-];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -50,5 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...servicePages, ...blogPages, ...locationPages];
+  const audiencePages: MetadataRoute.Sitemap = audiences.map((aud) => ({
+    url: `${BASE_URL}/for/${aud.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...servicePages, ...blogPages, ...locationPages, ...audiencePages];
 }

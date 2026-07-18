@@ -1,10 +1,14 @@
 import { NextResponse } from 'next/server';
+import { services } from '@/lib/services';
+import { locations } from '@/lib/locations';
+import { audiences } from '@/lib/audiences';
+import { blogSlugs } from '@/lib/blogSlugs';
 
 const BASE_URL = 'https://www.lndmrkdrone.com';
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY;
 const INDEXNOW_SUBMIT_SECRET = process.env.INDEXNOW_SUBMIT_SECRET;
 
-// All URLs to submit to Bing/IndexNow
+// All URLs to submit to Bing/IndexNow — derived from the same data files as the sitemap
 const ALL_URLS = [
   '/',
   '/about',
@@ -13,36 +17,10 @@ const ALL_URLS = [
   '/blog',
   '/contact',
   '/locations',
-  // Services
-  '/services/real-estate',
-  '/services/construction',
-  '/services/film-and-media',
-  '/services/inspection',
-  '/services/events',
-  '/services/government-and-public-safety',
-  // Locations
-  '/locations/fort-worth',
-  '/locations/southlake',
-  '/locations/keller',
-  '/locations/arlington',
-  '/locations/granbury',
-  '/locations/aledo',
-  '/locations/weatherford',
-  '/locations/parker-county',
-  '/locations/burleson',
-  '/locations/mansfield',
-  '/locations/grapevine',
-  '/locations/benbrook',
-  '/locations/haslet',
-  '/locations/justin',
-  // Blog
-  '/blog/aerial-photography-tips',
-  '/blog/real-estate-drone-guide',
-  '/blog/faa-part-107-explained',
-  '/blog/do-drone-photos-help-sell-homes',
-  '/blog/construction-drone-benefits',
-  '/blog/drone-mapping-accuracy',
-  '/blog/hiring-drone-company',
+  ...services.map((svc) => `/services/${svc.slug}`),
+  ...locations.map((loc) => `/locations/${loc.slug}`),
+  ...audiences.map((aud) => `/for/${aud.slug}`),
+  ...blogSlugs.map((slug) => `/blog/${slug}`),
 ].map((path) => `${BASE_URL}${path}`);
 
 /**
