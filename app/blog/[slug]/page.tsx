@@ -49,6 +49,21 @@ const relatedPostsData: Record<string, { title: string; excerpt: string; href: s
     excerpt: 'NAR data, buyer perspectives, and the property types where aerial photography moves the needle most.',
     href: '/blog/do-drone-photos-help-sell-homes',
   },
+  'construction-drone-benefits': {
+    title: 'How Construction Teams Are Using Drones to Reduce Rework and Disputes',
+    excerpt: 'How aerial documentation cuts rework, settles disputes, and keeps owners informed on every phase of the build.',
+    href: '/blog/construction-drone-benefits',
+  },
+  'drone-mapping-accuracy': {
+    title: 'How Accurate Is Drone Mapping? A Plain-English Guide to Photogrammetry',
+    excerpt: 'What accuracy drone mapping can actually achieve, what drives the variance, and how to spec a mapping project.',
+    href: '/blog/drone-mapping-accuracy',
+  },
+  'hiring-drone-company': {
+    title: '7 Questions to Ask Before Hiring a Drone Photography Company',
+    excerpt: 'The seven questions that separate professional drone operators from hobbyists before you sign a contract.',
+    href: '/blog/hiring-drone-company',
+  },
 };
 
 const posts: BlogPost[] = [
@@ -723,6 +738,385 @@ const posts: BlogPost[] = [
       {
         q: 'How do I verify that a drone pilot\'s certificate is current?',
         a: 'The FAA\'s online Airmen Inquiry tool allows you to search by name and verify that a pilot holds a current Remote Pilot Certificate. Ask the operator for their certificate number and legal name before your flight.',
+      },
+    ],
+  },
+  {
+    slug: 'construction-drone-benefits',
+    title: 'How Construction Teams Are Using Drones to Reduce Rework and Disputes',
+    metaTitle: 'Construction Drone Benefits: Reduce Rework and Disputes',
+    metaDesc:
+      'How construction teams use drone photography and aerial documentation to reduce rework, resolve disputes, track progress, and keep owners and lenders informed on every phase of the build.',
+    date: '2026-01-22',
+    author: 'Colin Burns',
+    authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
+    authorBio:
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with 3+ years of experience in aerial photography and videography across Texas and beyond.',
+    category: 'Construction',
+    readTime: '9 min read',
+    relatedSlugs: ['drone-mapping-accuracy', 'hiring-drone-company'],
+    content: (
+      <div className="space-y-6 text-brand-muted leading-relaxed">
+        <p>
+          Construction has always run on documentation — daily logs, progress photos, RFIs, punch lists.
+          What&apos;s changed is how cheaply and consistently that documentation can now be captured from the
+          air. A drone flight that takes twenty minutes produces a complete, time-stamped visual record of an
+          entire site — something that used to require renting a lift, hiring a plane, or simply going without.
+          Here&apos;s how contractors, owners, and project managers are putting aerial documentation to work.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">The Real Cost of a Documentation Gap</h2>
+        <p>
+          Most construction disputes come down to a disagreement about what the site looked like at a specific
+          point in time. Was the underground utility line installed before the slab was poured? Was the grading
+          complete when the framing crew mobilized? Did the storm damage happen before or after the roofing
+          sub demobilized? Without a visual record, these questions get settled by memory, incomplete photos
+          taken on someone&apos;s phone, and — too often — attorneys.
+        </p>
+        <p>
+          Regular aerial documentation closes that gap. A scheduled drone flight every week or at each major
+          milestone creates an objective, date-stamped record of exactly what existed on-site and when. When a
+          question comes up six months later, you pull up the photo set from that week and the conversation is
+          over before it becomes a claim.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">Catching Rework While It&apos;s Still Cheap</h2>
+        <p>
+          The cost of a construction error grows the longer it goes undetected. A misplaced footing caught
+          before the pour is a survey correction; caught after framing, it&apos;s demolition. Aerial
+          documentation gives superintendents and project engineers a perspective they can&apos;t get from the
+          ground — the whole site at once, with the geometry of the work visible in a way that walking the
+          site can&apos;t replicate.
+        </p>
+        <ul className="list-disc list-inside space-y-2 ml-2">
+          <li><strong className="text-brand-text">Layout verification:</strong> Overhead views make it easy to compare as-built conditions against the site plan before the next trade builds on top of an error.</li>
+          <li><strong className="text-brand-text">Earthwork and drainage:</strong> Grading problems, ponding, and erosion issues are obvious from the air long before they&apos;re obvious from the ground.</li>
+          <li><strong className="text-brand-text">Roof and elevated work:</strong> Drones inspect roofing, flashing, and facade work without lifts, ladders, or fall-protection logistics.</li>
+          <li><strong className="text-brand-text">Laydown and logistics:</strong> Aerial views reveal material staging conflicts, access problems, and site congestion that slow trades down.</li>
+        </ul>
+        <h2 className="text-2xl font-bold text-brand-text">Keeping Owners and Lenders Informed</h2>
+        <p>
+          For owners, developers, and lenders who aren&apos;t on-site every day, a monthly aerial photo set is
+          the most efficient progress report there is. A construction lender drawing against a schedule of
+          values can see at a glance whether the work matches the pay application. An out-of-state owner can
+          watch the project take shape without a site visit. General contractors who deliver this kind of
+          visibility as a standard practice find it builds trust — and makes draw approvals and progress
+          meetings faster.
+        </p>
+        <p>
+          Progress documentation also has marketing value that&apos;s easy to overlook. A time-lapse sequence of
+          a building rising from a bare pad, assembled from consistent monthly aerial shots, is some of the most
+          effective marketing content a builder can own. It costs almost nothing extra if the flights are
+          already happening.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">What a Construction Drone Program Looks Like</h2>
+        <p>
+          Most projects don&apos;t need anything elaborate. A typical program looks like this:
+        </p>
+        <ul className="list-disc list-inside space-y-2 ml-2">
+          <li><strong className="text-brand-text">Baseline flight:</strong> Document existing conditions before mobilization — invaluable for pre-existing damage claims from neighbors and for verifying site conditions against the bid documents.</li>
+          <li><strong className="text-brand-text">Recurring progress flights:</strong> Weekly, biweekly, or monthly flights from consistent altitudes and angles so photos are directly comparable over time.</li>
+          <li><strong className="text-brand-text">Milestone documentation:</strong> Extra coverage at critical phases — underground utilities before backfill, slab pre-pour, structural steel, dry-in.</li>
+          <li><strong className="text-brand-text">Closeout package:</strong> Final aerial documentation of the completed project for the owner&apos;s records, warranty baseline, and marketing.</li>
+        </ul>
+        <p>
+          For projects that need measurable data rather than just photos — stockpile volumes, cut/fill
+          verification, as-built site mapping — photogrammetry adds a whole additional layer. We cover what&apos;s
+          achievable in{' '}
+          <Link href="/blog/drone-mapping-accuracy" className="text-brand-teal hover:text-brand-accent transition-colors">
+            How Accurate Is Drone Mapping? A Plain-English Guide to Photogrammetry
+          </Link>
+          .
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">Compliance Considerations on Active Sites</h2>
+        <p>
+          Construction sites add a few wrinkles to drone operations. Flights over workers are restricted under
+          FAA Part 107 — operations must be planned so the aircraft doesn&apos;t overfly non-participating
+          people without the appropriate category of aircraft or waiver. Sites near airports need airspace
+          authorization before the first flight. And crane operations require coordination so the aircraft and
+          the crane are never in conflict. A professional operator handles all of this as part of the flight
+          plan; it&apos;s one of the clearest reasons to hire a certified pilot rather than having someone on
+          the crew fly a personally-owned drone.
+        </p>
+        <p>
+          Interested in setting up progress documentation for a project? See our{' '}
+          <Link href="/services/construction-progress-documentation" className="text-brand-teal hover:text-brand-accent transition-colors">
+            construction progress documentation service
+          </Link>{' '}
+          or{' '}
+          <Link href="/contact" className="text-brand-teal hover:text-brand-accent transition-colors">
+            contact us
+          </Link>{' '}
+          for a quote.
+        </p>
+      </div>
+    ),
+    faqs: [
+      {
+        q: 'How often should a construction site be documented by drone?',
+        a: 'Most projects are well served by biweekly or monthly progress flights, with additional milestone flights at critical phases like underground utilities before backfill, slab pre-pour, and structural completion. Fast-moving projects or those with active disputes may justify weekly flights.',
+      },
+      {
+        q: 'Can drones legally fly over an active construction site?',
+        a: 'Yes, with restrictions. FAA Part 107 limits flight over people who are not part of the drone operation, so flights are planned to avoid overflying workers, or conducted with appropriately certified aircraft. Sites in controlled airspace near airports also require FAA authorization, which a certified operator obtains before flying.',
+      },
+      {
+        q: 'What deliverables should I expect from a construction drone flight?',
+        a: 'A standard progress flight delivers high-resolution photos from consistent, repeatable angles and altitudes, plus overhead site overviews. Optional add-ons include video, panoramas, time-lapse sequences assembled across visits, and photogrammetry outputs like orthomosaic maps and stockpile volume measurements.',
+      },
+    ],
+  },
+  {
+    slug: 'drone-mapping-accuracy',
+    title: 'How Accurate Is Drone Mapping? A Plain-English Guide to Photogrammetry',
+    metaTitle: 'How Accurate Is Drone Mapping? Photogrammetry Explained',
+    metaDesc:
+      'What accuracy can drone mapping actually achieve? A plain-English guide to photogrammetry, ground sample distance, ground control points, RTK workflows, and how to spec a mapping project.',
+    date: '2026-01-08',
+    author: 'Colin Burns',
+    authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
+    authorBio:
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with 3+ years of experience in aerial photography and videography across Texas and beyond.',
+    category: 'Mapping',
+    readTime: '11 min read',
+    relatedSlugs: ['construction-drone-benefits', 'faa-part-107-explained'],
+    content: (
+      <div className="space-y-6 text-brand-muted leading-relaxed">
+        <p>
+          &ldquo;How accurate is it?&rdquo; is the first question every surveyor, engineer, and project manager
+          asks about drone mapping — and the honest answer is &ldquo;it depends on how the project is set
+          up.&rdquo; The same drone can produce a map that&apos;s accurate to within an inch or one that&apos;s
+          off by several feet, depending on the workflow. This guide explains what drives that variance in
+          plain English, so you can spec a mapping project that actually meets your requirements.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">What Photogrammetry Actually Does</h2>
+        <p>
+          Drone mapping is built on photogrammetry: the drone flies a systematic grid pattern over a site,
+          capturing hundreds of overlapping photos. Software then identifies matching features across those
+          photos and triangulates the 3D position of every point — the same way your two eyes triangulate
+          depth. The outputs are an orthomosaic (a single, geometrically corrected top-down image of the whole
+          site), a digital elevation model, and a 3D point cloud that can be measured like survey data.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">The Two Kinds of Accuracy</h2>
+        <p>
+          When someone quotes a mapping accuracy number, always ask which kind they mean:
+        </p>
+        <ul className="list-disc list-inside space-y-2 ml-2">
+          <li><strong className="text-brand-text">Relative accuracy</strong> is how correct measurements are within the map — the distance between two corners of a building, the volume of a stockpile. Photogrammetry is naturally strong here.</li>
+          <li><strong className="text-brand-text">Absolute accuracy</strong> is how correctly the map is positioned on the Earth — whether a point on the map lands on the true real-world coordinate. This is much harder, and it&apos;s where workflow matters most.</li>
+        </ul>
+        <p>
+          A stockpile volume calculation needs good relative accuracy. Overlaying a site plan on the map, or
+          handing data to a survey crew, needs good absolute accuracy. Many mapping disappointments come from
+          buying one when the project needed the other.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">What Drives Accuracy</h2>
+        <h3 className="text-xl font-bold text-brand-text">Ground Sample Distance (GSD)</h3>
+        <p>
+          GSD is the size of one image pixel on the ground, and it sets the ceiling on everything else. Fly
+          lower with a good camera and each pixel might cover a quarter of an inch; fly high with a lesser
+          sensor and each pixel covers several inches. You can never measure more precisely than your GSD, and
+          practical accuracy is typically a small multiple of it. Lower flight altitude means better GSD but
+          longer flight times and more photos to process — one of the core cost/accuracy trade-offs.
+        </p>
+        <h3 className="text-xl font-bold text-brand-text">Ground Control Points (GCPs)</h3>
+        <p>
+          GCPs are marked targets on the ground whose positions are measured with survey-grade GPS. The
+          photogrammetry software uses them to pin the map to true coordinates, transforming decent relative
+          accuracy into strong absolute accuracy. A handful of well-distributed GCPs is the traditional gold
+          standard for absolute accuracy — the trade-off is the field time required to place and survey them.
+        </p>
+        <h3 className="text-xl font-bold text-brand-text">RTK and PPK Positioning</h3>
+        <p>
+          RTK (Real-Time Kinematic) and PPK (Post-Processed Kinematic) drones carry survey-grade GPS receivers
+          that record each photo&apos;s position to within a few centimeters, rather than the several meters of
+          consumer GPS. This dramatically reduces — though doesn&apos;t always eliminate — the need for ground
+          control points. A common professional workflow pairs an RTK drone with a small number of checkpoints
+          used to independently verify the result rather than to build it.
+        </p>
+        <h3 className="text-xl font-bold text-brand-text">Overlap, Texture, and Processing</h3>
+        <p>
+          Photogrammetry needs each ground point visible in many photos (typically 70–80% overlap between
+          images) and needs visual texture to match features between them. Uniform surfaces — fresh asphalt,
+          calm water, dense canopy — give the software little to grab onto and degrade results locally.
+          Processing settings and quality control matter too: a rushed processing job can waste a
+          well-flown dataset.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">What Accuracy Should You Expect?</h2>
+        <p>
+          As a rule of thumb for well-executed projects:
+        </p>
+        <ul className="list-disc list-inside space-y-2 ml-2">
+          <li><strong className="text-brand-text">Standard GPS drone, no ground control:</strong> Strong relative accuracy, but absolute position can be off by several feet — fine for visual documentation and rough measurements.</li>
+          <li><strong className="text-brand-text">RTK/PPK drone or GCP workflow:</strong> Absolute accuracy in the range of a few centimeters horizontally, with vertical accuracy typically two to three times looser than horizontal.</li>
+          <li><strong className="text-brand-text">RTK plus ground control and checkpoints:</strong> The most defensible results — sub-inch-class horizontal accuracy with independent verification, suitable for engineering-grade deliverables.</li>
+        </ul>
+        <p>
+          Vertical accuracy deserves special attention: it&apos;s almost always the weaker axis in
+          photogrammetry, and it&apos;s the axis that matters most for earthwork quantities and drainage. If
+          your application depends on elevations, say so explicitly when requesting a quote.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">An Important Note on Surveying</h2>
+        <p>
+          Drone mapping produces measurement data, but it does not replace a licensed land surveyor. Boundary
+          determinations, legal descriptions, and certified surveys are regulated professional services in
+          every state, including Texas. Professional drone operators work alongside surveyors and engineers —
+          providing the aerial data capture — rather than in place of them. If a drone operator offers to
+          establish your property boundaries, that&apos;s a red flag.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">How to Spec a Mapping Project</h2>
+        <p>
+          To get an accurate quote and a deliverable that fits the job, be ready to answer these questions:
+        </p>
+        <ul className="list-disc list-inside space-y-2 ml-2">
+          <li>What decisions will be made from this data? (Documentation, quantities, design, construction verification?)</li>
+          <li>Do you need absolute accuracy (tied to real-world coordinates) or relative accuracy (measurements within the map)?</li>
+          <li>What accuracy do you need on the vertical axis specifically?</li>
+          <li>What deliverable formats does your team use — orthomosaic, point cloud, contours, CAD-ready files?</li>
+          <li>Is there existing survey control on-site the mapping can tie into?</li>
+        </ul>
+        <p>
+          Aerial mapping pairs naturally with recurring construction documentation — see{' '}
+          <Link href="/blog/construction-drone-benefits" className="text-brand-teal hover:text-brand-accent transition-colors">
+            How Construction Teams Are Using Drones to Reduce Rework and Disputes
+          </Link>{' '}
+          — and as with any commercial drone work, it requires an FAA Part 107 certified pilot. Have a project
+          in mind?{' '}
+          <Link href="/contact" className="text-brand-teal hover:text-brand-accent transition-colors">
+            Contact us
+          </Link>{' '}
+          to talk through the requirements.
+        </p>
+      </div>
+    ),
+    faqs: [
+      {
+        q: 'Can drone mapping replace a land survey?',
+        a: 'No. Drone photogrammetry produces measurement data that supports surveyors and engineers, but boundary determinations and certified surveys are regulated professional services that require a licensed land surveyor. Drone mapping is a data-capture tool used alongside — not instead of — licensed surveying.',
+      },
+      {
+        q: 'What is the difference between RTK drones and ground control points?',
+        a: 'Ground control points are surveyed targets placed on the ground that anchor the map to true coordinates. RTK drones instead record each photo\'s position with survey-grade GPS accuracy, reducing the need for ground targets. Many professional workflows combine an RTK drone with a few independent checkpoints to verify the final accuracy.',
+      },
+      {
+        q: 'How accurate are drone stockpile volume measurements?',
+        a: 'Stockpile volumes depend on relative accuracy, which photogrammetry handles well. A properly flown and processed dataset typically produces volume measurements within a low single-digit percentage of true volume — accurate enough that drone measurement has become a standard practice for aggregate and earthwork inventories.',
+      },
+    ],
+  },
+  {
+    slug: 'hiring-drone-company',
+    title: '7 Questions to Ask Before Hiring a Drone Photography Company',
+    metaTitle: '7 Questions to Ask Before Hiring a Drone Company',
+    metaDesc:
+      'Before you hire a drone photography company, ask these 7 questions about FAA certification, insurance, equipment, deliverables, airspace authorization, weather policy, and experience.',
+    date: '2025-12-14',
+    author: 'Colin Burns',
+    authorTitle: 'Lead Pilot & Founder, LNDMRK Drone',
+    authorBio:
+      'Colin Burns is the founder of LNDMRK Drone and an FAA Part 107 certified commercial drone pilot with 3+ years of experience in aerial photography and videography across Texas and beyond.',
+    category: 'Guides',
+    readTime: '7 min read',
+    relatedSlugs: ['faa-part-107-explained', 'real-estate-drone-guide'],
+    content: (
+      <div className="space-y-6 text-brand-muted leading-relaxed">
+        <p>
+          Drones have gotten cheap enough that anyone with a few hundred dollars can call themselves an aerial
+          photographer. That&apos;s great for the hobby — and a real problem for anyone hiring commercial drone
+          services, because the gap between a hobbyist with a camera and a professional operator is invisible
+          until something goes wrong. These seven questions surface that gap before you sign anything.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">1. Are You FAA Part 107 Certified?</h2>
+        <p>
+          This is the non-negotiable one. Every commercial drone flight in the United States — any flight
+          someone is compensated for, directly or indirectly — requires the pilot to hold an FAA Part 107
+          Remote Pilot Certificate. Ask for the certificate number and verify it through the FAA&apos;s{' '}
+          <a href="https://amsrvs.registry.faa.gov/" className="text-brand-teal hover:text-brand-accent transition-colors" target="_blank" rel="noopener noreferrer">
+            Airmen Inquiry tool
+          </a>
+          . An unlicensed operator exposes you to liability and federal penalties, and their willingness to
+          skip the certification tells you how they&apos;ll treat every other rule. We cover the full details in{' '}
+          <Link href="/blog/faa-part-107-explained" className="text-brand-teal hover:text-brand-accent transition-colors">
+            FAA Part 107 Explained
+          </Link>
+          .
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">2. Do You Carry Liability Insurance?</h2>
+        <p>
+          A professional operator carries commercial liability insurance specific to drone operations and can
+          produce a certificate of insurance on request — including naming your company or brokerage as an
+          additional insured if your contract requires it. Homeowner&apos;s policies and general photography
+          insurance typically exclude drone operations. If an operator hesitates on this question, keep
+          looking.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">3. How Do You Handle Airspace Authorization?</h2>
+        <p>
+          Large portions of every metro area — including much of DFW — sit in controlled airspace where drone
+          flights require FAA authorization before takeoff, usually obtained through the LAANC system. A
+          professional checks the airspace for your specific address as part of the booking process and tells
+          you upfront whether authorization is needed and whether any altitude limits apply. An operator who
+          has never heard of LAANC is telling you they either don&apos;t fly in controlled airspace or, worse,
+          fly in it anyway.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">4. What Equipment Do You Fly, and What&apos;s Your Backup Plan?</h2>
+        <p>
+          You don&apos;t need to be a drone expert to ask this — you&apos;re listening for whether they have
+          professional-grade equipment appropriate for your job, and whether they carry backup aircraft and
+          batteries. A pro shows up to a shoot with redundancy; a hobbyist shows up with one drone and hopes.
+          For specialized work like mapping, twilight shoots, or interior flights, ask specifically whether
+          their equipment is suited to it.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">5. What Exactly Is Delivered, and When?</h2>
+        <p>
+          Get the deliverables in writing before the shoot: how many edited photos, what resolution, video
+          length and format, licensing terms, and turnaround time. Ambiguity here is the most common source of
+          disappointment — &ldquo;aerial photos of the property&rdquo; can mean five quick snapshots or a
+          thoughtfully composed, professionally edited set. Ask who owns the images and what usage rights you
+          receive; for real estate and marketing work you generally want broad, perpetual usage rights included.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">6. What Happens If the Weather Doesn&apos;t Cooperate?</h2>
+        <p>
+          Wind, rain, and low light all degrade or ground drone operations. A professional has a clear
+          rescheduling policy, monitors conditions in the days before your shoot, and will proactively move a
+          shoot rather than deliver substandard results. Ask how rescheduling works, whether it costs anything,
+          and how far in advance the call gets made. The answer tells you whether they prioritize the
+          deliverable or the calendar.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">7. Can I See Work Similar to My Project?</h2>
+        <p>
+          Portfolios reveal specialization. An operator with beautiful landscape footage may have never shot a
+          real estate listing; a real estate shooter may have no construction documentation experience. Ask to
+          see examples of the specific type of work you&apos;re hiring for, and ask how many similar projects
+          they&apos;ve completed. References from repeat commercial clients are worth more than any highlight
+          reel.
+        </p>
+        <h2 className="text-2xl font-bold text-brand-text">The Pattern Behind the Questions</h2>
+        <p>
+          Notice what these questions have in common: none of them are really about photography. They&apos;re
+          about professionalism — certification, insurance, process, and accountability. The photography skill
+          gap between operators is real, but it&apos;s the professionalism gap that creates risk for your
+          project, your property, and your business.
+        </p>
+        <p>
+          We&apos;re happy to answer all seven for our own operation — certificate number, insurance
+          documentation, equipment list, and portfolio included.{' '}
+          <Link href="/contact" className="text-brand-teal hover:text-brand-accent transition-colors">
+            Get in touch
+          </Link>{' '}
+          to talk about your project.
+        </p>
+      </div>
+    ),
+    faqs: [
+      {
+        q: 'How do I verify a drone pilot is FAA certified?',
+        a: 'Ask the operator for their FAA Remote Pilot Certificate number and legal name, then look them up in the FAA\'s free online Airmen Inquiry tool. A legitimate professional will provide this without hesitation — it\'s a routine request in commercial drone work.',
+      },
+      {
+        q: 'Should a drone company have insurance even for a small job?',
+        a: 'Yes. Aircraft size doesn\'t change liability exposure — a drone can damage property or injure someone on a small shoot just as easily as a large one. Commercial drone liability insurance is standard for professional operators, and you can request a certificate of insurance for any job.',
+      },
+      {
+        q: 'What is a reasonable turnaround time for drone photos?',
+        a: 'For standard real estate and marketing shoots, 24 to 48 hours is typical for edited photos, with video taking longer depending on editing scope. Rush and same-day delivery are often available for time-sensitive listings. Whatever the timeline, it should be agreed in writing before the shoot.',
       },
     ],
   },
