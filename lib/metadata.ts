@@ -33,6 +33,13 @@ export const defaultMetadata: Metadata = {
   },
 };
 
+// Root layout appends this via `title.template` to every child route's title.
+// When a page's own title is already long, adding it pushes the SERP title
+// past the ~60-character point where Google truncates — so once that'd happen,
+// render the title as `absolute` instead, which opts that page out of the template.
+const TITLE_SUFFIX = ' | LNDMRK Drone';
+const MAX_TITLE_LENGTH = 60;
+
 export function buildMetadata(overrides: {
   title: string;
   description: string;
@@ -40,8 +47,9 @@ export function buildMetadata(overrides: {
   ogImage?: string;
 }): Metadata {
   const url = `${BASE_URL}${overrides.path}`;
+  const wouldTruncate = (overrides.title + TITLE_SUFFIX).length > MAX_TITLE_LENGTH;
   return {
-    title: overrides.title,
+    title: wouldTruncate ? { absolute: overrides.title } : overrides.title,
     description: overrides.description,
     alternates: { canonical: url },
     openGraph: {

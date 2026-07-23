@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { HeroBackgroundVideo } from './HeroBackgroundVideo';
 
 interface HeroSectionProps {
   /** Small pill badge above the eyebrow — e.g. "FAA Part 107 Certified" */
@@ -132,23 +133,9 @@ export function HeroSection({
 
   return (
     <section className="relative bg-brand-bg overflow-hidden">
-      {/* Looping background video */}
-      {bgVideo && (
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster={bgImage ?? undefined}
-          className="absolute inset-0 w-full h-full object-cover"
-          aria-hidden="true"
-        >
-          <source src={bgVideo} type={bgVideo.endsWith('.mp4') ? 'video/mp4' : 'video/quicktime'} />
-        </video>
-      )}
-
-      {/* Static background photo (only when no video) */}
-      {bgImage && !bgVideo && (
+      {/* Background photo — also serves as the visible frame while bgVideo loads.
+          Rendered with priority so it (not the video) is what LCP measures. */}
+      {bgImage && (
         <Image
           src={bgImage}
           alt={bgImageAlt}
@@ -158,6 +145,9 @@ export function HeroSection({
           className="object-cover object-center"
         />
       )}
+
+      {/* Looping background video — loads in after first paint, see HeroBackgroundVideo */}
+      {bgVideo && <HeroBackgroundVideo src={bgVideo} />}
 
       {/* Dark overlay — shown whenever there's a photo or video background */}
       {hasBackground && (

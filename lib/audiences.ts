@@ -27,7 +27,7 @@ export const audiences: Audience[] = [
     navLabel: 'Architects',
     metaTitle: 'Drone Site Documentation for Architects | North Texas',
     metaDesc:
-      'Orthographic top-downs, hover studies at porch height, orthomosaic and contour mapping, raw 4K flat-profile delivery. Site documentation flown the way architects actually use it.',
+      'Orthographic top-downs, hover studies, orthomosaic and contour mapping, raw 4K flat-profile delivery — flown the way architects actually use it.',
     h1: "You don't need a highlight reel. You need data you can design from.",
     eyebrow: 'For Architects & Landscape Architects',
     intro:
@@ -141,7 +141,7 @@ export const audiences: Audience[] = [
     slug: 'equestrian-properties',
     title: 'Drone Photography for Equestrian & Horse Properties',
     navLabel: 'Equestrian Properties',
-    metaTitle: 'Drone Photography for Horse Properties & Equestrian Estates | North Texas',
+    metaTitle: 'Drone Photography for Equestrian Properties | North Texas',
     metaDesc:
       'Pasture layout, fencing plans, barn siting, and estate cinematics for horse properties — aerial documentation flown by a pilot who plans around the animals.',
     h1: 'Horse properties are planned from above.',

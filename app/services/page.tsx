@@ -10,7 +10,7 @@ import { buildMetadata } from '@/lib/metadata';
 export const metadata: Metadata = buildMetadata({
   title: 'Drone Photography & Videography Services',
   description:
-    'Explore LNDMRK Drone\'s full range of aerial services: real estate, ranch & land, construction, film, roof & building inspections, events, and government. FAA Part 107 certified, fully insured.',
+    'Aerial services for real estate, ranch & land, construction, film, inspections, events, and government — FAA Part 107 certified, fully insured.',
   path: '/services',
 });
 

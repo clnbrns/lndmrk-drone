@@ -29,9 +29,9 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'DFW Metroplex',
-    metaTitle: 'Drone Photography Fort Worth TX | FAA-Certified Aerial Photo & Video',
+    metaTitle: 'Drone Photography Fort Worth TX | Aerial Photo & Video',
     metaDesc:
-      'Fort Worth drone photography by an FAA Part 107 certified pilot based in Tarrant County. Real estate, construction, events, and film. No travel fees. Same-week scheduling.',
+      'Fort Worth drone photography by an FAA-certified pilot based in Tarrant County. Real estate, construction, events, and film. No travel fees.',
     h1: 'Drone Photography & Videography in Fort Worth, TX',
     intro:
       'Looking for drone photography in Fort Worth, TX? You found us — and we\'re local. LNDMRK Drone is based in Fort Worth, which means no travel fees, fast turnaround, and a pilot who knows every corner of Cowtown from above. From Sundance Square to the Cultural District, from Alliance Corridor developments to Benbrook Lake, we\'ve flown hundreds of commercial flights across Tarrant County.',
@@ -87,7 +87,7 @@ export const locations: Location[] = [
     county: 'Tarrant & Denton County',
     state: 'TX',
     region: 'Northeast Tarrant County',
-    metaTitle: 'Drone Photography Southlake TX | Luxury Real Estate Aerial Photos',
+    metaTitle: 'Drone Photography Southlake TX | Luxury Real Estate Photos',
     metaDesc:
       'Professional drone photography for Southlake, TX luxury real estate, estates, and events. FAA-certified pilot serving the Carroll ISD corridor and Southlake Town Square area.',
     h1: 'Drone Photography & Aerial Real Estate Photos in Southlake, TX',
@@ -133,7 +133,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'North Tarrant County',
-    metaTitle: 'Drone Photography Keller TX | Aerial Real Estate & Construction',
+    metaTitle: 'Drone Photography Keller TX | Real Estate & Construction',
     metaDesc:
       'Drone photography and videography in Keller, TX. Real estate listing photos, construction progress, and event coverage. FAA-certified pilot based in Fort Worth.',
     h1: 'Drone Photography & Aerial Videography in Keller, TX',
@@ -217,7 +217,7 @@ export const locations: Location[] = [
     county: 'Hood County',
     state: 'TX',
     region: 'Hood County / Lake Granbury',
-    metaTitle: 'Drone Photography Granbury TX | Lake Property & Real Estate Aerial',
+    metaTitle: 'Drone Photography Granbury TX | Lake Property & Real Estate',
     metaDesc:
       'Drone photography in Granbury, TX and Lake Granbury. Aerial real estate photos for waterfront properties, lake homes, and Hood County listings. FAA-certified pilot from Fort Worth.',
     h1: 'Drone Photography & Lake Property Aerials in Granbury, TX',
@@ -353,7 +353,7 @@ export const locations: Location[] = [
     county: 'Parker County',
     state: 'TX',
     region: 'West DFW',
-    metaTitle: 'Drone Photography Parker County TX | Aerial Real Estate & Ranch',
+    metaTitle: 'Drone Photography Parker County TX | Real Estate & Ranch',
     metaDesc:
       'Professional drone photography serving all of Parker County, TX — Weatherford, Aledo, Willow Park, Hudson Oaks, Azle, and surrounding areas. Real estate, ranch, construction, and events.',
     h1: 'Drone Photography Services Across Parker County, TX',
@@ -483,7 +483,7 @@ export const locations: Location[] = [
     county: 'Tarrant County',
     state: 'TX',
     region: 'North Tarrant County',
-    metaTitle: 'Drone Photography Grapevine TX | Aerial Events, Real Estate & Tourism',
+    metaTitle: 'Drone Photography Grapevine TX | Events & Tourism',
     metaDesc:
       'Drone photography in Grapevine, TX. Aerial coverage for events, wineries, Lake Grapevine, real estate, and tourism. FAA-certified pilot. Serving the Grapevine Historic District and beyond.',
     h1: 'Drone Photography, Events & Tourism Aerials in Grapevine, TX',

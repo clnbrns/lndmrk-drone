@@ -177,7 +177,7 @@ export const services: Service[] = [
     slug: 'film-and-media',
     title: 'Drone Videography & Aerial Cinematography',
     shortDesc: 'Cinematic 4K aerial footage for commercials, film, TV, events, and social media.',
-    metaTitle: 'Drone Videography & Aerial Cinematography | Commercial Drone Filming',
+    metaTitle: 'Drone Videography & Aerial Cinematography',
     metaDesc:
       'Professional drone videography and aerial cinematography for commercials, film, TV, events, and social media. 4K footage with FAA Part 107 certified pilots. Request a quote.',
     h1: 'Drone Videography & Aerial Cinematography',
