@@ -58,6 +58,26 @@ export const portfolioItems: PortfolioItem[] = [
     caption: 'Lake Property — Texas Hill Country',
     category: 'Real Estate',
   },
+  {
+    src: '/images/portfolio/real-estate-harwell-lake-road-overview.jpg',
+    alt: 'Straight-down aerial overview of a future homesite on Harwell Lake Road showing the existing house, driveway, well, and surrounding oak tree lines',
+    caption: 'Future Homesite — Harwell Lake Road',
+    category: 'Real Estate',
+    featured: true,
+  },
+  {
+    src: '/images/portfolio/real-estate-harwell-lake-road-windmill.jpg',
+    alt: 'Aerial drone photo of a historic Aermotor windmill with a 33-foot tower standing in a pasture surrounded by oak trees',
+    caption: 'Historic Aermotor Windmill — Harwell Lake Road',
+    category: 'Real Estate',
+  },
+  {
+    src: '/images/portfolio/real-estate-harwell-lake-road-sunset.jpg',
+    alt: 'Golden hour aerial drone photo over a lake on a North Texas ranch property with warm light across the water and tree canopy',
+    caption: 'Golden Hour — Harwell Lake Road Ranch',
+    category: 'Real Estate',
+    featured: true,
+  },
 
   // ── Film & Media ───────────────────────────────────────────────────────────
   {
