@@ -193,7 +193,7 @@ export default function HomePage() {
               What Our Clients Say
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
                 quote:
@@ -214,6 +214,13 @@ export default function HomePage() {
                   "We brought them in to document a large backyard build — putting green, plunge pool, stone retaining walls. They captured progress shots throughout the project and the final reveal photos were stunning. Our client used them for their HOA presentation and it made our crew look incredible.",
                 name: 'Derek C.',
                 title: 'Owner, Outdoor Construction Company',
+                stars: 5,
+              },
+              {
+                quote:
+                  "I've sent a few already and they're already being called high quality. I appreciate their help as well — it's really great work.",
+                name: 'David Blankenship',
+                title: 'Property Owner — Peaster, TX',
                 stars: 5,
               },
             ].map((t, i) => (
