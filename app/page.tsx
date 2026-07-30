@@ -46,6 +46,29 @@ const homeFaqs = [
   },
 ];
 
+const serviceAreaCities = [
+  'Abilene',
+  'Burleson',
+  'Mansfield',
+  'Fort Worth',
+  'Aledo',
+  'Weatherford',
+  'Mineral Wells',
+  'Wichita Falls',
+  'Stephenville',
+];
+
+const serviceAreaCounties = [
+  'Hood County',
+  'Wise County',
+  'Dallas County',
+  'Denton County',
+  'Parker County',
+  'Johnson County',
+  'Tarrant County',
+  'Palo Pinto County',
+];
+
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
@@ -54,12 +77,41 @@ const localBusinessSchema = {
   url: 'https://www.lndmrkdrone.com',
   telephone: '+16829999240',
   email: 'colinmburns@gmail.com',
+  sameAs: ['https://share.google/CKrko9vjpQen706EY'],
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Fort Worth',
     addressRegion: 'TX',
     addressCountry: 'US',
   },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+      opens: '08:00',
+      closes: '18:00',
+    },
+  ],
+  areaServed: [
+    ...serviceAreaCities.map((city) => ({
+      '@type': 'City',
+      name: city,
+      containedInPlace: { '@type': 'State', name: 'Texas' },
+    })),
+    ...serviceAreaCounties.map((county) => ({
+      '@type': 'AdministrativeArea',
+      name: county,
+      containedInPlace: { '@type': 'State', name: 'Texas' },
+    })),
+  ],
 };
 
 export default function HomePage() {

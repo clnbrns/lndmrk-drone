@@ -45,6 +45,23 @@ export default async function LocationPage({
     url: `${BASE_URL}/locations/${loc.slug}`,
     telephone: '+16829999240',
     email: 'colinmburns@gmail.com',
+    sameAs: ['https://share.google/CKrko9vjpQen706EY'],
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: [
+          'Monday',
+          'Tuesday',
+          'Wednesday',
+          'Thursday',
+          'Friday',
+          'Saturday',
+          'Sunday',
+        ],
+        opens: '08:00',
+        closes: '18:00',
+      },
+    ],
     areaServed: {
       '@type': 'City',
       name: loc.city,
