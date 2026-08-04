@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { HeroSection } from '@/components/HeroSection';
 import { CtaSection } from '@/components/CtaSection';
 import { JsonLd } from '@/components/JsonLd';
@@ -63,10 +64,22 @@ export default function AboutPage() {
             detailed aerial inspection for a general contractor, we bring the same obsessive attention to
             craft and safety to every flight.
           </p>
-          <p className="text-brand-muted text-lg leading-relaxed">
+          <p className="text-brand-muted text-lg leading-relaxed mb-4">
             Colin holds an FAA Part 107 Remote Pilot Certificate and undergoes regular flight reviews and continuing education. We carry comprehensive liability insurance
             and maintain our equipment to the highest standards so our clients can focus on their
             projects — not the logistics of flying.
+          </p>
+          <p className="text-brand-muted text-lg leading-relaxed">
+            We&apos;re proud to serve as the official aerial photographer for{' '}
+            <Link
+              href="https://bearcatturf.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-teal hover:text-brand-accent transition-colors"
+            >
+              Bearcat Turf &amp; Outdoors
+            </Link>
+            , covering all of their projects across DFW.
           </p>
 
           {/* E-E-A-T credentials */}
