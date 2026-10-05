@@ -45,24 +45,34 @@ export function buildMetadata(overrides: {
   description: string;
   path: string;
   ogImage?: string;
+  ogType?: 'website' | 'article';
 }): Metadata {
   const url = `${BASE_URL}${overrides.path}`;
   const wouldTruncate = (overrides.title + TITLE_SUFFIX).length > MAX_TITLE_LENGTH;
+  const images = overrides.ogImage
+    ? [{ url: overrides.ogImage, width: 1200, height: 630 }]
+    : defaultMetadata.openGraph?.images;
+  // Next.js replaces (not merges) `openGraph` and `twitter` from the root layout,
+  // so everything the root sets has to be repeated here or it's dropped per page.
   return {
     title: wouldTruncate ? { absolute: overrides.title } : overrides.title,
     description: overrides.description,
     alternates: { canonical: url },
     openGraph: {
+      siteName: 'LNDMRK Drone',
+      locale: 'en_US',
+      type: overrides.ogType ?? 'website',
       title: overrides.title,
       description: overrides.description,
       url,
-      images: overrides.ogImage
-        ? [{ url: overrides.ogImage, width: 1200, height: 630 }]
-        : defaultMetadata.openGraph?.images,
+      images,
     },
     twitter: {
+      card: 'summary_large_image',
+      site: '@lndmrkdrone',
       title: overrides.title,
       description: overrides.description,
+      images,
     },
   };
 }

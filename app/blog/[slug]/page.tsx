@@ -1138,6 +1138,7 @@ export async function generateMetadata({
     title: post.metaTitle,
     description: post.metaDesc,
     path: `/blog/${post.slug}`,
+    ogType: 'article',
   });
 }
 
